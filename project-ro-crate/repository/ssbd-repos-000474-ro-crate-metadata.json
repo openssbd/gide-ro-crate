@@ -78,25 +78,25 @@
             ],
             "about": [
                 {
-                    "@id": "http://purl.obolibrary.org/obo/NCBITaxon_03702"
+                    "@id": "http://purl.obolibrary.org/obo/NCBITaxon_3702"
                 },
                 {
                     "@id": "http://purl.obolibrary.org/obo/NCBITaxon_39947"
                 },
                 {
-                    "@id": "http://purl.obolibrary.org/obo/NCBITaxon_04100"
+                    "@id": "http://purl.obolibrary.org/obo/NCBITaxon_4100"
                 },
                 {
-                    "@id": "http://purl.obolibrary.org/obo/NCBITaxon_04679"
+                    "@id": "http://purl.obolibrary.org/obo/NCBITaxon_4679"
                 },
                 {
-                    "@id": "http://purl.obolibrary.org/obo/NCBITaxon_04097"
+                    "@id": "http://purl.obolibrary.org/obo/NCBITaxon_4097"
                 },
                 {
                     "@id": "http://purl.obolibrary.org/obo/NCBITaxon_50463"
                 },
                 {
-                    "@id": "http://purl.obolibrary.org/obo/NCBITaxon_03719"
+                    "@id": "http://purl.obolibrary.org/obo/NCBITaxon_3719"
                 },
                 {
                     "@id": "http://purl.obolibrary.org/obo/NCBITaxon_29727"
@@ -105,16 +105,21 @@
                     "@id": "http://purl.obolibrary.org/obo/NCBITaxon_79200"
                 },
                 {
-                    "@id": "http://purl.obolibrary.org/obo/NCBITaxon_04047"
+                    "@id": "http://purl.obolibrary.org/obo/NCBITaxon_4047"
                 },
                 {
                     "@id": "#biosample-1"
                 },
                 {
-                    "@id": "http://purl.obolibrary.org/obo/NCBITaxon_03659"
+                    "@id": "http://purl.obolibrary.org/obo/NCBITaxon_3659"
                 },
                 {
                     "@id": "http://purl.obolibrary.org/obo/NCBITaxon_35875"
+                }
+            ],
+            "measurementMethod": [
+                {
+                    "@id": "http://purl.obolibrary.org/obo/FBbi_00000265"
                 }
             ],
             "size": [
@@ -166,7 +171,7 @@
             "description": "Spinacia oleacea"
         },
         {
-            "@id": "http://purl.obolibrary.org/obo/NCBITaxon_03702",
+            "@id": "http://purl.obolibrary.org/obo/NCBITaxon_3702",
             "@type": "Taxon",
             "scientificName": "Arabidopsis thaliana",
             "vernacularName": "thale cress"
@@ -177,17 +182,17 @@
             "scientificName": "Oryza sativa Japonica Group"
         },
         {
-            "@id": "http://purl.obolibrary.org/obo/NCBITaxon_04100",
+            "@id": "http://purl.obolibrary.org/obo/NCBITaxon_4100",
             "@type": "Taxon",
             "scientificName": "Nicotiana benthamiana"
         },
         {
-            "@id": "http://purl.obolibrary.org/obo/NCBITaxon_04679",
+            "@id": "http://purl.obolibrary.org/obo/NCBITaxon_4679",
             "@type": "Taxon",
             "scientificName": "Allium cepa"
         },
         {
-            "@id": "http://purl.obolibrary.org/obo/NCBITaxon_04097",
+            "@id": "http://purl.obolibrary.org/obo/NCBITaxon_4097",
             "@type": "Taxon",
             "scientificName": "Nicotiana tabacum",
             "vernacularName": "tobacco"
@@ -198,7 +203,7 @@
             "scientificName": "Cardamine hirsute"
         },
         {
-            "@id": "http://purl.obolibrary.org/obo/NCBITaxon_03719",
+            "@id": "http://purl.obolibrary.org/obo/NCBITaxon_3719",
             "@type": "Taxon",
             "scientificName": "Capsella bursa-pastoris"
         },
@@ -213,12 +218,12 @@
             "scientificName": "Daucus carota subsp. sativus"
         },
         {
-            "@id": "http://purl.obolibrary.org/obo/NCBITaxon_04047",
+            "@id": "http://purl.obolibrary.org/obo/NCBITaxon_4047",
             "@type": "Taxon",
             "scientificName": "Coriandrum sativum"
         },
         {
-            "@id": "http://purl.obolibrary.org/obo/NCBITaxon_03659",
+            "@id": "http://purl.obolibrary.org/obo/NCBITaxon_3659",
             "@type": "Taxon",
             "scientificName": "Cucumis sativus"
         },
@@ -226,6 +231,11 @@
             "@id": "http://purl.obolibrary.org/obo/NCBITaxon_35875",
             "@type": "Taxon",
             "scientificName": "Allium fistulosum"
+        },
+        {
+            "@id": "http://purl.obolibrary.org/obo/FBbi_00000265",
+            "@type": "DefinedTerm",
+            "name": "recorded image"
         },
         {
             "@id": "#total-dataset-size",

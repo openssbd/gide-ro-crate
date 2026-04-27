@@ -81,7 +81,7 @@
             ],
             "about": [
                 {
-                    "@id": "http://purl.obolibrary.org/obo/NCBITaxon_04932"
+                    "@id": "http://purl.obolibrary.org/obo/NCBITaxon_4932"
                 },
                 {
                     "@id": "#biosample-1"
@@ -105,6 +105,9 @@
                 },
                 {
                     "@id": "http://purl.obolibrary.org/obo/FBbi_00000249"
+                },
+                {
+                    "@id": "http://purl.obolibrary.org/obo/FBbi_00000265"
                 }
             ],
             "size": [
@@ -163,12 +166,12 @@
             "description": "SK1",
             "taxonomicRange": [
                 {
-                    "@id": "http://purl.obolibrary.org/obo/NCBITaxon_04932"
+                    "@id": "http://purl.obolibrary.org/obo/NCBITaxon_4932"
                 }
             ]
         },
         {
-            "@id": "http://purl.obolibrary.org/obo/NCBITaxon_04932",
+            "@id": "http://purl.obolibrary.org/obo/NCBITaxon_4932",
             "@type": "Taxon",
             "scientificName": "Saccharomyces cerevisiae",
             "vernacularName": "baker's yeast"
@@ -214,6 +217,11 @@
             "@id": "http://purl.obolibrary.org/obo/FBbi_00000249",
             "@type": "DefinedTerm",
             "name": "time lapse microscopy"
+        },
+        {
+            "@id": "http://purl.obolibrary.org/obo/FBbi_00000265",
+            "@type": "DefinedTerm",
+            "name": "recorded image"
         },
         {
             "@id": "#total-dataset-size",

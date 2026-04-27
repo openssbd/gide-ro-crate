@@ -86,7 +86,7 @@
             ],
             "about": [
                 {
-                    "@id": "http://purl.obolibrary.org/obo/NCBITaxon_07227"
+                    "@id": "http://purl.obolibrary.org/obo/NCBITaxon_7227"
                 },
                 {
                     "@id": "#biosample-1"
@@ -125,6 +125,9 @@
                 },
                 {
                     "@id": "http://purl.obolibrary.org/obo/FBbi_00000383"
+                },
+                {
+                    "@id": "http://purl.obolibrary.org/obo/FBbi_00000265"
                 }
             ],
             "size": [
@@ -171,12 +174,12 @@
             "description": "w; btl-Gal4, UAS-lifeact::GFP, UAS-lifeact::mScarletx2, etc./ Drosphila melanogaster",
             "taxonomicRange": [
                 {
-                    "@id": "http://purl.obolibrary.org/obo/NCBITaxon_07227"
+                    "@id": "http://purl.obolibrary.org/obo/NCBITaxon_7227"
                 }
             ]
         },
         {
-            "@id": "http://purl.obolibrary.org/obo/NCBITaxon_07227",
+            "@id": "http://purl.obolibrary.org/obo/NCBITaxon_7227",
             "@type": "Taxon",
             "scientificName": "Drosophila melanogaster",
             "vernacularName": "fly"
@@ -205,11 +208,6 @@
             "@id": "http://purl.obolibrary.org/obo/GO_0016460",
             "@type": "DefinedTerm",
             "name": "myosin II complex"
-        },
-        {
-            "@id": "http://purl.obolibrary.org/obo/GO_1904530",
-            "@type": "DefinedTerm",
-            "name": "actin crosslinker"
         },
         {
             "@id": "http://purl.obolibrary.org/obo/GO_0090337",
@@ -247,6 +245,11 @@
             "@id": "http://purl.obolibrary.org/obo/FBbi_00000383",
             "@type": "DefinedTerm",
             "name": "time-lapse imaging"
+        },
+        {
+            "@id": "http://purl.obolibrary.org/obo/FBbi_00000265",
+            "@type": "DefinedTerm",
+            "name": "recorded image"
         },
         {
             "@id": "#total-dataset-size",

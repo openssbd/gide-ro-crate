@@ -49,26 +49,24 @@
                 "@id": "https://w3id.org/ro/crate/1.2"
             },
             "about": {
-                "@id": "https://ssbd.riken.jp/database/project/212-Kajikawa-GeckoEmbryos/"
+                "@id": "https://ssbd.riken.jp/v2/project/212-Kajikawa-GeckoEmbryos"
             }
         },
         {
-            "@id": "https://ssbd.riken.jp/database/project/212-Kajikawa-GeckoEmbryos/",
+            "@id": "https://ssbd.riken.jp/v2/project/212-Kajikawa-GeckoEmbryos",
             "@type": "Dataset",
             "identifier": "212-Kajikawa-GeckoEmbryos",
             "name": "Live-imaging of the absence of motile cilia in the middle of gecko embryos at stage 9.",
-            "description": "212-Kajikawa-GeckoEmbryos",
+            "description": "See details in Kajikawa E, et. al. (2020)  Nat Ecol Evol., 4(2):261-269.",
             "datePublished": "2022-03-31",
             "license": "https://creativecommons.org/licenses/by/4.0/",
             "keywords": [
                 "Animals",
-                "Body Patterning[major]",
+                "Body Patterning",
                 "Chick Embryo",
-                "Cilia[major]",
+                "Cilia",
                 "Madagascar",
-                "Mice",
-                "Reptiles",
-                "Zebrafish"
+                "Reptiles"
             ],
             "publisher": {
                 "@id": "https://ssbd.riken.jp/database"
@@ -88,9 +86,6 @@
             ],
             "about": [
                 {
-                    "@id": "http://purl.obolibrary.org/obo/NCBITaxon_08565"
-                },
-                {
                     "@id": "#biosample-1"
                 },
                 {
@@ -101,6 +96,9 @@
                 },
                 {
                     "@id": "http://purl.obolibrary.org/obo/GO_0097730"
+                },
+                {
+                    "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/8565"
                 }
             ],
             "measurementMethod": [
@@ -108,11 +106,71 @@
                     "@id": "#imaging-protocol-1"
                 },
                 {
-                    "@id": "http://purl.obolibrary.org/obo/FBbi_00000245"
+                    "@id": "http://purl.obolibrary.org/obo/FBbi_00000265"
+                },
+                {
+                    "@id": "#imaging-protocol-2"
+                },
+                {
+                    "@id": "http://purl.obolibrary.org/obo/FBbi_ 00000245"
+                },
+                {
+                    "@id": "#imaging-protocol-3"
+                },
+                {
+                    "@id": "#imaging-technique-3"
+                },
+                {
+                    "@id": "#imaging-protocol-4"
+                },
+                {
+                    "@id": "#imaging-technique-4"
+                },
+                {
+                    "@id": "#imaging-protocol-5"
+                },
+                {
+                    "@id": "#imaging-technique-5"
+                },
+                {
+                    "@id": "#imaging-protocol-6"
+                },
+                {
+                    "@id": "#imaging-technique-6"
+                },
+                {
+                    "@id": "#imaging-protocol-7"
+                },
+                {
+                    "@id": "#imaging-technique-7"
+                },
+                {
+                    "@id": "#imaging-protocol-8"
+                },
+                {
+                    "@id": "#imaging-technique-8"
+                },
+                {
+                    "@id": "#imaging-protocol-9"
+                },
+                {
+                    "@id": "#imaging-technique-9"
+                },
+                {
+                    "@id": "#imaging-protocol-10"
+                },
+                {
+                    "@id": "#imaging-technique-10"
+                },
+                {
+                    "@id": "#imaging-protocol-11"
+                },
+                {
+                    "@id": "#imaging-technique-11"
                 }
             ],
             "thumbnailUrl": [
-                "https://ssbd.riken.jp/omero/webclient/?show=project-720"
+                "https://ssbd.riken.jp/ssbd-omero/v1/projects/720/render_thumbnail/"
             ],
             "size": [
                 {
@@ -136,7 +194,7 @@
             "description": "Organization: RIKEN; Department: Center for Biosystems Dynamics Research; Laboratory: Laboratory for Phyloinformatics",
             "affiliation": [
                 {
-                    "@id": "https://ror.org/01sjwvz98"
+                    "@id": "#affiliation-001"
                 }
             ]
         },
@@ -148,20 +206,48 @@
             "description": "Organization: RIKEN; Department: Center for Biosystems Dynamics Research; Laboratory: Laboratory for Organismal Patterning",
             "affiliation": [
                 {
-                    "@id": "https://ror.org/01sjwvz98"
+                    "@id": "#affiliation-001"
                 }
             ]
         },
         {
-            "@id": "https://ror.org/01sjwvz98",
+            "@id": "#affiliation-001",
             "@type": "Organization",
             "name": "RIKEN"
         },
         {
             "@id": "https://doi.org/10.1038/s41559-019-1072-2",
             "@type": "ScholarlyArticle",
-            "name": "Nodal paralogues underlie distinct mechanisms for visceral left-right asymmetry in reptiles and mammals.",
-            "datePublished": "2020"
+            "name": "Kajikawa E, Horo U, Ide T, Mizuno K, Minegishi K, Hara Y, Ikawa Y, Nishimura H, Uchikawa M, Kiyonari H, Kuraku S, Hamada H (2020) Nodal paralogues underlie distinct mechanisms for visceral left-right asymmetry in reptiles and mammals . nature ecology & evolution , Volume 4, Issue 2, pages 261-269.",
+            "datePublished": "2020",
+            "sameAs": [
+                "https://www.ncbi.nlm.nih.gov/pubmed/31907383"
+            ]
+        },
+        {
+            "@id": "http://purl.obolibrary.org/obo/GO_0070986",
+            "@type": "DefinedTerm",
+            "name": "left/right axis specification",
+            "identifier": "GO:0070986"
+        },
+        {
+            "@id": "http://purl.obolibrary.org/obo/GO_0031514",
+            "@type": "DefinedTerm",
+            "name": "motile cilium",
+            "identifier": "GO:0031514"
+        },
+        {
+            "@id": "http://purl.obolibrary.org/obo/GO_0097730",
+            "@type": "DefinedTerm",
+            "name": "non-motile cilium",
+            "identifier": "GO:0097730"
+        },
+        {
+            "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/8565",
+            "@type": "Taxon",
+            "scientificName": "Gekko",
+            "name": "Gekko",
+            "identifier": "NCBITaxon:8565"
         },
         {
             "@id": "#biosample-1",
@@ -170,58 +256,200 @@
             "description": "Gekko",
             "taxonomicRange": [
                 {
-                    "@id": "http://purl.obolibrary.org/obo/NCBITaxon_08565"
+                    "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/8565"
                 }
             ]
         },
         {
-            "@id": "http://purl.obolibrary.org/obo/NCBITaxon_08565",
-            "@type": "Taxon",
-            "scientificName": "gekko"
-        },
-        {
-            "@id": "http://purl.obolibrary.org/obo/GO_0070986",
+            "@id": "http://purl.obolibrary.org/obo/FBbi_00000265",
             "@type": "DefinedTerm",
-            "name": "left/right axis specification"
-        },
-        {
-            "@id": "http://purl.obolibrary.org/obo/GO_0031514",
-            "@type": "DefinedTerm",
-            "name": "motile cilium"
-        },
-        {
-            "@id": "http://purl.obolibrary.org/obo/GO_0097730",
-            "@type": "DefinedTerm",
-            "name": "non-motile cilium"
+            "name": "recorded image",
+            "identifier": "FBbi:00000265"
         },
         {
             "@id": "#imaging-protocol-1",
+            "@type": "LabProtocol",
+            "name": "recorded image",
+            "description": "recorded image",
+            "measurementTechnique": [
+                {
+                    "@id": "http://purl.obolibrary.org/obo/FBbi_00000265"
+                }
+            ]
+        },
+        {
+            "@id": "http://purl.obolibrary.org/obo/FBbi_ 00000245",
+            "@type": "DefinedTerm",
+            "name": "differential interference contrast microscopy",
+            "identifier": "FBbi: 00000245"
+        },
+        {
+            "@id": "#imaging-protocol-2",
             "@type": "LabProtocol",
             "name": "differential interference contrast microscopy",
             "description": "differential interference contrast microscopy",
             "measurementTechnique": [
                 {
-                    "@id": "http://purl.obolibrary.org/obo/FBbi_00000245"
+                    "@id": "http://purl.obolibrary.org/obo/FBbi_ 00000245"
                 }
             ]
         },
         {
-            "@id": "http://purl.obolibrary.org/obo/FBbi_00000245",
+            "@id": "#imaging-technique-3",
             "@type": "DefinedTerm",
-            "name": "differential interference contrast microscopy"
+            "name": "HAS-U2 high speed camera (DITECT"
+        },
+        {
+            "@id": "#imaging-protocol-3",
+            "@type": "LabProtocol",
+            "name": "HAS-U2 high speed camera (DITECT",
+            "description": "HAS-U2 high speed camera (DITECT",
+            "measurementTechnique": [
+                {
+                    "@id": "#imaging-technique-3"
+                }
+            ]
+        },
+        {
+            "@id": "#imaging-technique-4",
+            "@type": "DefinedTerm",
+            "name": "Tokyo"
+        },
+        {
+            "@id": "#imaging-protocol-4",
+            "@type": "LabProtocol",
+            "name": "Tokyo",
+            "description": "Tokyo",
+            "measurementTechnique": [
+                {
+                    "@id": "#imaging-technique-4"
+                }
+            ]
+        },
+        {
+            "@id": "#imaging-technique-5",
+            "@type": "DefinedTerm",
+            "name": "Japan)"
+        },
+        {
+            "@id": "#imaging-protocol-5",
+            "@type": "LabProtocol",
+            "name": "Japan)",
+            "description": "Japan)",
+            "measurementTechnique": [
+                {
+                    "@id": "#imaging-technique-5"
+                }
+            ]
+        },
+        {
+            "@id": "#imaging-technique-6",
+            "@type": "DefinedTerm",
+            "name": "BX53 microscope (Olympus"
+        },
+        {
+            "@id": "#imaging-protocol-6",
+            "@type": "LabProtocol",
+            "name": "BX53 microscope (Olympus",
+            "description": "BX53 microscope (Olympus",
+            "measurementTechnique": [
+                {
+                    "@id": "#imaging-technique-6"
+                }
+            ]
+        },
+        {
+            "@id": "#imaging-technique-7",
+            "@type": "DefinedTerm",
+            "name": "Japan) with x40 lens"
+        },
+        {
+            "@id": "#imaging-protocol-7",
+            "@type": "LabProtocol",
+            "name": "Japan) with x40 lens",
+            "description": "Japan) with x40 lens",
+            "measurementTechnique": [
+                {
+                    "@id": "#imaging-technique-7"
+                }
+            ]
+        },
+        {
+            "@id": "#imaging-technique-8",
+            "@type": "DefinedTerm",
+            "name": "DFK33UX174 camera(THE IMAGING SOURCE"
+        },
+        {
+            "@id": "#imaging-protocol-8",
+            "@type": "LabProtocol",
+            "name": "DFK33UX174 camera(THE IMAGING SOURCE",
+            "description": "DFK33UX174 camera(THE IMAGING SOURCE",
+            "measurementTechnique": [
+                {
+                    "@id": "#imaging-technique-8"
+                }
+            ]
+        },
+        {
+            "@id": "#imaging-technique-9",
+            "@type": "DefinedTerm",
+            "name": "Bremen"
+        },
+        {
+            "@id": "#imaging-protocol-9",
+            "@type": "LabProtocol",
+            "name": "Bremen",
+            "description": "Bremen",
+            "measurementTechnique": [
+                {
+                    "@id": "#imaging-technique-9"
+                }
+            ]
+        },
+        {
+            "@id": "#imaging-technique-10",
+            "@type": "DefinedTerm",
+            "name": "Germany)"
+        },
+        {
+            "@id": "#imaging-protocol-10",
+            "@type": "LabProtocol",
+            "name": "Germany)",
+            "description": "Germany)",
+            "measurementTechnique": [
+                {
+                    "@id": "#imaging-technique-10"
+                }
+            ]
+        },
+        {
+            "@id": "#imaging-technique-11",
+            "@type": "DefinedTerm",
+            "name": "Japan)with x100 lens"
+        },
+        {
+            "@id": "#imaging-protocol-11",
+            "@type": "LabProtocol",
+            "name": "Japan)with x100 lens",
+            "description": "Japan)with x100 lens",
+            "measurementTechnique": [
+                {
+                    "@id": "#imaging-technique-11"
+                }
+            ]
         },
         {
             "@id": "#total-dataset-size",
             "@type": "QuantitativeValue",
-            "value": 5414499893,
-            "description": "5.4 GB",
+            "value": 7860021117,
+            "description": "7.9 GB",
             "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
             "unitText": "bytes"
         },
         {
             "@id": "#file-count",
             "@type": "QuantitativeValue",
-            "value": 3,
+            "value": 6,
             "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
             "unitText": "file count"
         }

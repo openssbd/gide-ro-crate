@@ -87,7 +87,7 @@
             ],
             "about": [
                 {
-                    "@id": "http://purl.obolibrary.org/obo/NCBITaxon_09606"
+                    "@id": "http://purl.obolibrary.org/obo/NCBITaxon_9606"
                 },
                 {
                     "@id": "#biosample-1"
@@ -99,6 +99,9 @@
                 },
                 {
                     "@id": "http://purl.obolibrary.org/obo/FBbi_00000278"
+                },
+                {
+                    "@id": "http://purl.obolibrary.org/obo/FBbi_00000265"
                 }
             ],
             "size": [
@@ -145,13 +148,13 @@
             "description": "Cell line sample",
             "taxonomicRange": [
                 {
-                    "@id": "http://purl.obolibrary.org/obo/NCBITaxon_09606"
+                    "@id": "http://purl.obolibrary.org/obo/NCBITaxon_9606"
                 }
             ],
             "hasCellLine": "Human induced pluripotent stem cells 585A1"
         },
         {
-            "@id": "http://purl.obolibrary.org/obo/NCBITaxon_09606",
+            "@id": "http://purl.obolibrary.org/obo/NCBITaxon_9606",
             "@type": "Taxon",
             "scientificName": "Homo sapiens",
             "vernacularName": "human"
@@ -171,6 +174,11 @@
             "@id": "http://purl.obolibrary.org/obo/FBbi_00000278",
             "@type": "DefinedTerm",
             "name": "Lens-free imaging"
+        },
+        {
+            "@id": "http://purl.obolibrary.org/obo/FBbi_00000265",
+            "@type": "DefinedTerm",
+            "name": "recorded image"
         },
         {
             "@id": "#total-dataset-size",

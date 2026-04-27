@@ -75,7 +75,7 @@
             ],
             "about": [
                 {
-                    "@id": "http://purl.obolibrary.org/obo/NCBITaxon_08033"
+                    "@id": "http://purl.obolibrary.org/obo/NCBITaxon_8033"
                 },
                 {
                     "@id": "http://purl.obolibrary.org/obo/GO_0006888"
@@ -99,6 +99,9 @@
                 },
                 {
                     "@id": "#imaging-technique-1"
+                },
+                {
+                    "@id": "http://purl.obolibrary.org/obo/FBbi_00000265"
                 }
             ],
             "size": [
@@ -139,7 +142,7 @@
             "datePublished": "2025"
         },
         {
-            "@id": "http://purl.obolibrary.org/obo/NCBITaxon_08033",
+            "@id": "http://purl.obolibrary.org/obo/NCBITaxon_8033",
             "@type": "Taxon",
             "scientificName": "Oryzias latipes",
             "vernacularName": "medaka"
@@ -184,6 +187,11 @@
             "@id": "#imaging-technique-1",
             "@type": "DefinedTerm",
             "name": "Zeiss LSM880 Airyscan"
+        },
+        {
+            "@id": "http://purl.obolibrary.org/obo/FBbi_00000265",
+            "@type": "DefinedTerm",
+            "name": "recorded image"
         },
         {
             "@id": "#total-dataset-size",

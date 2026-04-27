@@ -86,7 +86,7 @@
             ],
             "about": [
                 {
-                    "@id": "http://purl.obolibrary.org/obo/NCBITaxon_07955"
+                    "@id": "http://purl.obolibrary.org/obo/NCBITaxon_7955"
                 },
                 {
                     "@id": "#biosample-1"
@@ -98,10 +98,13 @@
                 },
                 {
                     "@id": "#imaging-technique-1"
+                },
+                {
+                    "@id": "http://purl.obolibrary.org/obo/FBbi_00000265"
                 }
             ],
             "thumbnailUrl": [
-                "https://ssbd.riken.jp/omero/webclient/?show=project-951"
+                "https://ssbd.riken.jp/ssbd-omero/v1/projects/951/render_thumbnail/"
             ],
             "size": [
                 {
@@ -147,12 +150,12 @@
             "description": "RIKEN Wako",
             "taxonomicRange": [
                 {
-                    "@id": "http://purl.obolibrary.org/obo/NCBITaxon_07955"
+                    "@id": "http://purl.obolibrary.org/obo/NCBITaxon_7955"
                 }
             ]
         },
         {
-            "@id": "http://purl.obolibrary.org/obo/NCBITaxon_07955",
+            "@id": "http://purl.obolibrary.org/obo/NCBITaxon_7955",
             "@type": "Taxon",
             "scientificName": "Danio rerio",
             "vernacularName": "zebrafish"
@@ -172,6 +175,11 @@
             "@id": "#imaging-technique-1",
             "@type": "DefinedTerm",
             "name": "NanoZoomer HT slide scanner"
+        },
+        {
+            "@id": "http://purl.obolibrary.org/obo/FBbi_00000265",
+            "@type": "DefinedTerm",
+            "name": "recorded image"
         },
         {
             "@id": "#total-dataset-size",

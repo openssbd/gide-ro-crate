@@ -43,22 +43,22 @@
     ],
     "@graph": [
         {
-            "@id": "ssbd-repos-000185-ro-crate-metadata.json",
+            "@id": "ssbd-repos-000484-ro-crate-metadata.json",
             "@type": "CreativeWork",
             "conformsTo": {
                 "@id": "https://w3id.org/ro/crate/1.2"
             },
             "about": {
-                "@id": "https://ssbd.riken.jp/repository/ssbd-repos-000185/"
+                "@id": "https://ssbd.riken.jp/repository/ssbd-repos-000484/"
             }
         },
         {
-            "@id": "https://ssbd.riken.jp/repository/ssbd-repos-000185/",
+            "@id": "https://ssbd.riken.jp/repository/ssbd-repos-000484/",
             "@type": "Dataset",
-            "identifier": "ssbd-repos-000185",
-            "name": "Images of EPS-induced Ca2+ signals in myotubes at 0, 5, 15, 30 and 60 min of 2 Hz or 20 Hz EPS. ",
-            "description": "ssbd-repos-000185",
-            "datePublished": "2022-03-31",
+            "identifier": "ssbd-repos-000484",
+            "name": "Imaging data in the paper, \"Isotonic and minimally invasive optical clearing media for live cell imaging ex vivo and in vivo\" (Inagaki et al., 2025).",
+            "description": "Images of cultured cells, organoids, glia and neurons in brain slices and in the brains of mice.",
+            "datePublished": "2026-03-12",
             "license": "https://creativecommons.org/licenses/by/4.0/",
             "publisher": {
                 "@id": "https://ssbd.riken.jp/repository"
@@ -66,11 +66,14 @@
             "author": [
                 {
                     "@id": "#auth-001"
+                },
+                {
+                    "@id": "#auth-002"
                 }
             ],
             "seeAlso": [
                 {
-                    "@id": "https://doi.org/10.1016/j.isci.2020.101558"
+                    "@id": "https://doi.org/10.1038/s41592-026-03023-y"
                 }
             ],
             "about": [
@@ -78,28 +81,31 @@
                     "@id": "http://purl.obolibrary.org/obo/NCBITaxon_10090"
                 },
                 {
+                    "@id": "#biosample-2"
+                },
+                {
+                    "@id": "#biosample-3"
+                },
+                {
+                    "@id": "http://purl.obolibrary.org/obo/NCBITaxon_9606"
+                },
+                {
                     "@id": "#biosample-1"
                 },
                 {
-                    "@id": "http://purl.obolibrary.org/obo/CLO_0050871"
+                    "@id": "http://purl.obolibrary.org/obo/CLO_0003684"
                 },
                 {
-                    "@id": "http://purl.obolibrary.org/obo/GO_0014902"
+                    "@id": "http://purl.obolibrary.org/obo/CLO_0001727"
                 },
                 {
-                    "@id": "http://purl.obolibrary.org/obo/GO_0019722"
+                    "@id": "http://purl.obolibrary.org/obo/CLO_0037354"
                 }
             ],
             "measurementMethod": [
                 {
-                    "@id": "#imaging-protocol-1"
-                },
-                {
-                    "@id": "http://purl.obolibrary.org/obo/FBbi_00000249"
+                    "@id": "http://purl.obolibrary.org/obo/FBbi_00000265"
                 }
-            ],
-            "thumbnailUrl": [
-                "https://ssbd.riken.jp/omero/webclient/?show=project-708"
             ],
             "size": [
                 {
@@ -118,39 +124,67 @@
         {
             "@id": "#auth-001",
             "@type": "Person",
-            "name": "Shinya Kuroda",
-            "email": "skuroda@bs.s.u-tokyo.ac.jp",
-            "description": "Organization: University of Tokyo; Department: Department of Biological Sciences",
+            "name": "Takeshi Imai",
+            "email": "imai.takeshi.457@m.kyushu-u.ac.jp",
+            "description": "Organization: Kyushu Univerisity",
             "affiliation": [
                 {
-                    "@id": "https://ror.org/057zh3y96"
+                    "@id": "https://ror.org/00p4k0j84"
                 }
             ]
         },
         {
-            "@id": "https://ror.org/057zh3y96",
-            "@type": "Organization",
-            "name": "University of Tokyo"
+            "@id": "#auth-002",
+            "@type": "Person",
+            "name": "Shigenori Inagaki"
         },
         {
-            "@id": "https://doi.org/10.1016/j.isci.2020.101558",
+            "@id": "https://ror.org/00p4k0j84",
+            "@type": "Organization",
+            "name": "Kyushu Univerisity"
+        },
+        {
+            "@id": "https://doi.org/10.1038/s41592-026-03023-y",
             "@type": "ScholarlyArticle",
-            "name": "Trans-omic Analysis Reveals ROS-Dependent Pentose Phosphate Pathway Activation after High-Frequency Electrical Stimulation in C2C12 Myotubes.",
-            "datePublished": "2020"
+            "name": "Isotonic and minimally invasive optical clearing media for live cell imaging ex vivo and in vivo.",
+            "datePublished": "2026"
+        },
+        {
+            "@id": "#biosample-2",
+            "@type": "BioSample",
+            "name": "Organism",
+            "description": "brain slice"
+        },
+        {
+            "@id": "#biosample-3",
+            "@type": "BioSample",
+            "name": "Organism",
+            "description": "organoids)"
         },
         {
             "@id": "#biosample-1",
             "@type": "BioSample",
-            "name": "Cell line sample",
-            "description": "Cell line sample",
+            "name": "C57BL/6, ICR (Mus musculus)",
+            "description": "C57BL/6, ICR (Mus musculus)",
             "taxonomicRange": [
                 {
                     "@id": "http://purl.obolibrary.org/obo/NCBITaxon_10090"
+                },
+                {
+                    "@id": "http://purl.obolibrary.org/obo/NCBITaxon_9606"
                 }
             ],
-            "hasCellLine": {
-                "@id": "http://purl.obolibrary.org/obo/CLO_0050871"
-            }
+            "hasCellLine": [
+                {
+                    "@id": "http://purl.obolibrary.org/obo/CLO_0003684"
+                },
+                {
+                    "@id": "http://purl.obolibrary.org/obo/CLO_0001727"
+                },
+                {
+                    "@id": "http://purl.obolibrary.org/obo/CLO_0037354"
+                }
+            ]
         },
         {
             "@id": "http://purl.obolibrary.org/obo/NCBITaxon_10090",
@@ -159,48 +193,43 @@
             "vernacularName": "mouse"
         },
         {
-            "@id": "http://purl.obolibrary.org/obo/GO_0014902",
-            "@type": "DefinedTerm",
-            "name": "myotube differentiation"
+            "@id": "http://purl.obolibrary.org/obo/NCBITaxon_9606",
+            "@type": "Taxon",
+            "scientificName": "Homo sapiens",
+            "vernacularName": "human"
         },
         {
-            "@id": "http://purl.obolibrary.org/obo/GO_0019722",
+            "@id": "http://purl.obolibrary.org/obo/CLO_0003684",
             "@type": "DefinedTerm",
-            "name": "calcium signaling"
+            "name": "HeLa cells"
         },
         {
-            "@id": "http://purl.obolibrary.org/obo/CLO_0050871",
+            "@id": "http://purl.obolibrary.org/obo/CLO_0001727",
             "@type": "DefinedTerm",
-            "name": "C2C12"
+            "name": "HeLa/Fucci2 cells"
         },
         {
-            "@id": "#imaging-protocol-1",
-            "@type": "LabProtocol",
-            "name": "time lapse microscopy",
-            "description": "time lapse microscopy",
-            "measurementTechnique": [
-                {
-                    "@id": "http://purl.obolibrary.org/obo/FBbi_00000249"
-                }
-            ]
+            "@id": "http://purl.obolibrary.org/obo/CLO_0037354",
+            "@type": "DefinedTerm",
+            "name": "AAVpro 293T cells"
         },
         {
-            "@id": "http://purl.obolibrary.org/obo/FBbi_00000249",
+            "@id": "http://purl.obolibrary.org/obo/FBbi_00000265",
             "@type": "DefinedTerm",
-            "name": "time lapse microscopy"
+            "name": "recorded image"
         },
         {
             "@id": "#total-dataset-size",
             "@type": "QuantitativeValue",
-            "value": 318873600,
-            "description": "318.9 MB",
+            "value": 393222467584,
+            "description": "393.2 GB",
             "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
             "unitText": "bytes"
         },
         {
             "@id": "#file-count",
             "@type": "QuantitativeValue",
-            "value": 10,
+            "value": 873,
             "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
             "unitText": "file count"
         }

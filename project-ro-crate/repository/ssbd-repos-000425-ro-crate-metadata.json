@@ -80,7 +80,7 @@
             ],
             "about": [
                 {
-                    "@id": "http://purl.obolibrary.org/obo/NCBITaxon_09606"
+                    "@id": "http://purl.obolibrary.org/obo/NCBITaxon_9606"
                 }
             ],
             "measurementMethod": [
@@ -89,6 +89,9 @@
                 },
                 {
                     "@id": "#imaging-technique-1"
+                },
+                {
+                    "@id": "http://purl.obolibrary.org/obo/FBbi_00000265"
                 }
             ],
             "size": [
@@ -134,7 +137,7 @@
             "datePublished": "2024"
         },
         {
-            "@id": "http://purl.obolibrary.org/obo/NCBITaxon_09606",
+            "@id": "http://purl.obolibrary.org/obo/NCBITaxon_9606",
             "@type": "Taxon",
             "scientificName": "Homo sapiens",
             "vernacularName": "human"
@@ -154,6 +157,11 @@
             "@id": "#imaging-technique-1",
             "@type": "DefinedTerm",
             "name": "10X Xenium"
+        },
+        {
+            "@id": "http://purl.obolibrary.org/obo/FBbi_00000265",
+            "@type": "DefinedTerm",
+            "name": "recorded image"
         },
         {
             "@id": "#total-dataset-size",

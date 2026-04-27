@@ -97,7 +97,7 @@
             ],
             "about": [
                 {
-                    "@id": "http://purl.obolibrary.org/obo/NCBITaxon_07227"
+                    "@id": "http://purl.obolibrary.org/obo/NCBITaxon_7227"
                 },
                 {
                     "@id": "#biosample-1"
@@ -139,6 +139,9 @@
                 },
                 {
                     "@id": "http://purl.obolibrary.org/obo/FBbi_00000249"
+                },
+                {
+                    "@id": "http://purl.obolibrary.org/obo/FBbi_00000265"
                 }
             ],
             "size": [
@@ -195,12 +198,12 @@
             "description": "Fly strains and exact genotypes are summarized in Table S6 of Tsuyama et. al. (2023) Development.",
             "taxonomicRange": [
                 {
-                    "@id": "http://purl.obolibrary.org/obo/NCBITaxon_07227"
+                    "@id": "http://purl.obolibrary.org/obo/NCBITaxon_7227"
                 }
             ]
         },
         {
-            "@id": "http://purl.obolibrary.org/obo/NCBITaxon_07227",
+            "@id": "http://purl.obolibrary.org/obo/NCBITaxon_7227",
             "@type": "Taxon",
             "scientificName": "Drosophila melanogaster",
             "vernacularName": "fly"
@@ -270,6 +273,11 @@
             "@id": "http://purl.obolibrary.org/obo/FBbi_00000249",
             "@type": "DefinedTerm",
             "name": "time lapse microscopy"
+        },
+        {
+            "@id": "http://purl.obolibrary.org/obo/FBbi_00000265",
+            "@type": "DefinedTerm",
+            "name": "recorded image"
         },
         {
             "@id": "#total-dataset-size",
