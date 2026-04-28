@@ -75,7 +75,12 @@
             ],
             "about": [
                 {
-                    "@id": "http://purl.obolibrary.org/obo/NCBITaxon_03702"
+                    "@id": "http://purl.obolibrary.org/obo/NCBITaxon_3702"
+                }
+            ],
+            "measurementMethod": [
+                {
+                    "@id": "http://purl.obolibrary.org/obo/FBbi_00000265"
                 }
             ],
             "size": [
@@ -116,10 +121,15 @@
             "datePublished": "2024"
         },
         {
-            "@id": "http://purl.obolibrary.org/obo/NCBITaxon_03702",
+            "@id": "http://purl.obolibrary.org/obo/NCBITaxon_3702",
             "@type": "Taxon",
             "scientificName": "Arabidopsis thaliana",
             "vernacularName": "thale cress"
+        },
+        {
+            "@id": "http://purl.obolibrary.org/obo/FBbi_00000265",
+            "@type": "DefinedTerm",
+            "name": "recorded image"
         },
         {
             "@id": "#total-dataset-size",

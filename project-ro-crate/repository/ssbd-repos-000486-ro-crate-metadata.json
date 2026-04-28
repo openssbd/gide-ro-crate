@@ -73,6 +73,11 @@
                     "@id": "https://doi.org/10.1021/acsnano.3c12161"
                 }
             ],
+            "measurementMethod": [
+                {
+                    "@id": "http://purl.obolibrary.org/obo/FBbi_00000265"
+                }
+            ],
             "size": [
                 {
                     "@id": "#total-dataset-size"
@@ -109,6 +114,11 @@
             "@type": "ScholarlyArticle",
             "name": "Programmable Computational RNA Droplets Assembled via Kissing-Loop Interaction.",
             "datePublished": "2024"
+        },
+        {
+            "@id": "http://purl.obolibrary.org/obo/FBbi_00000265",
+            "@type": "DefinedTerm",
+            "name": "recorded image"
         },
         {
             "@id": "#total-dataset-size",

@@ -88,10 +88,15 @@
             ],
             "about": [
                 {
-                    "@id": "http://purl.obolibrary.org/obo/NCBITaxon_09606"
+                    "@id": "http://purl.obolibrary.org/obo/NCBITaxon_9606"
                 },
                 {
                     "@id": "#biosample-1"
+                }
+            ],
+            "measurementMethod": [
+                {
+                    "@id": "http://purl.obolibrary.org/obo/FBbi_00000265"
                 }
             ],
             "size": [
@@ -143,7 +148,7 @@
             "description": "Cell line sample",
             "taxonomicRange": [
                 {
-                    "@id": "http://purl.obolibrary.org/obo/NCBITaxon_09606"
+                    "@id": "http://purl.obolibrary.org/obo/NCBITaxon_9606"
                 }
             ],
             "hasCellLine": [
@@ -152,10 +157,15 @@
             ]
         },
         {
-            "@id": "http://purl.obolibrary.org/obo/NCBITaxon_09606",
+            "@id": "http://purl.obolibrary.org/obo/NCBITaxon_9606",
             "@type": "Taxon",
             "scientificName": "Homo sapiens",
             "vernacularName": "human"
+        },
+        {
+            "@id": "http://purl.obolibrary.org/obo/FBbi_00000265",
+            "@type": "DefinedTerm",
+            "name": "recorded image"
         },
         {
             "@id": "#total-dataset-size",

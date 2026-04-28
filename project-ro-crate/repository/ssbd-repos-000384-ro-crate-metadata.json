@@ -83,7 +83,7 @@
             ],
             "about": [
                 {
-                    "@id": "http://purl.obolibrary.org/obo/NCBITaxon_00562"
+                    "@id": "http://purl.obolibrary.org/obo/NCBITaxon_562"
                 }
             ],
             "measurementMethod": [
@@ -92,6 +92,9 @@
                 },
                 {
                     "@id": "http://purl.obolibrary.org/obo/FBbi_00000345"
+                },
+                {
+                    "@id": "http://purl.obolibrary.org/obo/FBbi_00000265"
                 }
             ],
             "size": [
@@ -143,7 +146,7 @@
             "datePublished": "2024"
         },
         {
-            "@id": "http://purl.obolibrary.org/obo/NCBITaxon_00562",
+            "@id": "http://purl.obolibrary.org/obo/NCBITaxon_562",
             "@type": "Taxon",
             "scientificName": "Escherichia coli",
             "vernacularName": "e. coli"
@@ -163,6 +166,11 @@
             "@id": "http://purl.obolibrary.org/obo/FBbi_00000345",
             "@type": "DefinedTerm",
             "name": "Transmitted-light microscopy and epi-fluorescent microscopy"
+        },
+        {
+            "@id": "http://purl.obolibrary.org/obo/FBbi_00000265",
+            "@type": "DefinedTerm",
+            "name": "recorded image"
         },
         {
             "@id": "#total-dataset-size",

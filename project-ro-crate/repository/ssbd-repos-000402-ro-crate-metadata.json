@@ -128,6 +128,9 @@
                 },
                 {
                     "@id": "http://purl.obolibrary.org/obo/FBbi_00000267"
+                },
+                {
+                    "@id": "http://purl.obolibrary.org/obo/FBbi_00000265"
                 }
             ],
             "size": [
@@ -263,6 +266,11 @@
             "@id": "http://purl.obolibrary.org/obo/FBbi_00000267",
             "@type": "DefinedTerm",
             "name": "fiber photometory with GCaMP6s or GRABDA"
+        },
+        {
+            "@id": "http://purl.obolibrary.org/obo/FBbi_00000265",
+            "@type": "DefinedTerm",
+            "name": "recorded image"
         },
         {
             "@id": "#total-dataset-size",

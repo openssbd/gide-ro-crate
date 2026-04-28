@@ -87,6 +87,9 @@
                 },
                 {
                     "@id": "http://purl.obolibrary.org/obo/FBbi_00001005"
+                },
+                {
+                    "@id": "http://purl.obolibrary.org/obo/FBbi_00000265"
                 }
             ],
             "size": [
@@ -153,6 +156,11 @@
             "@id": "http://purl.obolibrary.org/obo/FBbi_00001005",
             "@type": "DefinedTerm",
             "name": "Time-lapse images of fluorescent (GFP filter) and bright-field were taken in dark at 20 min interval for 48 h with Leica DMi8 inverted microscope"
+        },
+        {
+            "@id": "http://purl.obolibrary.org/obo/FBbi_00000265",
+            "@type": "DefinedTerm",
+            "name": "recorded image"
         },
         {
             "@id": "#total-dataset-size",

@@ -73,6 +73,11 @@
                     "@id": "https://doi.org/10.1002/1873-3468.14600"
                 }
             ],
+            "measurementMethod": [
+                {
+                    "@id": "http://purl.obolibrary.org/obo/FBbi_00000265"
+                }
+            ],
             "size": [
                 {
                     "@id": "#total-dataset-size"
@@ -109,6 +114,11 @@
             "@type": "ScholarlyArticle",
             "name": "Raman imaging of rat non-alcoholic fatty liver tissues reveals distinct biomolecular states.",
             "datePublished": "2023"
+        },
+        {
+            "@id": "http://purl.obolibrary.org/obo/FBbi_00000265",
+            "@type": "DefinedTerm",
+            "name": "recorded image"
         },
         {
             "@id": "#total-dataset-size",

@@ -75,10 +75,15 @@
             ],
             "about": [
                 {
-                    "@id": "http://purl.obolibrary.org/obo/NCBITaxon_08033"
+                    "@id": "http://purl.obolibrary.org/obo/NCBITaxon_8033"
                 },
                 {
                     "@id": "#biosample-1"
+                }
+            ],
+            "measurementMethod": [
+                {
+                    "@id": "http://purl.obolibrary.org/obo/FBbi_00000265"
                 }
             ],
             "size": [
@@ -124,15 +129,20 @@
             "description": "dr-R",
             "taxonomicRange": [
                 {
-                    "@id": "http://purl.obolibrary.org/obo/NCBITaxon_08033"
+                    "@id": "http://purl.obolibrary.org/obo/NCBITaxon_8033"
                 }
             ]
         },
         {
-            "@id": "http://purl.obolibrary.org/obo/NCBITaxon_08033",
+            "@id": "http://purl.obolibrary.org/obo/NCBITaxon_8033",
             "@type": "Taxon",
             "scientificName": "Oryzias latipes",
             "vernacularName": "medaka"
+        },
+        {
+            "@id": "http://purl.obolibrary.org/obo/FBbi_00000265",
+            "@type": "DefinedTerm",
+            "name": "recorded image"
         },
         {
             "@id": "#total-dataset-size",

@@ -98,10 +98,10 @@
             ],
             "about": [
                 {
-                    "@id": "http://purl.obolibrary.org/obo/NCBITaxon_08355"
+                    "@id": "http://purl.obolibrary.org/obo/NCBITaxon_8355"
                 },
                 {
-                    "@id": "http://purl.obolibrary.org/obo/NCBITaxon_09615"
+                    "@id": "http://purl.obolibrary.org/obo/NCBITaxon_9615"
                 },
                 {
                     "@id": "http://purl.obolibrary.org/obo/NCBITaxon_10090"
@@ -131,6 +131,9 @@
                 },
                 {
                     "@id": "http://purl.obolibrary.org/obo/FBbi_00000256"
+                },
+                {
+                    "@id": "http://purl.obolibrary.org/obo/FBbi_00000265"
                 }
             ],
             "size": [
@@ -177,10 +180,10 @@
             "description": "Cell line sample",
             "taxonomicRange": [
                 {
-                    "@id": "http://purl.obolibrary.org/obo/NCBITaxon_08355"
+                    "@id": "http://purl.obolibrary.org/obo/NCBITaxon_8355"
                 },
                 {
-                    "@id": "http://purl.obolibrary.org/obo/NCBITaxon_09615"
+                    "@id": "http://purl.obolibrary.org/obo/NCBITaxon_9615"
                 },
                 {
                     "@id": "http://purl.obolibrary.org/obo/NCBITaxon_10090"
@@ -194,13 +197,13 @@
             ]
         },
         {
-            "@id": "http://purl.obolibrary.org/obo/NCBITaxon_08355",
+            "@id": "http://purl.obolibrary.org/obo/NCBITaxon_8355",
             "@type": "Taxon",
             "scientificName": "Xenopus laevis",
             "vernacularName": "african clawed frog"
         },
         {
-            "@id": "http://purl.obolibrary.org/obo/NCBITaxon_09615",
+            "@id": "http://purl.obolibrary.org/obo/NCBITaxon_9615",
             "@type": "Taxon",
             "scientificName": "Canis lupus familiaris",
             "vernacularName": "dog"
@@ -257,6 +260,11 @@
             "@id": "http://purl.obolibrary.org/obo/FBbi_00000256",
             "@type": "DefinedTerm",
             "name": "laser scanning confocal microscopy"
+        },
+        {
+            "@id": "http://purl.obolibrary.org/obo/FBbi_00000265",
+            "@type": "DefinedTerm",
+            "name": "recorded image"
         },
         {
             "@id": "#total-dataset-size",
