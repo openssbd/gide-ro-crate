@@ -1,219 +1,242 @@
 {
-    "@context": [
-        "https://w3id.org/ro/crate/1.2/context",
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "datePublished": {
+        "@id": "http://schema.org/datePublished",
+        "@type": "xsd:date"
+      },
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "taxonomicRange": {
+        "@id": "http://schema.org/taxonomicRange"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "18-Kunida-MolDynRho-ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://ssbd.riken.jp/v1/project/18-Kunida-MolDynRho"
+      }
+    },
+    {
+      "@id": "https://ssbd.riken.jp/v1/project/18-Kunida-MolDynRho",
+      "@type": "Dataset",
+      "identifier": "18-Kunida-MolDynRho",
+      "name": "18-Kunida-MolDynRho",
+      "description": "See details in Kunida et al. (2012) Journal of Cell Science, 125(10): 2381-2392",
+      "datePublished": "2016-10-03",
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "publisher": {
+        "@id": "https://ssbd.riken.jp/database"
+      },
+      "author": [
         {
-            "bia": "https://bioimage-archive.org/ro-crate/",
-            "obo": "http://purl.obolibrary.org/obo/",
-            "dwc": "http://rs.tdwg.org/dwc/terms/",
-            "dwciri": "http://rs.tdwg.org/dwc/iri/",
-            "bao": "http://www.bioassayontology.org/bao#",
-            "xsd": "http://www.w3.org/2001/XMLSchema#",
-            "datePublished": {
-                "@id": "http://schema.org/datePublished",
-                "@type": "xsd:date"
-            },
-            "vernacularName": {
-                "@id": "dwc:vernacularName"
-            },
-            "scientificName": {
-                "@id": "dwc:scientificName"
-            },
-            "hasCellLine": {
-                "@id": "bao:BAO_0002004"
-            },
-            "measurementMethod": {
-                "@id": "dwciri:measurementMethod"
-            },
-            "taxonomicRange": {
-                "@id": "http://schema.org/taxonomicRange"
-            },
-            "seeAlso": {
-                "@id": "rdf:seeAlso"
-            },
-            "BioSample": {
-                "@id": "http://schema.org/BioSample"
-            },
-            "LabProtocol": {
-                "@id": "http://schema.org/LabProtocol"
-            },
-            "labEquipment": {
-                "@id": "http://schema.org/labEquipment"
-            }
+          "@id": "#auth-001"
+        },
+        {
+          "@id": "#auth-002"
+        },
+        {
+          "@id": "#auth-003"
         }
-    ],
-    "@graph": [
+      ],
+      "seeAlso": [
         {
-            "@id": "18-Kunida-MolDynRho-ro-crate-metadata.json",
-            "@type": "CreativeWork",
-            "conformsTo": {
-                "@id": "https://w3id.org/ro/crate/1.2"
-            },
-            "about": {
-                "@id": "https://ssbd.riken.jp/v1/project/18-Kunida-MolDynRho"
-            }
-        },
-        {
-            "@id": "https://ssbd.riken.jp/v1/project/18-Kunida-MolDynRho",
-            "@type": "Dataset",
-            "identifier": "18-Kunida-MolDynRho",
-            "name": "18-Kunida-MolDynRho",
-            "description": "See details in Kunida et al. (2012) Journal of Cell Science, 125(10): 2381-2392",
-            "datePublished": "2016-10-03",
-            "license": "https://creativecommons.org/licenses/by/4.0/",
-            "publisher": {
-                "@id": "https://ssbd.riken.jp/database"
-            },
-            "author": [
-                {
-                    "@id": "#auth-001"
-                },
-                {
-                    "@id": "#auth-002"
-                },
-                {
-                    "@id": "#auth-003"
-                }
-            ],
-            "seeAlso": [
-                {
-                    "@id": "https://www.ncbi.nlm.nih.gov/pubmed/22344265"
-                }
-            ],
-            "about": [
-                {
-                    "@id": "#biosample-1"
-                },
-                {
-                    "@id": "http://purl.obolibrary.org/obo/GO_0034613"
-                },
-                {
-                    "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/9606"
-                }
-            ],
-            "measurementMethod": [
-                {
-                    "@id": "#imaging-protocol-1"
-                },
-                {
-                    "@id": "http://purl.obolibrary.org/obo/FBbi_00000265"
-                }
-            ],
-            "thumbnailUrl": [
-                "https://ssbd.riken.jp/ssbd-omero/v1/projects/5/render_thumbnail/"
-            ],
-            "size": [
-                {
-                    "@id": "#total-dataset-size"
-                },
-                {
-                    "@id": "#file-count"
-                }
-            ]
-        },
-        {
-            "@id": "https://ssbd.riken.jp/database",
-            "@type": "Organization",
-            "name": "SSBD:database"
-        },
-        {
-            "@id": "#auth-001",
-            "@type": "Person",
-            "name": "Kazuhiro Aoki",
-            "email": "k-aoki@lif.kyoto-u.ac.jp",
-            "description": "Organization: Kyoto University; Department: Graduate School of Medicine; Laboratory: Imaging Platform for Spatio-Temporal Information",
-            "affiliation": [
-                {
-                    "@id": "#affiliation-001"
-                }
-            ]
-        },
-        {
-            "@id": "#auth-002",
-            "@type": "Person",
-            "name": "Katsuyuki Kunida",
-            "description": "Organization: Kyoto University; Department: Graduate School of Medicine; Laboratory: Imaging Platform for Spatio-Temporal Information",
-            "affiliation": [
-                {
-                    "@id": "#affiliation-001"
-                }
-            ]
-        },
-        {
-            "@id": "#auth-003",
-            "@type": "Person",
-            "name": "Michiyuki Matsuda",
-            "description": "Organization: Kyoto University; Department: Graduate School of Medicine; Laboratory: Imaging Platform for Spatio-Temporal Information",
-            "affiliation": [
-                {
-                    "@id": "#affiliation-001"
-                }
-            ]
-        },
-        {
-            "@id": "#affiliation-001",
-            "@type": "Organization",
-            "name": "Kyoto University"
-        },
-        {
-            "@id": "https://www.ncbi.nlm.nih.gov/pubmed/22344265",
-            "@type": "ScholarlyArticle",
-            "name": "https://www.ncbi.nlm.nih.gov/pubmed/22344265"
-        },
-        {
-            "@id": "http://purl.obolibrary.org/obo/GO_0034613",
-            "@type": "DefinedTerm",
-            "name": "cellular protein localization",
-            "identifier": "GO:0034613"
-        },
-        {
-            "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/9606",
-            "@type": "Taxon",
-            "scientificName": "Homo sapiens",
-            "name": "Homo sapiens",
-            "identifier": "NCBITaxon:9606"
-        },
-        {
-            "@id": "#biosample-1",
-            "@type": "BioSample",
-            "name": "Homo sapiens",
-            "description": "Homo sapiens",
-            "taxonomicRange": [
-                {
-                    "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/9606"
-                }
-            ]
-        },
-        {
-            "@id": "http://purl.obolibrary.org/obo/FBbi_00000265",
-            "@type": "DefinedTerm",
-            "name": "recorded image",
-            "identifier": "FBbi:00000265"
-        },
-        {
-            "@id": "#imaging-protocol-1",
-            "@type": "LabProtocol",
-            "name": "recorded image",
-            "description": "recorded image",
-            "measurementTechnique": [
-                {
-                    "@id": "http://purl.obolibrary.org/obo/FBbi_00000265"
-                }
-            ]
-        },
-        {
-            "@id": "#total-dataset-size",
-            "@type": "QuantitativeValue",
-            "value": 156827257,
-            "description": "156.8 MB",
-            "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
-            "unitText": "bytes"
-        },
-        {
-            "@id": "#file-count",
-            "@type": "QuantitativeValue",
-            "value": 8,
-            "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
-            "unitText": "file count"
+          "@id": "https://www.ncbi.nlm.nih.gov/pubmed/22344265"
         }
-    ]
+      ],
+      "about": [
+        {
+          "@id": "#biosample-1"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/GO_0034613"
+        },
+        {
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/9606"
+        }
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#imaging-protocol-1"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000367"
+        },
+        {
+          "@id": "#imaging-protocol-2"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000249"
+        }
+      ],
+      "thumbnailUrl": [
+        "https://ssbd.riken.jp/ssbd-omero/v1/projects/5/render_thumbnail/"
+      ],
+      "size": [
+        {
+          "@id": "#total-dataset-size"
+        },
+        {
+          "@id": "#file-count"
+        }
+      ]
+    },
+    {
+      "@id": "https://ssbd.riken.jp/database",
+      "@type": "Organization",
+      "name": "SSBD:database"
+    },
+    {
+      "@id": "#auth-001",
+      "@type": "Person",
+      "name": "Kazuhiro Aoki",
+      "email": "k-aoki@lif.kyoto-u.ac.jp",
+      "description": "Organization: Kyoto University; Department: Graduate School of Medicine; Laboratory: Imaging Platform for Spatio-Temporal Information",
+      "affiliation": [
+        {
+          "@id": "#affiliation-001"
+        }
+      ]
+    },
+    {
+      "@id": "#auth-002",
+      "@type": "Person",
+      "name": "Katsuyuki Kunida",
+      "description": "Organization: Kyoto University; Department: Graduate School of Medicine; Laboratory: Imaging Platform for Spatio-Temporal Information",
+      "affiliation": [
+        {
+          "@id": "#affiliation-001"
+        }
+      ]
+    },
+    {
+      "@id": "#auth-003",
+      "@type": "Person",
+      "name": "Michiyuki Matsuda",
+      "description": "Organization: Kyoto University; Department: Graduate School of Medicine; Laboratory: Imaging Platform for Spatio-Temporal Information",
+      "affiliation": [
+        {
+          "@id": "#affiliation-001"
+        }
+      ]
+    },
+    {
+      "@id": "#affiliation-001",
+      "@type": "Organization",
+      "name": "Kyoto University"
+    },
+    {
+      "@id": "https://www.ncbi.nlm.nih.gov/pubmed/22344265",
+      "@type": "ScholarlyArticle",
+      "name": "https://www.ncbi.nlm.nih.gov/pubmed/22344265"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_0034613",
+      "@type": "DefinedTerm",
+      "name": "cellular protein localization",
+      "identifier": "GO:0034613"
+    },
+    {
+      "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/9606",
+      "@type": "Taxon",
+      "scientificName": "Homo sapiens",
+      "name": "Homo sapiens",
+      "identifier": "NCBITaxon:9606"
+    },
+    {
+      "@id": "#biosample-1",
+      "@type": "BioSample",
+      "name": "Homo sapiens",
+      "description": "Homo sapiens",
+      "taxonomicRange": [
+        {
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/9606"
+        }
+      ]
+    },
+    {
+      "@id": "#total-dataset-size",
+      "@type": "QuantitativeValue",
+      "value": 156827257,
+      "description": "156.8 MB",
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes"
+    },
+    {
+      "@id": "#file-count",
+      "@type": "QuantitativeValue",
+      "value": 8,
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/FBbi_00000367",
+      "@type": "DefinedTerm",
+      "name": "FRET",
+      "identifier": "FBbi:00000367"
+    },
+    {
+      "@id": "#imaging-protocol-1",
+      "@type": "LabProtocol",
+      "name": "FRET",
+      "description": "FRET",
+      "measurementTechnique": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000367"
+        }
+      ]
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/FBbi_00000249",
+      "@type": "DefinedTerm",
+      "name": "time lapse microscopy",
+      "identifier": "FBbi:00000249"
+    },
+    {
+      "@id": "#imaging-protocol-2",
+      "@type": "LabProtocol",
+      "name": "time lapse microscopy",
+      "description": "time lapse microscopy",
+      "measurementTechnique": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000249"
+        }
+      ]
+    }
+  ]
 }

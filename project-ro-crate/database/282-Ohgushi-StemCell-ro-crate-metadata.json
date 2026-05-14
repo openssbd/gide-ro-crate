@@ -1,291 +1,268 @@
 {
-    "@context": [
-        "https://w3id.org/ro/crate/1.2/context",
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "datePublished": {
+        "@id": "http://schema.org/datePublished",
+        "@type": "xsd:date"
+      },
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "taxonomicRange": {
+        "@id": "http://schema.org/taxonomicRange"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "282-Ohgushi-StemCell-ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://ssbd.riken.jp/v2/project/282-Ohgushi-StemCell"
+      }
+    },
+    {
+      "@id": "https://ssbd.riken.jp/v2/project/282-Ohgushi-StemCell",
+      "@type": "Dataset",
+      "identifier": "282-Ohgushi-StemCell",
+      "name": "Embryonic stem cell differentiation",
+      "description": "Chemical blockage of ACTIVIN/NODAL and FGF signals induces human primed ESCs into GATA3-expressing cells that give rise to placental hormone-producing syncytia analogous to syncytiotrophoblasts of the post-implantation stage of the human embryo.",
+      "datePublished": "2024-11-25",
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "publisher": {
+        "@id": "https://ssbd.riken.jp/database"
+      },
+      "author": [
         {
-            "bia": "https://bioimage-archive.org/ro-crate/",
-            "obo": "http://purl.obolibrary.org/obo/",
-            "dwc": "http://rs.tdwg.org/dwc/terms/",
-            "dwciri": "http://rs.tdwg.org/dwc/iri/",
-            "bao": "http://www.bioassayontology.org/bao#",
-            "xsd": "http://www.w3.org/2001/XMLSchema#",
-            "datePublished": {
-                "@id": "http://schema.org/datePublished",
-                "@type": "xsd:date"
-            },
-            "vernacularName": {
-                "@id": "dwc:vernacularName"
-            },
-            "scientificName": {
-                "@id": "dwc:scientificName"
-            },
-            "hasCellLine": {
-                "@id": "bao:BAO_0002004"
-            },
-            "measurementMethod": {
-                "@id": "dwciri:measurementMethod"
-            },
-            "taxonomicRange": {
-                "@id": "http://schema.org/taxonomicRange"
-            },
-            "seeAlso": {
-                "@id": "rdf:seeAlso"
-            },
-            "BioSample": {
-                "@id": "http://schema.org/BioSample"
-            },
-            "LabProtocol": {
-                "@id": "http://schema.org/LabProtocol"
-            },
-            "labEquipment": {
-                "@id": "http://schema.org/labEquipment"
-            }
+          "@id": "#auth-001"
         }
-    ],
-    "@graph": [
+      ],
+      "seeAlso": [
         {
-            "@id": "282-Ohgushi-StemCell-ro-crate-metadata.json",
-            "@type": "CreativeWork",
-            "conformsTo": {
-                "@id": "https://w3id.org/ro/crate/1.2"
-            },
-            "about": {
-                "@id": "https://ssbd.riken.jp/v2/project/282-Ohgushi-StemCell"
-            }
-        },
-        {
-            "@id": "https://ssbd.riken.jp/v2/project/282-Ohgushi-StemCell",
-            "@type": "Dataset",
-            "identifier": "282-Ohgushi-StemCell",
-            "name": "Embryonic stem cell differentiation",
-            "description": "Chemical blockage of ACTIVIN/NODAL and FGF signals induces human primed ESCs into GATA3-expressing cells that give rise to placental hormone-producing syncytia analogous to syncytiotrophoblasts of the post-implantation stage of the human embryo.",
-            "datePublished": "2024-11-25",
-            "license": "https://creativecommons.org/licenses/by/4.0/",
-            "publisher": {
-                "@id": "https://ssbd.riken.jp/database"
-            },
-            "author": [
-                {
-                    "@id": "#auth-001"
-                }
-            ],
-            "seeAlso": [
-                {
-                    "@id": "https://doi.org/10.1016/j.celrep.2022.110973"
-                }
-            ],
-            "about": [
-                {
-                    "@id": "#biosample-1"
-                },
-                {
-                    "@id": "http://purl.obolibrary.org/obo/GO_0002009"
-                },
-                {
-                    "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/9606"
-                },
-                {
-                    "@id": "http://purl.obolibrary.org/obo/GO_0048863"
-                },
-                {
-                    "@id": "http://purl.obolibrary.org/obo/GO_0006949"
-                },
-                {
-                    "@id": "http://purl.obolibrary.org/obo/GO_0051301"
-                }
-            ],
-            "measurementMethod": [
-                {
-                    "@id": "#imaging-protocol-1"
-                },
-                {
-                    "@id": "http://purl.obolibrary.org/obo/FBbi_00000265"
-                },
-                {
-                    "@id": "#imaging-protocol-2"
-                },
-                {
-                    "@id": "http://purl.obolibrary.org/obo/FBbi_00000246"
-                },
-                {
-                    "@id": "#imaging-protocol-3"
-                },
-                {
-                    "@id": "http://purl.obolibrary.org/obo/FBbi_00000251"
-                },
-                {
-                    "@id": "#imaging-protocol-4"
-                },
-                {
-                    "@id": "http://purl.obolibrary.org/obo/FBbi_00000249"
-                }
-            ],
-            "thumbnailUrl": [
-                "https://ssbd.riken.jp/ssbd-omero/v1/projects/1260/render_thumbnail/"
-            ],
-            "size": [
-                {
-                    "@id": "#total-dataset-size"
-                },
-                {
-                    "@id": "#file-count"
-                }
-            ]
-        },
-        {
-            "@id": "https://ssbd.riken.jp/database",
-            "@type": "Organization",
-            "name": "SSBD:database"
-        },
-        {
-            "@id": "#auth-001",
-            "@type": "Person",
-            "name": "Masatoshi Ohgushi",
-            "email": "mohgushi@infront.kyoto-u.ac.jp",
-            "description": "Organization: Kyoto University; Department: Institute for Life and Medical Sciences; Laboratory: Laboratory of Organoids Technology, Center for Human ES Cell Research",
-            "affiliation": [
-                {
-                    "@id": "#affiliation-001"
-                }
-            ]
-        },
-        {
-            "@id": "#affiliation-001",
-            "@type": "Organization",
-            "name": "Kyoto University"
-        },
-        {
-            "@id": "https://doi.org/10.1016/j.celrep.2022.110973",
-            "@type": "ScholarlyArticle",
-            "name": "Delamination of trophoblast-like syncytia from the amniotic ectodermal analogue in human primed embryonic stem cell-based differentiation model. Ohgushi M, Taniyama N, Vandenbon A, Eiraku M. Cell Rep. 2022 Jun 21;39(12):110973",
-            "datePublished": "2022",
-            "sameAs": [
-                "https://pubmed.ncbi.nlm.nih.gov/35732132/"
-            ]
-        },
-        {
-            "@id": "http://purl.obolibrary.org/obo/GO_0002009",
-            "@type": "DefinedTerm",
-            "name": "morphogenesis of an epithelium",
-            "identifier": "GO:0002009"
-        },
-        {
-            "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/9606",
-            "@type": "Taxon",
-            "scientificName": "Homo sapiens",
-            "name": "Homo sapiens",
-            "identifier": "NCBITaxon:9606"
-        },
-        {
-            "@id": "http://purl.obolibrary.org/obo/GO_0048863",
-            "@type": "DefinedTerm",
-            "name": "stem cell differentiation",
-            "identifier": "GO:0048863"
-        },
-        {
-            "@id": "http://purl.obolibrary.org/obo/GO_0006949",
-            "@type": "DefinedTerm",
-            "name": "syncytium formation",
-            "identifier": "GO:0006949"
-        },
-        {
-            "@id": "http://purl.obolibrary.org/obo/GO_0051301",
-            "@type": "DefinedTerm",
-            "name": "cell division",
-            "identifier": "GO:0051301"
-        },
-        {
-            "@id": "#biosample-1",
-            "@type": "BioSample",
-            "name": "Homo sapiens",
-            "description": "Homo sapiens",
-            "taxonomicRange": [
-                {
-                    "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/9606"
-                }
-            ]
-        },
-        {
-            "@id": "http://purl.obolibrary.org/obo/FBbi_00000265",
-            "@type": "DefinedTerm",
-            "name": "recorded image",
-            "identifier": "FBbi:00000265"
-        },
-        {
-            "@id": "#imaging-protocol-1",
-            "@type": "LabProtocol",
-            "name": "recorded image",
-            "description": "recorded image",
-            "measurementTechnique": [
-                {
-                    "@id": "http://purl.obolibrary.org/obo/FBbi_00000265"
-                }
-            ]
-        },
-        {
-            "@id": "http://purl.obolibrary.org/obo/FBbi_00000246",
-            "@type": "DefinedTerm",
-            "name": "fluorescence microscopy",
-            "identifier": "FBbi:00000246"
-        },
-        {
-            "@id": "#imaging-protocol-2",
-            "@type": "LabProtocol",
-            "name": "fluorescence microscopy",
-            "description": "fluorescence microscopy",
-            "measurementTechnique": [
-                {
-                    "@id": "http://purl.obolibrary.org/obo/FBbi_00000246"
-                }
-            ]
-        },
-        {
-            "@id": "http://purl.obolibrary.org/obo/FBbi_00000251",
-            "@type": "DefinedTerm",
-            "name": "confocal microscopy",
-            "identifier": "FBbi:00000251"
-        },
-        {
-            "@id": "#imaging-protocol-3",
-            "@type": "LabProtocol",
-            "name": "confocal microscopy",
-            "description": "confocal microscopy",
-            "measurementTechnique": [
-                {
-                    "@id": "http://purl.obolibrary.org/obo/FBbi_00000251"
-                }
-            ]
-        },
-        {
-            "@id": "http://purl.obolibrary.org/obo/FBbi_00000249",
-            "@type": "DefinedTerm",
-            "name": "time lapse microscopy",
-            "identifier": "FBbi:00000249"
-        },
-        {
-            "@id": "#imaging-protocol-4",
-            "@type": "LabProtocol",
-            "name": "time lapse microscopy",
-            "description": "time lapse microscopy",
-            "measurementTechnique": [
-                {
-                    "@id": "http://purl.obolibrary.org/obo/FBbi_00000249"
-                }
-            ]
-        },
-        {
-            "@id": "#total-dataset-size",
-            "@type": "QuantitativeValue",
-            "value": 4363607187,
-            "description": "4.4 GB",
-            "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
-            "unitText": "bytes"
-        },
-        {
-            "@id": "#file-count",
-            "@type": "QuantitativeValue",
-            "value": 13,
-            "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
-            "unitText": "file count"
+          "@id": "https://doi.org/10.1016/j.celrep.2022.110973"
         }
-    ]
+      ],
+      "about": [
+        {
+          "@id": "#biosample-1"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/GO_0002009"
+        },
+        {
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/9606"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/GO_0048863"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/GO_0006949"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/GO_0051301"
+        }
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#imaging-protocol-1"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000246"
+        },
+        {
+          "@id": "#imaging-protocol-2"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000251"
+        },
+        {
+          "@id": "#imaging-protocol-3"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000249"
+        }
+      ],
+      "thumbnailUrl": [
+        "https://ssbd.riken.jp/ssbd-omero/v1/projects/1260/render_thumbnail/"
+      ],
+      "size": [
+        {
+          "@id": "#total-dataset-size"
+        },
+        {
+          "@id": "#file-count"
+        }
+      ]
+    },
+    {
+      "@id": "https://ssbd.riken.jp/database",
+      "@type": "Organization",
+      "name": "SSBD:database"
+    },
+    {
+      "@id": "#auth-001",
+      "@type": "Person",
+      "name": "Masatoshi Ohgushi",
+      "email": "mohgushi@infront.kyoto-u.ac.jp",
+      "description": "Organization: Kyoto University; Department: Institute for Life and Medical Sciences; Laboratory: Laboratory of Organoids Technology, Center for Human ES Cell Research",
+      "affiliation": [
+        {
+          "@id": "#affiliation-001"
+        }
+      ]
+    },
+    {
+      "@id": "#affiliation-001",
+      "@type": "Organization",
+      "name": "Kyoto University"
+    },
+    {
+      "@id": "https://doi.org/10.1016/j.celrep.2022.110973",
+      "@type": "ScholarlyArticle",
+      "name": "Delamination of trophoblast-like syncytia from the amniotic ectodermal analogue in human primed embryonic stem cell-based differentiation model. Ohgushi M, Taniyama N, Vandenbon A, Eiraku M. Cell Rep. 2022 Jun 21;39(12):110973",
+      "datePublished": "2022",
+      "sameAs": [
+        "https://pubmed.ncbi.nlm.nih.gov/35732132/"
+      ]
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_0002009",
+      "@type": "DefinedTerm",
+      "name": "morphogenesis of an epithelium",
+      "identifier": "GO:0002009"
+    },
+    {
+      "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/9606",
+      "@type": "Taxon",
+      "scientificName": "Homo sapiens",
+      "name": "Homo sapiens",
+      "identifier": "NCBITaxon:9606"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_0048863",
+      "@type": "DefinedTerm",
+      "name": "stem cell differentiation",
+      "identifier": "GO:0048863"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_0006949",
+      "@type": "DefinedTerm",
+      "name": "syncytium formation",
+      "identifier": "GO:0006949"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_0051301",
+      "@type": "DefinedTerm",
+      "name": "cell division",
+      "identifier": "GO:0051301"
+    },
+    {
+      "@id": "#biosample-1",
+      "@type": "BioSample",
+      "name": "Homo sapiens",
+      "description": "Homo sapiens",
+      "taxonomicRange": [
+        {
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/9606"
+        }
+      ]
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/FBbi_00000246",
+      "@type": "DefinedTerm",
+      "name": "fluorescence microscopy",
+      "identifier": "FBbi:00000246"
+    },
+    {
+      "@id": "#imaging-protocol-1",
+      "@type": "LabProtocol",
+      "name": "fluorescence microscopy",
+      "description": "fluorescence microscopy",
+      "measurementTechnique": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000246"
+        }
+      ]
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/FBbi_00000251",
+      "@type": "DefinedTerm",
+      "name": "confocal microscopy",
+      "identifier": "FBbi:00000251"
+    },
+    {
+      "@id": "#imaging-protocol-2",
+      "@type": "LabProtocol",
+      "name": "confocal microscopy",
+      "description": "confocal microscopy",
+      "measurementTechnique": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000251"
+        }
+      ]
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/FBbi_00000249",
+      "@type": "DefinedTerm",
+      "name": "time lapse microscopy",
+      "identifier": "FBbi:00000249"
+    },
+    {
+      "@id": "#imaging-protocol-3",
+      "@type": "LabProtocol",
+      "name": "time lapse microscopy",
+      "description": "time lapse microscopy",
+      "measurementTechnique": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000249"
+        }
+      ]
+    },
+    {
+      "@id": "#total-dataset-size",
+      "@type": "QuantitativeValue",
+      "value": 4363607187,
+      "description": "4.4 GB",
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes"
+    },
+    {
+      "@id": "#file-count",
+      "@type": "QuantitativeValue",
+      "value": 13,
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count"
+    }
+  ]
 }

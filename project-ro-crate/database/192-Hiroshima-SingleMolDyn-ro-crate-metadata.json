@@ -1,280 +1,235 @@
 {
-    "@context": [
-        "https://w3id.org/ro/crate/1.2/context",
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "datePublished": {
+        "@id": "http://schema.org/datePublished",
+        "@type": "xsd:date"
+      },
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "taxonomicRange": {
+        "@id": "http://schema.org/taxonomicRange"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "192-Hiroshima-SingleMolDyn-ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://ssbd.riken.jp/v2/project/192-Hiroshima-SingleMolDyn"
+      }
+    },
+    {
+      "@id": "https://ssbd.riken.jp/v2/project/192-Hiroshima-SingleMolDyn",
+      "@type": "Dataset",
+      "identifier": "192-Hiroshima-SingleMolDyn",
+      "name": "Single-molecule images of living cells with epidermal growth factor (EGF) stimulation by automated in-cell single-molecule imaging system (AiSIS)",
+      "description": "See details in Hiroshima M, et. al. (2020)  Microscopy (Oxf), 69(2):69-78.",
+      "datePublished": "2022-03-31",
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "keywords": [
+        "Artificial Intelligence",
+        "Automation",
+        "Drug Evaluation",
+        "Preclinical",
+        "Preclinical/methods",
+        "Flow Cytometry",
+        "Flow Cytometry/methods",
+        "Pharmacology",
+        "Pharmacology/methods",
+        "Single Molecule Imaging",
+        "Single Molecule Imaging/methods"
+      ],
+      "publisher": {
+        "@id": "https://ssbd.riken.jp/database"
+      },
+      "author": [
         {
-            "bia": "https://bioimage-archive.org/ro-crate/",
-            "obo": "http://purl.obolibrary.org/obo/",
-            "dwc": "http://rs.tdwg.org/dwc/terms/",
-            "dwciri": "http://rs.tdwg.org/dwc/iri/",
-            "bao": "http://www.bioassayontology.org/bao#",
-            "xsd": "http://www.w3.org/2001/XMLSchema#",
-            "datePublished": {
-                "@id": "http://schema.org/datePublished",
-                "@type": "xsd:date"
-            },
-            "vernacularName": {
-                "@id": "dwc:vernacularName"
-            },
-            "scientificName": {
-                "@id": "dwc:scientificName"
-            },
-            "hasCellLine": {
-                "@id": "bao:BAO_0002004"
-            },
-            "measurementMethod": {
-                "@id": "dwciri:measurementMethod"
-            },
-            "taxonomicRange": {
-                "@id": "http://schema.org/taxonomicRange"
-            },
-            "seeAlso": {
-                "@id": "rdf:seeAlso"
-            },
-            "BioSample": {
-                "@id": "http://schema.org/BioSample"
-            },
-            "LabProtocol": {
-                "@id": "http://schema.org/LabProtocol"
-            },
-            "labEquipment": {
-                "@id": "http://schema.org/labEquipment"
-            }
+          "@id": "#auth-001"
+        },
+        {
+          "@id": "#auth-002"
         }
-    ],
-    "@graph": [
+      ],
+      "seeAlso": [
         {
-            "@id": "192-Hiroshima-SingleMolDyn-ro-crate-metadata.json",
-            "@type": "CreativeWork",
-            "conformsTo": {
-                "@id": "https://w3id.org/ro/crate/1.2"
-            },
-            "about": {
-                "@id": "https://ssbd.riken.jp/v2/project/192-Hiroshima-SingleMolDyn"
-            }
-        },
-        {
-            "@id": "https://ssbd.riken.jp/v2/project/192-Hiroshima-SingleMolDyn",
-            "@type": "Dataset",
-            "identifier": "192-Hiroshima-SingleMolDyn",
-            "name": "Single-molecule images of living cells with epidermal growth factor (EGF) stimulation by automated in-cell single-molecule imaging system (AiSIS)",
-            "description": "See details in Hiroshima M, et. al. (2020)  Microscopy (Oxf), 69(2):69-78.",
-            "datePublished": "2022-03-31",
-            "license": "https://creativecommons.org/licenses/by/4.0/",
-            "keywords": [
-                "Artificial Intelligence",
-                "Automation",
-                "Drug Evaluation",
-                "Preclinical",
-                "Preclinical/methods",
-                "Flow Cytometry",
-                "Flow Cytometry/methods",
-                "Pharmacology",
-                "Pharmacology/methods",
-                "Single Molecule Imaging",
-                "Single Molecule Imaging/methods"
-            ],
-            "publisher": {
-                "@id": "https://ssbd.riken.jp/database"
-            },
-            "author": [
-                {
-                    "@id": "#auth-001"
-                },
-                {
-                    "@id": "#auth-002"
-                }
-            ],
-            "seeAlso": [
-                {
-                    "@id": "https://doi.org/10.1093/jmicro/dfz116"
-                }
-            ],
-            "about": [
-                {
-                    "@id": "#biosample-1"
-                },
-                {
-                    "@id": "http://purl.obolibrary.org/obo/CLO_0002462"
-                },
-                {
-                    "@id": "http://purl.obolibrary.org/obo/GO_0005154"
-                },
-                {
-                    "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/10029"
-                }
-            ],
-            "measurementMethod": [
-                {
-                    "@id": "#imaging-protocol-1"
-                },
-                {
-                    "@id": "http://purl.obolibrary.org/obo/FBbi_00000265"
-                },
-                {
-                    "@id": "#imaging-protocol-2"
-                },
-                {
-                    "@id": "http://purl.obolibrary.org/obo/FBbi_00000246"
-                },
-                {
-                    "@id": "#imaging-protocol-3"
-                },
-                {
-                    "@id": "#imaging-technique-3"
-                }
-            ],
-            "thumbnailUrl": [
-                "https://ssbd.riken.jp/ssbd-omero/v1/projects/718/render_thumbnail/"
-            ],
-            "size": [
-                {
-                    "@id": "#total-dataset-size"
-                },
-                {
-                    "@id": "#file-count"
-                }
-            ]
-        },
-        {
-            "@id": "https://ssbd.riken.jp/database",
-            "@type": "Organization",
-            "name": "SSBD:database"
-        },
-        {
-            "@id": "#auth-001",
-            "@type": "Person",
-            "name": "Michio Hiroshima",
-            "email": "m_hiroshima@riken.jp",
-            "description": "Organization: RIKEN; Department: Center for Biosystems Dynamics Research; Laboratory: Laboratory for Cell Signaling Dynamics",
-            "affiliation": [
-                {
-                    "@id": "#affiliation-001"
-                }
-            ]
-        },
-        {
-            "@id": "#auth-002",
-            "@type": "Person",
-            "name": "Michio Hiroshima",
-            "email": "m_hiroshima@riken.jp",
-            "description": "Organization: RIKEN; Department: Center for Biosystems Dynamics Research; Laboratory: Laboratory for Cell Signaling Dynamics",
-            "affiliation": [
-                {
-                    "@id": "#affiliation-001"
-                }
-            ]
-        },
-        {
-            "@id": "#affiliation-001",
-            "@type": "Organization",
-            "name": "RIKEN"
-        },
-        {
-            "@id": "https://doi.org/10.1093/jmicro/dfz116",
-            "@type": "ScholarlyArticle",
-            "name": "Hiroshima M, Yasui M, and Ueda M (2013) Large-scale single-molecule imaging aided by artificial intelligence. Microscopy, Volume 69, Issue 2, pages 69-78.",
-            "datePublished": "2013",
-            "sameAs": [
-                "https://www.ncbi.nlm.nih.gov/pubmed/32090254"
-            ]
-        },
-        {
-            "@id": "http://purl.obolibrary.org/obo/CLO_0002462",
-            "@type": "DefinedTerm",
-            "name": "CHO-K1",
-            "identifier": "CLO:0002462"
-        },
-        {
-            "@id": "http://purl.obolibrary.org/obo/GO_0005154",
-            "@type": "DefinedTerm",
-            "name": "epidermal growth factor receptor binding",
-            "identifier": "GO:0005154"
-        },
-        {
-            "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/10029",
-            "@type": "Taxon",
-            "scientificName": "Cricetulus griseus",
-            "name": "Cricetulus griseus",
-            "identifier": "NCBITaxon:10029"
-        },
-        {
-            "@id": "#biosample-1",
-            "@type": "BioSample",
-            "name": "Cricetulus griseus ~ CHO-K1",
-            "description": "Cricetulus griseus ~ CHO-K1",
-            "taxonomicRange": [
-                {
-                    "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/10029"
-                }
-            ],
-            "hasCellLine": {
-                "@id": "http://purl.obolibrary.org/obo/CLO_0002462"
-            }
-        },
-        {
-            "@id": "http://purl.obolibrary.org/obo/FBbi_00000265",
-            "@type": "DefinedTerm",
-            "name": "recorded image",
-            "identifier": "FBbi:00000265"
-        },
-        {
-            "@id": "#imaging-protocol-1",
-            "@type": "LabProtocol",
-            "name": "recorded image",
-            "description": "recorded image",
-            "measurementTechnique": [
-                {
-                    "@id": "http://purl.obolibrary.org/obo/FBbi_00000265"
-                }
-            ]
-        },
-        {
-            "@id": "http://purl.obolibrary.org/obo/FBbi_00000246",
-            "@type": "DefinedTerm",
-            "name": "fluorescence microscopy",
-            "identifier": "FBbi:00000246"
-        },
-        {
-            "@id": "#imaging-protocol-2",
-            "@type": "LabProtocol",
-            "name": "fluorescence microscopy",
-            "description": "fluorescence microscopy",
-            "measurementTechnique": [
-                {
-                    "@id": "http://purl.obolibrary.org/obo/FBbi_00000246"
-                }
-            ]
-        },
-        {
-            "@id": "#imaging-technique-3",
-            "@type": "DefinedTerm",
-            "name": "single-molecule imaging"
-        },
-        {
-            "@id": "#imaging-protocol-3",
-            "@type": "LabProtocol",
-            "name": "single-molecule imaging",
-            "description": "single-molecule imaging",
-            "measurementTechnique": [
-                {
-                    "@id": "#imaging-technique-3"
-                }
-            ]
-        },
-        {
-            "@id": "#total-dataset-size",
-            "@type": "QuantitativeValue",
-            "value": 2904342577,
-            "description": "2.9 GB",
-            "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
-            "unitText": "bytes"
-        },
-        {
-            "@id": "#file-count",
-            "@type": "QuantitativeValue",
-            "value": 120,
-            "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
-            "unitText": "file count"
+          "@id": "https://doi.org/10.1093/jmicro/dfz116"
         }
-    ]
+      ],
+      "about": [
+        {
+          "@id": "#biosample-1"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/CLO_0002462"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/GO_0005154"
+        },
+        {
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/10029"
+        }
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#imaging-protocol-1"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000246"
+        }
+      ],
+      "thumbnailUrl": [
+        "https://ssbd.riken.jp/ssbd-omero/v1/projects/718/render_thumbnail/"
+      ],
+      "size": [
+        {
+          "@id": "#total-dataset-size"
+        },
+        {
+          "@id": "#file-count"
+        }
+      ]
+    },
+    {
+      "@id": "https://ssbd.riken.jp/database",
+      "@type": "Organization",
+      "name": "SSBD:database"
+    },
+    {
+      "@id": "#auth-001",
+      "@type": "Person",
+      "name": "Michio Hiroshima",
+      "email": "m_hiroshima@riken.jp",
+      "description": "Organization: RIKEN; Department: Center for Biosystems Dynamics Research; Laboratory: Laboratory for Cell Signaling Dynamics",
+      "affiliation": [
+        {
+          "@id": "#affiliation-001"
+        }
+      ]
+    },
+    {
+      "@id": "#auth-002",
+      "@type": "Person",
+      "name": "Michio Hiroshima",
+      "email": "m_hiroshima@riken.jp",
+      "description": "Organization: RIKEN; Department: Center for Biosystems Dynamics Research; Laboratory: Laboratory for Cell Signaling Dynamics",
+      "affiliation": [
+        {
+          "@id": "#affiliation-001"
+        }
+      ]
+    },
+    {
+      "@id": "#affiliation-001",
+      "@type": "Organization",
+      "name": "RIKEN"
+    },
+    {
+      "@id": "https://doi.org/10.1093/jmicro/dfz116",
+      "@type": "ScholarlyArticle",
+      "name": "Hiroshima M, Yasui M, and Ueda M (2013) Large-scale single-molecule imaging aided by artificial intelligence. Microscopy, Volume 69, Issue 2, pages 69-78.",
+      "datePublished": "2013",
+      "sameAs": [
+        "https://www.ncbi.nlm.nih.gov/pubmed/32090254"
+      ]
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/CLO_0002462",
+      "@type": "DefinedTerm",
+      "name": "CHO-K1",
+      "identifier": "CLO:0002462"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_0005154",
+      "@type": "DefinedTerm",
+      "name": "epidermal growth factor receptor binding",
+      "identifier": "GO:0005154"
+    },
+    {
+      "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/10029",
+      "@type": "Taxon",
+      "scientificName": "Cricetulus griseus",
+      "name": "Cricetulus griseus",
+      "identifier": "NCBITaxon:10029"
+    },
+    {
+      "@id": "#biosample-1",
+      "@type": "BioSample",
+      "name": "Cricetulus griseus ~ CHO-K1",
+      "description": "Cricetulus griseus ~ CHO-K1",
+      "taxonomicRange": [
+        {
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/10029"
+        }
+      ],
+      "hasCellLine": {
+        "@id": "http://purl.obolibrary.org/obo/CLO_0002462"
+      }
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/FBbi_00000246",
+      "@type": "DefinedTerm",
+      "name": "fluorescence microscopy",
+      "identifier": "FBbi:00000246"
+    },
+    {
+      "@id": "#imaging-protocol-1",
+      "@type": "LabProtocol",
+      "name": "fluorescence microscopy",
+      "description": "fluorescence microscopy",
+      "measurementTechnique": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000246"
+        }
+      ]
+    },
+    {
+      "@id": "#total-dataset-size",
+      "@type": "QuantitativeValue",
+      "value": 2904342577,
+      "description": "2.9 GB",
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes"
+    },
+    {
+      "@id": "#file-count",
+      "@type": "QuantitativeValue",
+      "value": 120,
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count"
+    }
+  ]
 }

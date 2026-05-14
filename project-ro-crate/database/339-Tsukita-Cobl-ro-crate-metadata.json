@@ -1,403 +1,379 @@
 {
-    "@context": [
-        "https://w3id.org/ro/crate/1.2/context",
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "datePublished": {
+        "@id": "http://schema.org/datePublished",
+        "@type": "xsd:date"
+      },
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "taxonomicRange": {
+        "@id": "http://schema.org/taxonomicRange"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "339-Tsukita-Cobl-ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://ssbd.riken.jp/v2/project/339-Tsukita-Cobl"
+      }
+    },
+    {
+      "@id": "https://ssbd.riken.jp/v2/project/339-Tsukita-Cobl",
+      "@type": "Dataset",
+      "identifier": "339-Tsukita-Cobl",
+      "name": "Time lapse images of cytoskeleton and cordon bleu, a microtubule-associated protein",
+      "description": "Liquid-liquid phase separation (LLPS) is involved in various dynamic biological phenomena. In epithelial cells, dynamic regulation of junctional actin filaments tethered to the apical junctional complex (AJC) is critical for maintaining internal homeostasis against external perturbations; however, the role of LLPS in this process remains unknown. Here, after identifying a multifunctional actin nucleator, cordon bleu (Cobl), as an AJC-en- riched microtubule-associated protein, we conducted comprehensive in vitro and in vivo analyses. We found that apical microtubules promoted LLPS of Cobl at the AJC, and Cobl actin assembly activity increased upon LLPS. Thus, microtubules spatiotemporally regulated junctional actin assembly for epithelial morphogenesis and paracellular barriers. Collectively, these findings established that LLPS of the actin nucleator Cobl mediated dynamic microtubule-actin cross-talk in junctions, which fine-tuned the epithelial barrier.",
+      "datePublished": "2024-12-14",
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "publisher": {
+        "@id": "https://ssbd.riken.jp/database"
+      },
+      "author": [
         {
-            "bia": "https://bioimage-archive.org/ro-crate/",
-            "obo": "http://purl.obolibrary.org/obo/",
-            "dwc": "http://rs.tdwg.org/dwc/terms/",
-            "dwciri": "http://rs.tdwg.org/dwc/iri/",
-            "bao": "http://www.bioassayontology.org/bao#",
-            "xsd": "http://www.w3.org/2001/XMLSchema#",
-            "datePublished": {
-                "@id": "http://schema.org/datePublished",
-                "@type": "xsd:date"
-            },
-            "vernacularName": {
-                "@id": "dwc:vernacularName"
-            },
-            "scientificName": {
-                "@id": "dwc:scientificName"
-            },
-            "hasCellLine": {
-                "@id": "bao:BAO_0002004"
-            },
-            "measurementMethod": {
-                "@id": "dwciri:measurementMethod"
-            },
-            "taxonomicRange": {
-                "@id": "http://schema.org/taxonomicRange"
-            },
-            "seeAlso": {
-                "@id": "rdf:seeAlso"
-            },
-            "BioSample": {
-                "@id": "http://schema.org/BioSample"
-            },
-            "LabProtocol": {
-                "@id": "http://schema.org/LabProtocol"
-            },
-            "labEquipment": {
-                "@id": "http://schema.org/labEquipment"
-            }
+          "@id": "#auth-001"
+        },
+        {
+          "@id": "#auth-002"
+        },
+        {
+          "@id": "#auth-003"
         }
-    ],
-    "@graph": [
+      ],
+      "seeAlso": [
         {
-            "@id": "339-Tsukita-Cobl-ro-crate-metadata.json",
-            "@type": "CreativeWork",
-            "conformsTo": {
-                "@id": "https://w3id.org/ro/crate/1.2"
-            },
-            "about": {
-                "@id": "https://ssbd.riken.jp/v2/project/339-Tsukita-Cobl"
-            }
-        },
-        {
-            "@id": "https://ssbd.riken.jp/v2/project/339-Tsukita-Cobl",
-            "@type": "Dataset",
-            "identifier": "339-Tsukita-Cobl",
-            "name": "Time lapse images of cytoskeleton and cordon bleu, a microtubule-associated protein",
-            "description": "Liquid-liquid phase separation (LLPS) is involved in various dynamic biological phenomena. In epithelial cells, dynamic regulation of junctional actin filaments tethered to the apical junctional complex (AJC) is critical for maintaining internal homeostasis against external perturbations; however, the role of LLPS in this process remains unknown. Here, after identifying a multifunctional actin nucleator, cordon bleu (Cobl), as an AJC-en- riched microtubule-associated protein, we conducted comprehensive in vitro and in vivo analyses. We found that apical microtubules promoted LLPS of Cobl at the AJC, and Cobl actin assembly activity increased upon LLPS. Thus, microtubules spatiotemporally regulated junctional actin assembly for epithelial morphogenesis and paracellular barriers. Collectively, these findings established that LLPS of the actin nucleator Cobl mediated dynamic microtubule-actin cross-talk in junctions, which fine-tuned the epithelial barrier.",
-            "datePublished": "2024-12-14",
-            "license": "https://creativecommons.org/licenses/by/4.0/",
-            "publisher": {
-                "@id": "https://ssbd.riken.jp/database"
-            },
-            "author": [
-                {
-                    "@id": "#auth-001"
-                },
-                {
-                    "@id": "#auth-002"
-                },
-                {
-                    "@id": "#auth-003"
-                }
-            ],
-            "seeAlso": [
-                {
-                    "@id": "https://doi.org/10.1126/sciadv.adf6358"
-                }
-            ],
-            "about": [
-                {
-                    "@id": "#biosample-2"
-                },
-                {
-                    "@id": "#biosample-1"
-                },
-                {
-                    "@id": "http://purl.obolibrary.org/obo/GO_0005829"
-                },
-                {
-                    "@id": "http://purl.obolibrary.org/obo/GO_0140693"
-                },
-                {
-                    "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/10090"
-                },
-                {
-                    "@id": "http://purl.obolibrary.org/obo/CLO_0001230"
-                },
-                {
-                    "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/9606"
-                },
-                {
-                    "@id": "http://purl.obolibrary.org/obo/GO_0030042"
-                },
-                {
-                    "@id": "http://purl.obolibrary.org/obo/GO_0030041"
-                }
-            ],
-            "measurementMethod": [
-                {
-                    "@id": "#imaging-protocol-1"
-                },
-                {
-                    "@id": "http://purl.obolibrary.org/obo/FBbi_00000265"
-                },
-                {
-                    "@id": "#imaging-protocol-2"
-                },
-                {
-                    "@id": "http://purl.obolibrary.org/obo/FBbi_00000251"
-                },
-                {
-                    "@id": "#imaging-protocol-3"
-                },
-                {
-                    "@id": "http://purl.obolibrary.org/obo/FBbi_00000246"
-                },
-                {
-                    "@id": "#imaging-protocol-4"
-                },
-                {
-                    "@id": "http://purl.obolibrary.org/obo/FBbi_00000366"
-                },
-                {
-                    "@id": "#imaging-protocol-5"
-                },
-                {
-                    "@id": "http://purl.obolibrary.org/obo/FBbi_00000249"
-                },
-                {
-                    "@id": "#imaging-protocol-6"
-                },
-                {
-                    "@id": "http://purl.obolibrary.org/obo/FBbi_00000617"
-                }
-            ],
-            "thumbnailUrl": [
-                "https://ssbd.riken.jp/ssbd-omero/v1/projects/1356/render_thumbnail/"
-            ],
-            "size": [
-                {
-                    "@id": "#total-dataset-size"
-                },
-                {
-                    "@id": "#file-count"
-                }
-            ]
-        },
-        {
-            "@id": "https://ssbd.riken.jp/database",
-            "@type": "Organization",
-            "name": "SSBD:database"
-        },
-        {
-            "@id": "#auth-001",
-            "@type": "Person",
-            "name": "Atsushi Tamura",
-            "email": "atamura@med.teikyo-u.ac.jp",
-            "description": "Organization: Teikyo University; Department: Advanced Comprehensive Research Organization",
-            "affiliation": [
-                {
-                    "@id": "#affiliation-001"
-                }
-            ]
-        },
-        {
-            "@id": "#auth-002",
-            "@type": "Person",
-            "name": "Sachiko Tsukita",
-            "email": "stsukitatjcl@ gmail.com",
-            "description": "Organization: Teikyo University; Department: Advanced Comprehensive Research Organization",
-            "affiliation": [
-                {
-                    "@id": "#affiliation-001"
-                }
-            ]
-        },
-        {
-            "@id": "#auth-003",
-            "@type": "Person",
-            "name": "Kazuto Tsukita",
-            "description": "Organization: Teikyo University; Department: Advanced Comprehensive Research Organization",
-            "affiliation": [
-                {
-                    "@id": "#affiliation-001"
-                }
-            ]
-        },
-        {
-            "@id": "#affiliation-001",
-            "@type": "Organization",
-            "name": "Teikyo University"
-        },
-        {
-            "@id": "https://doi.org/10.1126/sciadv.adf6358",
-            "@type": "ScholarlyArticle",
-            "name": "Tsukita K, Kitamata M, Kashihara H, Yano T, Fujiwara I, Day TF, Katsuno T, Kim J, Takenaga F, Tanaka H, Park S, Miyata M, Watanabe H, Kondoh G, Takahashi R, Tamura A, Tsukita S. Phase separation of an actin nucleator by junctional microtubules regulates epithelial function. Sci Adv. 2023 Feb 15;9(7):eadf6358.",
-            "datePublished": "2023",
-            "sameAs": [
-                "https://pubmed.ncbi.nlm.nih.gov/36791197/"
-            ]
-        },
-        {
-            "@id": "http://purl.obolibrary.org/obo/GO_0005829",
-            "@type": "DefinedTerm",
-            "name": "cytosol",
-            "identifier": "GO:0005829"
-        },
-        {
-            "@id": "http://purl.obolibrary.org/obo/GO_0140693",
-            "@type": "DefinedTerm",
-            "name": "molecular condensate scaffold activity",
-            "identifier": "GO:0140693"
-        },
-        {
-            "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/10090",
-            "@type": "Taxon",
-            "scientificName": "Mus musculus",
-            "name": "Mus musculus",
-            "identifier": "NCBITaxon:10090"
-        },
-        {
-            "@id": "http://purl.obolibrary.org/obo/CLO_0001230",
-            "@type": "DefinedTerm",
-            "name": "HEK293",
-            "identifier": "CLO:0001230"
-        },
-        {
-            "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/9606",
-            "@type": "Taxon",
-            "scientificName": "Homo sapiens",
-            "name": "Homo sapiens",
-            "identifier": "NCBITaxon:9606"
-        },
-        {
-            "@id": "http://purl.obolibrary.org/obo/GO_0030042",
-            "@type": "DefinedTerm",
-            "name": "actin filament depolymerization",
-            "identifier": "GO:0030042"
-        },
-        {
-            "@id": "http://purl.obolibrary.org/obo/GO_0030041",
-            "@type": "DefinedTerm",
-            "name": "actin filament polymerization",
-            "identifier": "GO:0030041"
-        },
-        {
-            "@id": "#biosample-1",
-            "@type": "BioSample",
-            "name": "Mus musculus ~ Eph4 mouse mammary gland epithelial cell",
-            "description": "Mus musculus ~ Eph4 mouse mammary gland epithelial cell",
-            "taxonomicRange": [
-                {
-                    "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/10090"
-                }
-            ],
-            "hasCellLine": "Eph4 mouse mammary gland epithelial cell"
-        },
-        {
-            "@id": "#biosample-2",
-            "@type": "BioSample",
-            "name": "Homo sapiens ~ HEK293",
-            "description": "Homo sapiens ~ HEK293",
-            "taxonomicRange": [
-                {
-                    "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/9606"
-                }
-            ],
-            "hasCellLine": {
-                "@id": "http://purl.obolibrary.org/obo/CLO_0001230"
-            }
-        },
-        {
-            "@id": "http://purl.obolibrary.org/obo/FBbi_00000265",
-            "@type": "DefinedTerm",
-            "name": "recorded image",
-            "identifier": "FBbi:00000265"
-        },
-        {
-            "@id": "#imaging-protocol-1",
-            "@type": "LabProtocol",
-            "name": "recorded image",
-            "description": "recorded image",
-            "measurementTechnique": [
-                {
-                    "@id": "http://purl.obolibrary.org/obo/FBbi_00000265"
-                }
-            ]
-        },
-        {
-            "@id": "http://purl.obolibrary.org/obo/FBbi_00000251",
-            "@type": "DefinedTerm",
-            "name": "confocal microscopy",
-            "identifier": "Fbbi:00000251"
-        },
-        {
-            "@id": "#imaging-protocol-2",
-            "@type": "LabProtocol",
-            "name": "confocal microscopy",
-            "description": "confocal microscopy",
-            "measurementTechnique": [
-                {
-                    "@id": "http://purl.obolibrary.org/obo/FBbi_00000251"
-                }
-            ]
-        },
-        {
-            "@id": "http://purl.obolibrary.org/obo/FBbi_00000246",
-            "@type": "DefinedTerm",
-            "name": "fluorescence microscopy",
-            "identifier": "FBbi:00000246"
-        },
-        {
-            "@id": "#imaging-protocol-3",
-            "@type": "LabProtocol",
-            "name": "fluorescence microscopy",
-            "description": "fluorescence microscopy",
-            "measurementTechnique": [
-                {
-                    "@id": "http://purl.obolibrary.org/obo/FBbi_00000246"
-                }
-            ]
-        },
-        {
-            "@id": "http://purl.obolibrary.org/obo/FBbi_00000366",
-            "@type": "DefinedTerm",
-            "name": "FRAP",
-            "identifier": "FBbi:00000366"
-        },
-        {
-            "@id": "#imaging-protocol-4",
-            "@type": "LabProtocol",
-            "name": "FRAP",
-            "description": "FRAP",
-            "measurementTechnique": [
-                {
-                    "@id": "http://purl.obolibrary.org/obo/FBbi_00000366"
-                }
-            ]
-        },
-        {
-            "@id": "http://purl.obolibrary.org/obo/FBbi_00000249",
-            "@type": "DefinedTerm",
-            "name": "time lapse microscopy",
-            "identifier": "FBbi:00000249"
-        },
-        {
-            "@id": "#imaging-protocol-5",
-            "@type": "LabProtocol",
-            "name": "time lapse microscopy",
-            "description": "time lapse microscopy",
-            "measurementTechnique": [
-                {
-                    "@id": "http://purl.obolibrary.org/obo/FBbi_00000249"
-                }
-            ]
-        },
-        {
-            "@id": "http://purl.obolibrary.org/obo/FBbi_00000617",
-            "@type": "DefinedTerm",
-            "name": "evanescent wave microscopy",
-            "identifier": "FBbi:00000617"
-        },
-        {
-            "@id": "#imaging-protocol-6",
-            "@type": "LabProtocol",
-            "name": "evanescent wave microscopy",
-            "description": "evanescent wave microscopy",
-            "measurementTechnique": [
-                {
-                    "@id": "http://purl.obolibrary.org/obo/FBbi_00000617"
-                }
-            ]
-        },
-        {
-            "@id": "#total-dataset-size",
-            "@type": "QuantitativeValue",
-            "value": 4903271270,
-            "description": "4.9 GB",
-            "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
-            "unitText": "bytes"
-        },
-        {
-            "@id": "#file-count",
-            "@type": "QuantitativeValue",
-            "value": 99,
-            "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
-            "unitText": "file count"
+          "@id": "https://doi.org/10.1126/sciadv.adf6358"
         }
-    ]
+      ],
+      "about": [
+        {
+          "@id": "#biosample-2"
+        },
+        {
+          "@id": "#biosample-1"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/GO_0005829"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/GO_0140693"
+        },
+        {
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/10090"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/CLO_0001230"
+        },
+        {
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/9606"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/GO_0030042"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/GO_0030041"
+        }
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#imaging-protocol-1"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000251"
+        },
+        {
+          "@id": "#imaging-protocol-2"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000246"
+        },
+        {
+          "@id": "#imaging-protocol-3"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000366"
+        },
+        {
+          "@id": "#imaging-protocol-4"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000249"
+        },
+        {
+          "@id": "#imaging-protocol-5"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000617"
+        }
+      ],
+      "thumbnailUrl": [
+        "https://ssbd.riken.jp/ssbd-omero/v1/projects/1356/render_thumbnail/"
+      ],
+      "size": [
+        {
+          "@id": "#total-dataset-size"
+        },
+        {
+          "@id": "#file-count"
+        }
+      ]
+    },
+    {
+      "@id": "https://ssbd.riken.jp/database",
+      "@type": "Organization",
+      "name": "SSBD:database"
+    },
+    {
+      "@id": "#auth-001",
+      "@type": "Person",
+      "name": "Atsushi Tamura",
+      "email": "atamura@med.teikyo-u.ac.jp",
+      "description": "Organization: Teikyo University; Department: Advanced Comprehensive Research Organization",
+      "affiliation": [
+        {
+          "@id": "#affiliation-001"
+        }
+      ]
+    },
+    {
+      "@id": "#auth-002",
+      "@type": "Person",
+      "name": "Sachiko Tsukita",
+      "email": "stsukitatjcl@ gmail.com",
+      "description": "Organization: Teikyo University; Department: Advanced Comprehensive Research Organization",
+      "affiliation": [
+        {
+          "@id": "#affiliation-001"
+        }
+      ]
+    },
+    {
+      "@id": "#auth-003",
+      "@type": "Person",
+      "name": "Kazuto Tsukita",
+      "description": "Organization: Teikyo University; Department: Advanced Comprehensive Research Organization",
+      "affiliation": [
+        {
+          "@id": "#affiliation-001"
+        }
+      ]
+    },
+    {
+      "@id": "#affiliation-001",
+      "@type": "Organization",
+      "name": "Teikyo University"
+    },
+    {
+      "@id": "https://doi.org/10.1126/sciadv.adf6358",
+      "@type": "ScholarlyArticle",
+      "name": "Tsukita K, Kitamata M, Kashihara H, Yano T, Fujiwara I, Day TF, Katsuno T, Kim J, Takenaga F, Tanaka H, Park S, Miyata M, Watanabe H, Kondoh G, Takahashi R, Tamura A, Tsukita S. Phase separation of an actin nucleator by junctional microtubules regulates epithelial function. Sci Adv. 2023 Feb 15;9(7):eadf6358.",
+      "datePublished": "2023",
+      "sameAs": [
+        "https://pubmed.ncbi.nlm.nih.gov/36791197/"
+      ]
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_0005829",
+      "@type": "DefinedTerm",
+      "name": "cytosol",
+      "identifier": "GO:0005829"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_0140693",
+      "@type": "DefinedTerm",
+      "name": "molecular condensate scaffold activity",
+      "identifier": "GO:0140693"
+    },
+    {
+      "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/10090",
+      "@type": "Taxon",
+      "scientificName": "Mus musculus",
+      "name": "Mus musculus",
+      "identifier": "NCBITaxon:10090"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/CLO_0001230",
+      "@type": "DefinedTerm",
+      "name": "HEK293",
+      "identifier": "CLO:0001230"
+    },
+    {
+      "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/9606",
+      "@type": "Taxon",
+      "scientificName": "Homo sapiens",
+      "name": "Homo sapiens",
+      "identifier": "NCBITaxon:9606"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_0030042",
+      "@type": "DefinedTerm",
+      "name": "actin filament depolymerization",
+      "identifier": "GO:0030042"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_0030041",
+      "@type": "DefinedTerm",
+      "name": "actin filament polymerization",
+      "identifier": "GO:0030041"
+    },
+    {
+      "@id": "#biosample-1",
+      "@type": "BioSample",
+      "name": "Mus musculus ~ Eph4 mouse mammary gland epithelial cell",
+      "description": "Mus musculus ~ Eph4 mouse mammary gland epithelial cell",
+      "taxonomicRange": [
+        {
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/10090"
+        }
+      ]
+    },
+    {
+      "@id": "#biosample-2",
+      "@type": "BioSample",
+      "name": "Homo sapiens ~ HEK293",
+      "description": "Homo sapiens ~ HEK293",
+      "taxonomicRange": [
+        {
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/9606"
+        }
+      ],
+      "hasCellLine": {
+        "@id": "http://purl.obolibrary.org/obo/CLO_0001230"
+      }
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/FBbi_00000251",
+      "@type": "DefinedTerm",
+      "name": "confocal microscopy",
+      "identifier": "FBbi:00000251"
+    },
+    {
+      "@id": "#imaging-protocol-1",
+      "@type": "LabProtocol",
+      "name": "confocal microscopy",
+      "description": "confocal microscopy",
+      "measurementTechnique": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000251"
+        }
+      ]
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/FBbi_00000246",
+      "@type": "DefinedTerm",
+      "name": "fluorescence microscopy",
+      "identifier": "FBbi:00000246"
+    },
+    {
+      "@id": "#imaging-protocol-2",
+      "@type": "LabProtocol",
+      "name": "fluorescence microscopy",
+      "description": "fluorescence microscopy",
+      "measurementTechnique": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000246"
+        }
+      ]
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/FBbi_00000366",
+      "@type": "DefinedTerm",
+      "name": "FRAP",
+      "identifier": "FBbi:00000366"
+    },
+    {
+      "@id": "#imaging-protocol-3",
+      "@type": "LabProtocol",
+      "name": "FRAP",
+      "description": "FRAP",
+      "measurementTechnique": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000366"
+        }
+      ]
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/FBbi_00000249",
+      "@type": "DefinedTerm",
+      "name": "time lapse microscopy",
+      "identifier": "FBbi:00000249"
+    },
+    {
+      "@id": "#imaging-protocol-4",
+      "@type": "LabProtocol",
+      "name": "time lapse microscopy",
+      "description": "time lapse microscopy",
+      "measurementTechnique": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000249"
+        }
+      ]
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/FBbi_00000617",
+      "@type": "DefinedTerm",
+      "name": "evanescent wave microscopy",
+      "identifier": "FBbi:00000617"
+    },
+    {
+      "@id": "#imaging-protocol-5",
+      "@type": "LabProtocol",
+      "name": "evanescent wave microscopy",
+      "description": "evanescent wave microscopy",
+      "measurementTechnique": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000617"
+        }
+      ]
+    },
+    {
+      "@id": "#total-dataset-size",
+      "@type": "QuantitativeValue",
+      "value": 4903271270,
+      "description": "4.9 GB",
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes"
+    },
+    {
+      "@id": "#file-count",
+      "@type": "QuantitativeValue",
+      "value": 99,
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count"
+    }
+  ]
 }

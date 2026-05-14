@@ -1,457 +1,259 @@
 {
-    "@context": [
-        "https://w3id.org/ro/crate/1.2/context",
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "datePublished": {
+        "@id": "http://schema.org/datePublished",
+        "@type": "xsd:date"
+      },
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "taxonomicRange": {
+        "@id": "http://schema.org/taxonomicRange"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "212-Kajikawa-GeckoEmbryos-ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://ssbd.riken.jp/v2/project/212-Kajikawa-GeckoEmbryos"
+      }
+    },
+    {
+      "@id": "https://ssbd.riken.jp/v2/project/212-Kajikawa-GeckoEmbryos",
+      "@type": "Dataset",
+      "identifier": "212-Kajikawa-GeckoEmbryos",
+      "name": "Live-imaging of the absence of motile cilia in the middle of gecko embryos at stage 9.",
+      "description": "See details in Kajikawa E, et. al. (2020)  Nat Ecol Evol., 4(2):261-269.",
+      "datePublished": "2022-03-31",
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "keywords": [
+        "Animals",
+        "Body Patterning",
+        "Chick Embryo",
+        "Cilia",
+        "Madagascar",
+        "Reptiles"
+      ],
+      "publisher": {
+        "@id": "https://ssbd.riken.jp/database"
+      },
+      "author": [
         {
-            "bia": "https://bioimage-archive.org/ro-crate/",
-            "obo": "http://purl.obolibrary.org/obo/",
-            "dwc": "http://rs.tdwg.org/dwc/terms/",
-            "dwciri": "http://rs.tdwg.org/dwc/iri/",
-            "bao": "http://www.bioassayontology.org/bao#",
-            "xsd": "http://www.w3.org/2001/XMLSchema#",
-            "datePublished": {
-                "@id": "http://schema.org/datePublished",
-                "@type": "xsd:date"
-            },
-            "vernacularName": {
-                "@id": "dwc:vernacularName"
-            },
-            "scientificName": {
-                "@id": "dwc:scientificName"
-            },
-            "hasCellLine": {
-                "@id": "bao:BAO_0002004"
-            },
-            "measurementMethod": {
-                "@id": "dwciri:measurementMethod"
-            },
-            "taxonomicRange": {
-                "@id": "http://schema.org/taxonomicRange"
-            },
-            "seeAlso": {
-                "@id": "rdf:seeAlso"
-            },
-            "BioSample": {
-                "@id": "http://schema.org/BioSample"
-            },
-            "LabProtocol": {
-                "@id": "http://schema.org/LabProtocol"
-            },
-            "labEquipment": {
-                "@id": "http://schema.org/labEquipment"
-            }
+          "@id": "#auth-001"
+        },
+        {
+          "@id": "#auth-002"
         }
-    ],
-    "@graph": [
+      ],
+      "seeAlso": [
         {
-            "@id": "212-Kajikawa-GeckoEmbryos-ro-crate-metadata.json",
-            "@type": "CreativeWork",
-            "conformsTo": {
-                "@id": "https://w3id.org/ro/crate/1.2"
-            },
-            "about": {
-                "@id": "https://ssbd.riken.jp/v2/project/212-Kajikawa-GeckoEmbryos"
-            }
-        },
-        {
-            "@id": "https://ssbd.riken.jp/v2/project/212-Kajikawa-GeckoEmbryos",
-            "@type": "Dataset",
-            "identifier": "212-Kajikawa-GeckoEmbryos",
-            "name": "Live-imaging of the absence of motile cilia in the middle of gecko embryos at stage 9.",
-            "description": "See details in Kajikawa E, et. al. (2020)  Nat Ecol Evol., 4(2):261-269.",
-            "datePublished": "2022-03-31",
-            "license": "https://creativecommons.org/licenses/by/4.0/",
-            "keywords": [
-                "Animals",
-                "Body Patterning",
-                "Chick Embryo",
-                "Cilia",
-                "Madagascar",
-                "Reptiles"
-            ],
-            "publisher": {
-                "@id": "https://ssbd.riken.jp/database"
-            },
-            "author": [
-                {
-                    "@id": "#auth-001"
-                },
-                {
-                    "@id": "#auth-002"
-                }
-            ],
-            "seeAlso": [
-                {
-                    "@id": "https://doi.org/10.1038/s41559-019-1072-2"
-                }
-            ],
-            "about": [
-                {
-                    "@id": "#biosample-1"
-                },
-                {
-                    "@id": "http://purl.obolibrary.org/obo/GO_0070986"
-                },
-                {
-                    "@id": "http://purl.obolibrary.org/obo/GO_0031514"
-                },
-                {
-                    "@id": "http://purl.obolibrary.org/obo/GO_0097730"
-                },
-                {
-                    "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/8565"
-                }
-            ],
-            "measurementMethod": [
-                {
-                    "@id": "#imaging-protocol-1"
-                },
-                {
-                    "@id": "http://purl.obolibrary.org/obo/FBbi_00000265"
-                },
-                {
-                    "@id": "#imaging-protocol-2"
-                },
-                {
-                    "@id": "http://purl.obolibrary.org/obo/FBbi_ 00000245"
-                },
-                {
-                    "@id": "#imaging-protocol-3"
-                },
-                {
-                    "@id": "#imaging-technique-3"
-                },
-                {
-                    "@id": "#imaging-protocol-4"
-                },
-                {
-                    "@id": "#imaging-technique-4"
-                },
-                {
-                    "@id": "#imaging-protocol-5"
-                },
-                {
-                    "@id": "#imaging-technique-5"
-                },
-                {
-                    "@id": "#imaging-protocol-6"
-                },
-                {
-                    "@id": "#imaging-technique-6"
-                },
-                {
-                    "@id": "#imaging-protocol-7"
-                },
-                {
-                    "@id": "#imaging-technique-7"
-                },
-                {
-                    "@id": "#imaging-protocol-8"
-                },
-                {
-                    "@id": "#imaging-technique-8"
-                },
-                {
-                    "@id": "#imaging-protocol-9"
-                },
-                {
-                    "@id": "#imaging-technique-9"
-                },
-                {
-                    "@id": "#imaging-protocol-10"
-                },
-                {
-                    "@id": "#imaging-technique-10"
-                },
-                {
-                    "@id": "#imaging-protocol-11"
-                },
-                {
-                    "@id": "#imaging-technique-11"
-                }
-            ],
-            "thumbnailUrl": [
-                "https://ssbd.riken.jp/ssbd-omero/v1/projects/720/render_thumbnail/"
-            ],
-            "size": [
-                {
-                    "@id": "#total-dataset-size"
-                },
-                {
-                    "@id": "#file-count"
-                }
-            ]
-        },
-        {
-            "@id": "https://ssbd.riken.jp/database",
-            "@type": "Organization",
-            "name": "SSBD:database"
-        },
-        {
-            "@id": "#auth-001",
-            "@type": "Person",
-            "name": "Shigehiro Kuraku",
-            "email": "shigehiro.kuraku@riken.jp",
-            "description": "Organization: RIKEN; Department: Center for Biosystems Dynamics Research; Laboratory: Laboratory for Phyloinformatics",
-            "affiliation": [
-                {
-                    "@id": "#affiliation-001"
-                }
-            ]
-        },
-        {
-            "@id": "#auth-002",
-            "@type": "Person",
-            "name": "Hiroshi Hamada",
-            "email": "hiroshi.hamada@riken.jp",
-            "description": "Organization: RIKEN; Department: Center for Biosystems Dynamics Research; Laboratory: Laboratory for Organismal Patterning",
-            "affiliation": [
-                {
-                    "@id": "#affiliation-001"
-                }
-            ]
-        },
-        {
-            "@id": "#affiliation-001",
-            "@type": "Organization",
-            "name": "RIKEN"
-        },
-        {
-            "@id": "https://doi.org/10.1038/s41559-019-1072-2",
-            "@type": "ScholarlyArticle",
-            "name": "Kajikawa E, Horo U, Ide T, Mizuno K, Minegishi K, Hara Y, Ikawa Y, Nishimura H, Uchikawa M, Kiyonari H, Kuraku S, Hamada H (2020) Nodal paralogues underlie distinct mechanisms for visceral left-right asymmetry in reptiles and mammals . nature ecology & evolution , Volume 4, Issue 2, pages 261-269.",
-            "datePublished": "2020",
-            "sameAs": [
-                "https://www.ncbi.nlm.nih.gov/pubmed/31907383"
-            ]
-        },
-        {
-            "@id": "http://purl.obolibrary.org/obo/GO_0070986",
-            "@type": "DefinedTerm",
-            "name": "left/right axis specification",
-            "identifier": "GO:0070986"
-        },
-        {
-            "@id": "http://purl.obolibrary.org/obo/GO_0031514",
-            "@type": "DefinedTerm",
-            "name": "motile cilium",
-            "identifier": "GO:0031514"
-        },
-        {
-            "@id": "http://purl.obolibrary.org/obo/GO_0097730",
-            "@type": "DefinedTerm",
-            "name": "non-motile cilium",
-            "identifier": "GO:0097730"
-        },
-        {
-            "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/8565",
-            "@type": "Taxon",
-            "scientificName": "Gekko",
-            "name": "Gekko",
-            "identifier": "NCBITaxon:8565"
-        },
-        {
-            "@id": "#biosample-1",
-            "@type": "BioSample",
-            "name": "Gekko",
-            "description": "Gekko",
-            "taxonomicRange": [
-                {
-                    "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/8565"
-                }
-            ]
-        },
-        {
-            "@id": "http://purl.obolibrary.org/obo/FBbi_00000265",
-            "@type": "DefinedTerm",
-            "name": "recorded image",
-            "identifier": "FBbi:00000265"
-        },
-        {
-            "@id": "#imaging-protocol-1",
-            "@type": "LabProtocol",
-            "name": "recorded image",
-            "description": "recorded image",
-            "measurementTechnique": [
-                {
-                    "@id": "http://purl.obolibrary.org/obo/FBbi_00000265"
-                }
-            ]
-        },
-        {
-            "@id": "http://purl.obolibrary.org/obo/FBbi_ 00000245",
-            "@type": "DefinedTerm",
-            "name": "differential interference contrast microscopy",
-            "identifier": "FBbi: 00000245"
-        },
-        {
-            "@id": "#imaging-protocol-2",
-            "@type": "LabProtocol",
-            "name": "differential interference contrast microscopy",
-            "description": "differential interference contrast microscopy",
-            "measurementTechnique": [
-                {
-                    "@id": "http://purl.obolibrary.org/obo/FBbi_ 00000245"
-                }
-            ]
-        },
-        {
-            "@id": "#imaging-technique-3",
-            "@type": "DefinedTerm",
-            "name": "HAS-U2 high speed camera (DITECT"
-        },
-        {
-            "@id": "#imaging-protocol-3",
-            "@type": "LabProtocol",
-            "name": "HAS-U2 high speed camera (DITECT",
-            "description": "HAS-U2 high speed camera (DITECT",
-            "measurementTechnique": [
-                {
-                    "@id": "#imaging-technique-3"
-                }
-            ]
-        },
-        {
-            "@id": "#imaging-technique-4",
-            "@type": "DefinedTerm",
-            "name": "Tokyo"
-        },
-        {
-            "@id": "#imaging-protocol-4",
-            "@type": "LabProtocol",
-            "name": "Tokyo",
-            "description": "Tokyo",
-            "measurementTechnique": [
-                {
-                    "@id": "#imaging-technique-4"
-                }
-            ]
-        },
-        {
-            "@id": "#imaging-technique-5",
-            "@type": "DefinedTerm",
-            "name": "Japan)"
-        },
-        {
-            "@id": "#imaging-protocol-5",
-            "@type": "LabProtocol",
-            "name": "Japan)",
-            "description": "Japan)",
-            "measurementTechnique": [
-                {
-                    "@id": "#imaging-technique-5"
-                }
-            ]
-        },
-        {
-            "@id": "#imaging-technique-6",
-            "@type": "DefinedTerm",
-            "name": "BX53 microscope (Olympus"
-        },
-        {
-            "@id": "#imaging-protocol-6",
-            "@type": "LabProtocol",
-            "name": "BX53 microscope (Olympus",
-            "description": "BX53 microscope (Olympus",
-            "measurementTechnique": [
-                {
-                    "@id": "#imaging-technique-6"
-                }
-            ]
-        },
-        {
-            "@id": "#imaging-technique-7",
-            "@type": "DefinedTerm",
-            "name": "Japan) with x40 lens"
-        },
-        {
-            "@id": "#imaging-protocol-7",
-            "@type": "LabProtocol",
-            "name": "Japan) with x40 lens",
-            "description": "Japan) with x40 lens",
-            "measurementTechnique": [
-                {
-                    "@id": "#imaging-technique-7"
-                }
-            ]
-        },
-        {
-            "@id": "#imaging-technique-8",
-            "@type": "DefinedTerm",
-            "name": "DFK33UX174 camera(THE IMAGING SOURCE"
-        },
-        {
-            "@id": "#imaging-protocol-8",
-            "@type": "LabProtocol",
-            "name": "DFK33UX174 camera(THE IMAGING SOURCE",
-            "description": "DFK33UX174 camera(THE IMAGING SOURCE",
-            "measurementTechnique": [
-                {
-                    "@id": "#imaging-technique-8"
-                }
-            ]
-        },
-        {
-            "@id": "#imaging-technique-9",
-            "@type": "DefinedTerm",
-            "name": "Bremen"
-        },
-        {
-            "@id": "#imaging-protocol-9",
-            "@type": "LabProtocol",
-            "name": "Bremen",
-            "description": "Bremen",
-            "measurementTechnique": [
-                {
-                    "@id": "#imaging-technique-9"
-                }
-            ]
-        },
-        {
-            "@id": "#imaging-technique-10",
-            "@type": "DefinedTerm",
-            "name": "Germany)"
-        },
-        {
-            "@id": "#imaging-protocol-10",
-            "@type": "LabProtocol",
-            "name": "Germany)",
-            "description": "Germany)",
-            "measurementTechnique": [
-                {
-                    "@id": "#imaging-technique-10"
-                }
-            ]
-        },
-        {
-            "@id": "#imaging-technique-11",
-            "@type": "DefinedTerm",
-            "name": "Japan)with x100 lens"
-        },
-        {
-            "@id": "#imaging-protocol-11",
-            "@type": "LabProtocol",
-            "name": "Japan)with x100 lens",
-            "description": "Japan)with x100 lens",
-            "measurementTechnique": [
-                {
-                    "@id": "#imaging-technique-11"
-                }
-            ]
-        },
-        {
-            "@id": "#total-dataset-size",
-            "@type": "QuantitativeValue",
-            "value": 7860021117,
-            "description": "7.9 GB",
-            "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
-            "unitText": "bytes"
-        },
-        {
-            "@id": "#file-count",
-            "@type": "QuantitativeValue",
-            "value": 6,
-            "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
-            "unitText": "file count"
+          "@id": "https://doi.org/10.1038/s41559-019-1072-2"
         }
-    ]
+      ],
+      "about": [
+        {
+          "@id": "#biosample-1"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/GO_0070986"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/GO_0031514"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/GO_0097730"
+        },
+        {
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/8565"
+        }
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#imaging-protocol-1"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_ 00000245"
+        },
+        {
+          "@id": "#imaging-protocol-2"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000251"
+        }
+      ],
+      "thumbnailUrl": [
+        "https://ssbd.riken.jp/ssbd-omero/v1/projects/720/render_thumbnail/"
+      ],
+      "size": [
+        {
+          "@id": "#total-dataset-size"
+        },
+        {
+          "@id": "#file-count"
+        }
+      ]
+    },
+    {
+      "@id": "https://ssbd.riken.jp/database",
+      "@type": "Organization",
+      "name": "SSBD:database"
+    },
+    {
+      "@id": "#auth-001",
+      "@type": "Person",
+      "name": "Shigehiro Kuraku",
+      "email": "shigehiro.kuraku@riken.jp",
+      "description": "Organization: RIKEN; Department: Center for Biosystems Dynamics Research; Laboratory: Laboratory for Phyloinformatics",
+      "affiliation": [
+        {
+          "@id": "#affiliation-001"
+        }
+      ]
+    },
+    {
+      "@id": "#auth-002",
+      "@type": "Person",
+      "name": "Hiroshi Hamada",
+      "email": "hiroshi.hamada@riken.jp",
+      "description": "Organization: RIKEN; Department: Center for Biosystems Dynamics Research; Laboratory: Laboratory for Organismal Patterning",
+      "affiliation": [
+        {
+          "@id": "#affiliation-001"
+        }
+      ]
+    },
+    {
+      "@id": "#affiliation-001",
+      "@type": "Organization",
+      "name": "RIKEN"
+    },
+    {
+      "@id": "https://doi.org/10.1038/s41559-019-1072-2",
+      "@type": "ScholarlyArticle",
+      "name": "Kajikawa E, Horo U, Ide T, Mizuno K, Minegishi K, Hara Y, Ikawa Y, Nishimura H, Uchikawa M, Kiyonari H, Kuraku S, Hamada H (2020) Nodal paralogues underlie distinct mechanisms for visceral left-right asymmetry in reptiles and mammals . nature ecology & evolution , Volume 4, Issue 2, pages 261-269.",
+      "datePublished": "2020",
+      "sameAs": [
+        "https://www.ncbi.nlm.nih.gov/pubmed/31907383"
+      ]
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_0070986",
+      "@type": "DefinedTerm",
+      "name": "left/right axis specification",
+      "identifier": "GO:0070986"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_0031514",
+      "@type": "DefinedTerm",
+      "name": "motile cilium",
+      "identifier": "GO:0031514"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_0097730",
+      "@type": "DefinedTerm",
+      "name": "non-motile cilium",
+      "identifier": "GO:0097730"
+    },
+    {
+      "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/8565",
+      "@type": "Taxon",
+      "scientificName": "Gekko",
+      "name": "Gekko",
+      "identifier": "NCBITaxon:8565"
+    },
+    {
+      "@id": "#biosample-1",
+      "@type": "BioSample",
+      "name": "Gekko",
+      "description": "Gekko",
+      "taxonomicRange": [
+        {
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/8565"
+        }
+      ]
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/FBbi_ 00000245",
+      "@type": "DefinedTerm",
+      "name": "differential interference contrast microscopy",
+      "identifier": "FBbi: 00000245"
+    },
+    {
+      "@id": "#imaging-protocol-1",
+      "@type": "LabProtocol",
+      "name": "differential interference contrast microscopy",
+      "description": "differential interference contrast microscopy",
+      "measurementTechnique": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_ 00000245"
+        }
+      ]
+    },
+    {
+      "@id": "#total-dataset-size",
+      "@type": "QuantitativeValue",
+      "value": 7860021117,
+      "description": "7.9 GB",
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes"
+    },
+    {
+      "@id": "#file-count",
+      "@type": "QuantitativeValue",
+      "value": 6,
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/FBbi_00000251",
+      "@type": "DefinedTerm",
+      "name": "confocal microscopy",
+      "identifier": "FBbi:00000251"
+    },
+    {
+      "@id": "#imaging-protocol-2",
+      "@type": "LabProtocol",
+      "name": "confocal microscopy",
+      "description": "confocal microscopy",
+      "measurementTechnique": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000251"
+        }
+      ]
+    }
+  ]
 }

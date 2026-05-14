@@ -1,367 +1,346 @@
 {
-    "@context": [
-        "https://w3id.org/ro/crate/1.2/context",
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "datePublished": {
+        "@id": "http://schema.org/datePublished",
+        "@type": "xsd:date"
+      },
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "taxonomicRange": {
+        "@id": "http://schema.org/taxonomicRange"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "329-Nelson-Chemotaxis-ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://ssbd.riken.jp/v3/project/329-Nelson-Chemotaxis"
+      }
+    },
+    {
+      "@id": "https://ssbd.riken.jp/v3/project/329-Nelson-Chemotaxis",
+      "@type": "Dataset",
+      "identifier": "329-Nelson-Chemotaxis",
+      "name": "Ammonium chemotaxis\nof Chlamydomonas reinhardtii",
+      "description": "The mechanisms governing chemotaxis in Chlamydomonas reinhardtii are largely unknown compared to those regulating phototaxis despite equal importance on the migratory response in the ciliated microalga. To study chemotaxis, the authors made a simple modification to a conventional Petri dish assay. Using the assay, a novel mechanism governing Chlamydomonas ammonium chemotaxis was revealed. First, they found that light exposure enhances the chemotactic response of wild‐type Chlamydomonas strains, yet phototaxis‐incompetent mutant strains, eye3-2 and ptx1, exhibit normal chemotaxis. This suggests that Chlamydomonas transduces the light signal pathway in chemotaxis differently from that in phototaxis. Second, we found that Chlamydomonas collectively migrate during chemotaxis but not phototaxis. Collective migration during chemotaxis is not clearly observed when the assay\nis conducted in the dark. Third, the Chlamydomonas strain CC‐124 carrying agg1−, the AGGREGATE1 gene (AGG1) null mutation, exhibited a more robust collective migratory response than strains carrying the wild‐type AGG1 gene. The expression of a recombinant AGG1 protein in the CC‐124 strain suppressed this collective migration during chemotaxis.",
+      "datePublished": "2025-01-31",
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "publisher": {
+        "@id": "https://ssbd.riken.jp/database"
+      },
+      "author": [
         {
-            "bia": "https://bioimage-archive.org/ro-crate/",
-            "obo": "http://purl.obolibrary.org/obo/",
-            "dwc": "http://rs.tdwg.org/dwc/terms/",
-            "dwciri": "http://rs.tdwg.org/dwc/iri/",
-            "bao": "http://www.bioassayontology.org/bao#",
-            "xsd": "http://www.w3.org/2001/XMLSchema#",
-            "datePublished": {
-                "@id": "http://schema.org/datePublished",
-                "@type": "xsd:date"
-            },
-            "vernacularName": {
-                "@id": "dwc:vernacularName"
-            },
-            "scientificName": {
-                "@id": "dwc:scientificName"
-            },
-            "hasCellLine": {
-                "@id": "bao:BAO_0002004"
-            },
-            "measurementMethod": {
-                "@id": "dwciri:measurementMethod"
-            },
-            "taxonomicRange": {
-                "@id": "http://schema.org/taxonomicRange"
-            },
-            "seeAlso": {
-                "@id": "rdf:seeAlso"
-            },
-            "BioSample": {
-                "@id": "http://schema.org/BioSample"
-            },
-            "LabProtocol": {
-                "@id": "http://schema.org/LabProtocol"
-            },
-            "labEquipment": {
-                "@id": "http://schema.org/labEquipment"
-            }
+          "@id": "#auth-001"
+        },
+        {
+          "@id": "#auth-002"
+        },
+        {
+          "@id": "#auth-003"
         }
-    ],
-    "@graph": [
+      ],
+      "seeAlso": [
         {
-            "@id": "329-Nelson-Chemotaxis-ro-crate-metadata.json",
-            "@type": "CreativeWork",
-            "conformsTo": {
-                "@id": "https://w3id.org/ro/crate/1.2"
-            },
-            "about": {
-                "@id": "https://ssbd.riken.jp/v3/project/329-Nelson-Chemotaxis"
-            }
-        },
-        {
-            "@id": "https://ssbd.riken.jp/v3/project/329-Nelson-Chemotaxis",
-            "@type": "Dataset",
-            "identifier": "329-Nelson-Chemotaxis",
-            "name": "Ammonium chemotaxis\nof Chlamydomonas reinhardtii",
-            "description": "The mechanisms governing chemotaxis in Chlamydomonas reinhardtii are largely unknown compared to those regulating phototaxis despite equal importance on the migratory response in the ciliated microalga. To study chemotaxis, the authors made a simple modification to a conventional Petri dish assay. Using the assay, a novel mechanism governing Chlamydomonas ammonium chemotaxis was revealed. First, they found that light exposure enhances the chemotactic response of wild‐type Chlamydomonas strains, yet phototaxis‐incompetent mutant strains, eye3-2 and ptx1, exhibit normal chemotaxis. This suggests that Chlamydomonas transduces the light signal pathway in chemotaxis differently from that in phototaxis. Second, we found that Chlamydomonas collectively migrate during chemotaxis but not phototaxis. Collective migration during chemotaxis is not clearly observed when the assay\nis conducted in the dark. Third, the Chlamydomonas strain CC‐124 carrying agg1−, the AGGREGATE1 gene (AGG1) null mutation, exhibited a more robust collective migratory response than strains carrying the wild‐type AGG1 gene. The expression of a recombinant AGG1 protein in the CC‐124 strain suppressed this collective migration during chemotaxis.",
-            "datePublished": "2025-01-31",
-            "license": "https://creativecommons.org/licenses/by/4.0/",
-            "publisher": {
-                "@id": "https://ssbd.riken.jp/database"
-            },
-            "author": [
-                {
-                    "@id": "#auth-001"
-                },
-                {
-                    "@id": "#auth-002"
-                },
-                {
-                    "@id": "#auth-003"
-                }
-            ],
-            "seeAlso": [
-                {
-                    "@id": "https://doi.org/10.1038/s41598-023-36818-6"
-                }
-            ],
-            "funder": [
-                {
-                    "@id": "#grant-001"
-                }
-            ],
-            "about": [
-                {
-                    "@id": "#biosample-8"
-                },
-                {
-                    "@id": "#biosample-7"
-                },
-                {
-                    "@id": "#biosample-6"
-                },
-                {
-                    "@id": "#biosample-5"
-                },
-                {
-                    "@id": "#biosample-4"
-                },
-                {
-                    "@id": "#biosample-3"
-                },
-                {
-                    "@id": "#biosample-2"
-                },
-                {
-                    "@id": "#biosample-1"
-                },
-                {
-                    "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/3055"
-                }
-            ],
-            "measurementMethod": [
-                {
-                    "@id": "#imaging-protocol-1"
-                },
-                {
-                    "@id": "http://purl.obolibrary.org/obo/FBbi_00000265"
-                },
-                {
-                    "@id": "#imaging-protocol-2"
-                },
-                {
-                    "@id": "#imaging-technique-2"
-                },
-                {
-                    "@id": "#imaging-protocol-3"
-                },
-                {
-                    "@id": "#imaging-technique-3"
-                }
-            ],
-            "thumbnailUrl": [
-                "https://ssbd.riken.jp/ssbd-omero/v1/projects/1506/render_thumbnail/"
-            ],
-            "size": [
-                {
-                    "@id": "#total-dataset-size"
-                },
-                {
-                    "@id": "#file-count"
-                }
-            ]
-        },
-        {
-            "@id": "https://ssbd.riken.jp/database",
-            "@type": "Organization",
-            "name": "SSBD:database"
-        },
-        {
-            "@id": "#auth-001",
-            "@type": "Person",
-            "name": "Naohiro Kato",
-            "email": "kato@lsu.edu",
-            "description": "Organization: Louisiana State University; Department: Department of Biological Sciences",
-            "affiliation": [
-                {
-                    "@id": "#affiliation-001"
-                }
-            ]
-        },
-        {
-            "@id": "#auth-002",
-            "@type": "Person",
-            "name": "Gabela Nelson",
-            "description": "Organization: Louisiana State University; Department: Department of Biological Sciences",
-            "affiliation": [
-                {
-                    "@id": "#affiliation-001"
-                }
-            ]
-        },
-        {
-            "@id": "#auth-003",
-            "@type": "Person",
-            "name": "Alexis Strain",
-            "description": "Organization: Louisiana State University; Department: Department of Biological Sciences",
-            "affiliation": [
-                {
-                    "@id": "#affiliation-001"
-                }
-            ]
-        },
-        {
-            "@id": "#affiliation-001",
-            "@type": "Organization",
-            "name": "Louisiana State University"
-        },
-        {
-            "@id": "https://doi.org/10.1038/s41598-023-36818-6",
-            "@type": "ScholarlyArticle",
-            "name": "Nelson G, Strain A, Isu A, Rahnama A, Wakabayashi KI, Melvin AT, Kato N. Cells collectively migrate during ammonium chemotaxis\nin Chlamydomonas reinhardtii. Sci Rep. 2023 Jul 4;13(1):10781",
-            "datePublished": "2023",
-            "sameAs": [
-                "https://pubmed.ncbi.nlm.nih.gov/37402785/",
-                "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10319813/"
-            ]
-        },
-        {
-            "@id": "#grant-001",
-            "@type": "Grant",
-            "name": "This research was conducted with funds from Louisiana Economic Development Assistantship and LSU LIFT2 Fund for N.K. Japan Society for the Promotion of Science KAKENHI Grants 21H00420, 22H02642 and 22H05674 for K.W."
-        },
-        {
-            "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/3055",
-            "@type": "Taxon",
-            "scientificName": "Chlamydomonas reinhardtii",
-            "name": "Chlamydomonas reinhardtii",
-            "identifier": "NCBITaxon:3055"
-        },
-        {
-            "@id": "#biosample-1",
-            "@type": "BioSample",
-            "name": "CC-124",
-            "description": "Chlamydomonas reinhardtii",
-            "taxonomicRange": [
-                {
-                    "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/3055"
-                }
-            ]
-        },
-        {
-            "@id": "#biosample-2",
-            "@type": "BioSample",
-            "name": "CC-124, CC-125",
-            "description": "Chlamydomonas reinhardtii",
-            "taxonomicRange": [
-                {
-                    "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/3055"
-                }
-            ]
-        },
-        {
-            "@id": "#biosample-3",
-            "@type": "BioSample",
-            "name": "CC-125",
-            "description": "Chlamydomonas reinhardtii",
-            "taxonomicRange": [
-                {
-                    "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/3055"
-                }
-            ]
-        },
-        {
-            "@id": "#biosample-4",
-            "@type": "BioSample",
-            "name": "CC-4042",
-            "description": "Chlamydomonas reinhardtii",
-            "taxonomicRange": [
-                {
-                    "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/3055"
-                }
-            ]
-        },
-        {
-            "@id": "#biosample-5",
-            "@type": "BioSample",
-            "name": "CC-4316",
-            "description": "Chlamydomonas reinhardtii",
-            "taxonomicRange": [
-                {
-                    "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/3055"
-                }
-            ]
-        },
-        {
-            "@id": "#biosample-6",
-            "@type": "BioSample",
-            "name": "CC-613",
-            "description": "Chlamydomonas reinhardtii",
-            "taxonomicRange": [
-                {
-                    "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/3055"
-                }
-            ]
-        },
-        {
-            "@id": "#biosample-7",
-            "@type": "BioSample",
-            "name": "CC-1036",
-            "description": "Chlamydomonas reinhardtii",
-            "taxonomicRange": [
-                {
-                    "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/3055"
-                }
-            ]
-        },
-        {
-            "@id": "#biosample-8",
-            "@type": "BioSample",
-            "name": "CC-2894",
-            "description": "Chlamydomonas reinhardtii",
-            "taxonomicRange": [
-                {
-                    "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/3055"
-                }
-            ]
-        },
-        {
-            "@id": "http://purl.obolibrary.org/obo/FBbi_00000265",
-            "@type": "DefinedTerm",
-            "name": "recorded image",
-            "identifier": "FBbi:00000265"
-        },
-        {
-            "@id": "#imaging-protocol-1",
-            "@type": "LabProtocol",
-            "name": "recorded image",
-            "description": "recorded image",
-            "measurementTechnique": [
-                {
-                    "@id": "http://purl.obolibrary.org/obo/FBbi_00000265"
-                }
-            ]
-        },
-        {
-            "@id": "#imaging-technique-2",
-            "@type": "DefinedTerm",
-            "name": "macroscopy"
-        },
-        {
-            "@id": "#imaging-protocol-2",
-            "@type": "LabProtocol",
-            "name": "macroscopy",
-            "description": "macroscopy",
-            "measurementTechnique": [
-                {
-                    "@id": "#imaging-technique-2"
-                }
-            ]
-        },
-        {
-            "@id": "#imaging-technique-3",
-            "@type": "DefinedTerm",
-            "name": "microscopy"
-        },
-        {
-            "@id": "#imaging-protocol-3",
-            "@type": "LabProtocol",
-            "name": "microscopy",
-            "description": "microscopy",
-            "measurementTechnique": [
-                {
-                    "@id": "#imaging-technique-3"
-                }
-            ]
-        },
-        {
-            "@id": "#total-dataset-size",
-            "@type": "QuantitativeValue",
-            "value": 971412736,
-            "description": "971.4 MB",
-            "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
-            "unitText": "bytes"
-        },
-        {
-            "@id": "#file-count",
-            "@type": "QuantitativeValue",
-            "value": 186,
-            "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
-            "unitText": "file count"
+          "@id": "https://doi.org/10.1038/s41598-023-36818-6"
         }
-    ]
+      ],
+      "funder": [
+        {
+          "@id": "#grant-001"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#biosample-8"
+        },
+        {
+          "@id": "#biosample-7"
+        },
+        {
+          "@id": "#biosample-6"
+        },
+        {
+          "@id": "#biosample-5"
+        },
+        {
+          "@id": "#biosample-4"
+        },
+        {
+          "@id": "#biosample-3"
+        },
+        {
+          "@id": "#biosample-2"
+        },
+        {
+          "@id": "#biosample-1"
+        },
+        {
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/3055"
+        }
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#imaging-protocol-1"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000240"
+        },
+        {
+          "@id": "#imaging-protocol-2"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000241"
+        }
+      ],
+      "thumbnailUrl": [
+        "https://ssbd.riken.jp/ssbd-omero/v1/projects/1506/render_thumbnail/"
+      ],
+      "size": [
+        {
+          "@id": "#total-dataset-size"
+        },
+        {
+          "@id": "#file-count"
+        }
+      ]
+    },
+    {
+      "@id": "https://ssbd.riken.jp/database",
+      "@type": "Organization",
+      "name": "SSBD:database"
+    },
+    {
+      "@id": "#auth-001",
+      "@type": "Person",
+      "name": "Naohiro Kato",
+      "email": "kato@lsu.edu",
+      "description": "Organization: Louisiana State University; Department: Department of Biological Sciences",
+      "affiliation": [
+        {
+          "@id": "#affiliation-001"
+        }
+      ]
+    },
+    {
+      "@id": "#auth-002",
+      "@type": "Person",
+      "name": "Gabela Nelson",
+      "description": "Organization: Louisiana State University; Department: Department of Biological Sciences",
+      "affiliation": [
+        {
+          "@id": "#affiliation-001"
+        }
+      ]
+    },
+    {
+      "@id": "#auth-003",
+      "@type": "Person",
+      "name": "Alexis Strain",
+      "description": "Organization: Louisiana State University; Department: Department of Biological Sciences",
+      "affiliation": [
+        {
+          "@id": "#affiliation-001"
+        }
+      ]
+    },
+    {
+      "@id": "#affiliation-001",
+      "@type": "Organization",
+      "name": "Louisiana State University"
+    },
+    {
+      "@id": "https://doi.org/10.1038/s41598-023-36818-6",
+      "@type": "ScholarlyArticle",
+      "name": "Nelson G, Strain A, Isu A, Rahnama A, Wakabayashi KI, Melvin AT, Kato N. Cells collectively migrate during ammonium chemotaxis\nin Chlamydomonas reinhardtii. Sci Rep. 2023 Jul 4;13(1):10781",
+      "datePublished": "2023",
+      "sameAs": [
+        "https://pubmed.ncbi.nlm.nih.gov/37402785/",
+        "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10319813/"
+      ]
+    },
+    {
+      "@id": "#grant-001",
+      "@type": "Grant",
+      "name": "This research was conducted with funds from Louisiana Economic Development Assistantship and LSU LIFT2 Fund for N.K. Japan Society for the Promotion of Science KAKENHI Grants 21H00420, 22H02642 and 22H05674 for K.W."
+    },
+    {
+      "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/3055",
+      "@type": "Taxon",
+      "scientificName": "Chlamydomonas reinhardtii",
+      "name": "Chlamydomonas reinhardtii",
+      "identifier": "NCBITaxon:3055"
+    },
+    {
+      "@id": "#biosample-1",
+      "@type": "BioSample",
+      "name": "CC-124",
+      "description": "Chlamydomonas reinhardtii",
+      "taxonomicRange": [
+        {
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/3055"
+        }
+      ]
+    },
+    {
+      "@id": "#biosample-2",
+      "@type": "BioSample",
+      "name": "CC-124, CC-125",
+      "description": "Chlamydomonas reinhardtii",
+      "taxonomicRange": [
+        {
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/3055"
+        }
+      ]
+    },
+    {
+      "@id": "#biosample-3",
+      "@type": "BioSample",
+      "name": "CC-125",
+      "description": "Chlamydomonas reinhardtii",
+      "taxonomicRange": [
+        {
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/3055"
+        }
+      ]
+    },
+    {
+      "@id": "#biosample-4",
+      "@type": "BioSample",
+      "name": "CC-4042",
+      "description": "Chlamydomonas reinhardtii",
+      "taxonomicRange": [
+        {
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/3055"
+        }
+      ]
+    },
+    {
+      "@id": "#biosample-5",
+      "@type": "BioSample",
+      "name": "CC-4316",
+      "description": "Chlamydomonas reinhardtii",
+      "taxonomicRange": [
+        {
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/3055"
+        }
+      ]
+    },
+    {
+      "@id": "#biosample-6",
+      "@type": "BioSample",
+      "name": "CC-613",
+      "description": "Chlamydomonas reinhardtii",
+      "taxonomicRange": [
+        {
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/3055"
+        }
+      ]
+    },
+    {
+      "@id": "#biosample-7",
+      "@type": "BioSample",
+      "name": "CC-1036",
+      "description": "Chlamydomonas reinhardtii",
+      "taxonomicRange": [
+        {
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/3055"
+        }
+      ]
+    },
+    {
+      "@id": "#biosample-8",
+      "@type": "BioSample",
+      "name": "CC-2894",
+      "description": "Chlamydomonas reinhardtii",
+      "taxonomicRange": [
+        {
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/3055"
+        }
+      ]
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/FBbi_00000240",
+      "@type": "DefinedTerm",
+      "name": "macroscopy",
+      "identifier": "FBbi:00000240"
+    },
+    {
+      "@id": "#imaging-protocol-1",
+      "@type": "LabProtocol",
+      "name": "macroscopy",
+      "description": "macroscopy",
+      "measurementTechnique": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000240"
+        }
+      ]
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/FBbi_00000241",
+      "@type": "DefinedTerm",
+      "name": "microscopy",
+      "identifier": "FBbi:00000241"
+    },
+    {
+      "@id": "#imaging-protocol-2",
+      "@type": "LabProtocol",
+      "name": "microscopy",
+      "description": "microscopy",
+      "measurementTechnique": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000241"
+        }
+      ]
+    },
+    {
+      "@id": "#total-dataset-size",
+      "@type": "QuantitativeValue",
+      "value": 971412736,
+      "description": "971.4 MB",
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes"
+    },
+    {
+      "@id": "#file-count",
+      "@type": "QuantitativeValue",
+      "value": 186,
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count"
+    }
+  ]
 }

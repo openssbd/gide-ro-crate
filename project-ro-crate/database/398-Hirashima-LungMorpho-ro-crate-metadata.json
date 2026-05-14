@@ -1,267 +1,244 @@
 {
-    "@context": [
-        "https://w3id.org/ro/crate/1.2/context",
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "datePublished": {
+        "@id": "http://schema.org/datePublished",
+        "@type": "xsd:date"
+      },
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "taxonomicRange": {
+        "@id": "http://schema.org/taxonomicRange"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "398-Hirashima-LungMorpho-ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://ssbd.riken.jp/v3/project/398-Hirashima-LungMorpho"
+      }
+    },
+    {
+      "@id": "https://ssbd.riken.jp/v3/project/398-Hirashima-LungMorpho",
+      "@type": "Dataset",
+      "identifier": "398-Hirashima-LungMorpho",
+      "name": "Spatio-temporal activation of ERK during branching morphogenesis in lung",
+      "description": "Intricate branching patterns emerge in internal organs due to the recurrent occurrence of simple deformations in epithelial tissues. During murine lung development, epithelial cells in distal tips of the single tube require fibroblast growth factor (FGF) signals emanating from their surrounding mesenchyme to form repetitive tip bifurcations. However, it remains unknown how the cells employ FGF signaling to convert their behaviors to achieve the recursive branching processes. Here, the authors show a mechano-chemical regulatory system underlying lung branching morphogenesis, orchestrated by extracellular signal-regulated kinase (ERK) as a downstream driver of FGF signaling. They found that tissue-scale curvature regulated ERK activity in the lung epithelium using two-photon live cell imaging and mechanical perturbations. ERK activation occurs specifically in epithelial tissues exhibiting positive curvature, regardless of whether the change in curvature was attributable to morphogenesis or perturbations. Moreover, ERK activation accelerates actin polymerization preferentially at the apical side of cells, mechanically contributing to the extension of the apical membrane, culminating in a reduction of epithelial tissue curvature. These results indicate the existence of a negative feedback loop between tissue curvature and ERK activity that transcends spatial scales. Their mathematical model confirms that this regulatory mechanism is sufficient to generate the recursive branching processes. Taken together, they propose that ERK orchestrates a curvature feedback loop pivotal to the self-organized patterning of tissues.\nSee GitHub for code and sample images of simulations from Fig6 onwards",
+      "datePublished": "2025-02-13",
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "keywords": [
+        "Epithelial Cells",
+        "Microscopy, Fluorescence, Multiphoton",
+        "Lung",
+        "Morphogenesis",
+        "Cytosol",
+        "Epithelium",
+        "Signal Transduction",
+        "Cytoskeleton",
+        "Actin Cytoskeleton"
+      ],
+      "publisher": {
+        "@id": "https://ssbd.riken.jp/database"
+      },
+      "author": [
         {
-            "bia": "https://bioimage-archive.org/ro-crate/",
-            "obo": "http://purl.obolibrary.org/obo/",
-            "dwc": "http://rs.tdwg.org/dwc/terms/",
-            "dwciri": "http://rs.tdwg.org/dwc/iri/",
-            "bao": "http://www.bioassayontology.org/bao#",
-            "xsd": "http://www.w3.org/2001/XMLSchema#",
-            "datePublished": {
-                "@id": "http://schema.org/datePublished",
-                "@type": "xsd:date"
-            },
-            "vernacularName": {
-                "@id": "dwc:vernacularName"
-            },
-            "scientificName": {
-                "@id": "dwc:scientificName"
-            },
-            "hasCellLine": {
-                "@id": "bao:BAO_0002004"
-            },
-            "measurementMethod": {
-                "@id": "dwciri:measurementMethod"
-            },
-            "taxonomicRange": {
-                "@id": "http://schema.org/taxonomicRange"
-            },
-            "seeAlso": {
-                "@id": "rdf:seeAlso"
-            },
-            "BioSample": {
-                "@id": "http://schema.org/BioSample"
-            },
-            "LabProtocol": {
-                "@id": "http://schema.org/LabProtocol"
-            },
-            "labEquipment": {
-                "@id": "http://schema.org/labEquipment"
-            }
+          "@id": "https://orcid.org/0000-0001-7323-9627"
         }
-    ],
-    "@graph": [
+      ],
+      "seeAlso": [
         {
-            "@id": "398-Hirashima-LungMorpho-ro-crate-metadata.json",
-            "@type": "CreativeWork",
-            "conformsTo": {
-                "@id": "https://w3id.org/ro/crate/1.2"
-            },
-            "about": {
-                "@id": "https://ssbd.riken.jp/v3/project/398-Hirashima-LungMorpho"
-            }
-        },
-        {
-            "@id": "https://ssbd.riken.jp/v3/project/398-Hirashima-LungMorpho",
-            "@type": "Dataset",
-            "identifier": "398-Hirashima-LungMorpho",
-            "name": "Spatio-temporal activation of ERK during branching morphogenesis in lung",
-            "description": "Intricate branching patterns emerge in internal organs due to the recurrent occurrence of simple deformations in epithelial tissues. During murine lung development, epithelial cells in distal tips of the single tube require fibroblast growth factor (FGF) signals emanating from their surrounding mesenchyme to form repetitive tip bifurcations. However, it remains unknown how the cells employ FGF signaling to convert their behaviors to achieve the recursive branching processes. Here, the authors show a mechano-chemical regulatory system underlying lung branching morphogenesis, orchestrated by extracellular signal-regulated kinase (ERK) as a downstream driver of FGF signaling. They found that tissue-scale curvature regulated ERK activity in the lung epithelium using two-photon live cell imaging and mechanical perturbations. ERK activation occurs specifically in epithelial tissues exhibiting positive curvature, regardless of whether the change in curvature was attributable to morphogenesis or perturbations. Moreover, ERK activation accelerates actin polymerization preferentially at the apical side of cells, mechanically contributing to the extension of the apical membrane, culminating in a reduction of epithelial tissue curvature. These results indicate the existence of a negative feedback loop between tissue curvature and ERK activity that transcends spatial scales. Their mathematical model confirms that this regulatory mechanism is sufficient to generate the recursive branching processes. Taken together, they propose that ERK orchestrates a curvature feedback loop pivotal to the self-organized patterning of tissues.\nSee GitHub for code and sample images of simulations from Fig6 onwards",
-            "datePublished": "2025-02-13",
-            "license": "https://creativecommons.org/licenses/by/4.0/",
-            "keywords": [
-                "Epithelial Cells",
-                "Microscopy, Fluorescence, Multiphoton",
-                "Lung",
-                "Morphogenesis",
-                "Cytosol",
-                "Epithelium",
-                "Signal Transduction",
-                "Cytoskeleton",
-                "Actin Cytoskeleton"
-            ],
-            "publisher": {
-                "@id": "https://ssbd.riken.jp/database"
-            },
-            "author": [
-                {
-                    "@id": "https://orcid.org/0000-0001-7323-9627"
-                }
-            ],
-            "seeAlso": [
-                {
-                    "@id": "https://doi.org/10.1016/j.cub.2023.12.049"
-                }
-            ],
-            "funder": [
-                {
-                    "@id": "#grant-001"
-                }
-            ],
-            "about": [
-                {
-                    "@id": "#biosample-2"
-                },
-                {
-                    "@id": "#biosample-1"
-                },
-                {
-                    "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/10090"
-                }
-            ],
-            "measurementMethod": [
-                {
-                    "@id": "#imaging-protocol-1"
-                },
-                {
-                    "@id": "http://purl.obolibrary.org/obo/FBbi_00000265"
-                },
-                {
-                    "@id": "#imaging-protocol-2"
-                },
-                {
-                    "@id": "http://purl.obolibrary.org/obo/FBbi_00000254"
-                },
-                {
-                    "@id": "#imaging-protocol-3"
-                },
-                {
-                    "@id": "http://purl.obolibrary.org/obo/FBbi_00000251"
-                }
-            ],
-            "thumbnailUrl": [
-                "https://ssbd.riken.jp/ssbd-omero/v1/projects/1551/render_thumbnail/"
-            ],
-            "size": [
-                {
-                    "@id": "#total-dataset-size"
-                },
-                {
-                    "@id": "#file-count"
-                }
-            ]
-        },
-        {
-            "@id": "https://ssbd.riken.jp/database",
-            "@type": "Organization",
-            "name": "SSBD:database"
-        },
-        {
-            "@id": "https://orcid.org/0000-0001-7323-9627",
-            "@type": "Person",
-            "name": "Tsuyoshi Hirashima",
-            "email": "thira@nus.edu.sg",
-            "description": "Organization: National University of Singapore; Department: Mechanobiology Institute",
-            "affiliation": [
-                {
-                    "@id": "#affiliation-001"
-                }
-            ]
-        },
-        {
-            "@id": "#affiliation-001",
-            "@type": "Organization",
-            "name": "National University of Singapore"
-        },
-        {
-            "@id": "https://doi.org/10.1016/j.cub.2023.12.049",
-            "@type": "ScholarlyArticle",
-            "name": "Hirashima T and Matsuda M. ERK-mediated curvature feedback regulates branching morphogenesis in lung epithelial tissue. Curr Biol. 2024 Feb 26;34(4):683-696.e6.",
-            "datePublished": "2024",
-            "sameAs": [
-                "https://pubmed.ncbi.nlm.nih.gov/38228149/"
-            ]
-        },
-        {
-            "@id": "#grant-001",
-            "@type": "Grant",
-            "name": "This work was supported by JST PRESTO grant JPMJPR1949, JSPS KA- KENHI 19H00993 and 21H05290, the Medical Research Support Center of Kyoto University, and the Mechanobiology Institute (MBI) at the National Uni- versity of Singapore funded through the National Research Foundation, Singapore and the Ministry of Education, Singapore under the Research Centre of Excellence program and by the Department of Physiology at the Na- tional University of Singapore."
-        },
-        {
-            "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/10090",
-            "@type": "Taxon",
-            "scientificName": "Mus musculus",
-            "name": "Mus musculus",
-            "identifier": "NCBITaxon:10090"
-        },
-        {
-            "@id": "#biosample-1",
-            "@type": "BioSample",
-            "name": "hyBRET-ERK-NES ~ epithelial cell of lung",
-            "description": "Murine lungs dissected at embryonic day 12.5  that ubiquitously expressed the cytoplasmic FRET biosensor for the ERK activity.",
-            "taxonomicRange": [
-                {
-                    "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/10090"
-                }
-            ]
-        },
-        {
-            "@id": "#biosample-2",
-            "@type": "BioSample",
-            "name": "Slc:ICR ~ epithelial cell of lung",
-            "description": "Isolated epithelial tissues cultured within growth factor-reduced Matrigel.",
-            "taxonomicRange": [
-                {
-                    "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/10090"
-                }
-            ]
-        },
-        {
-            "@id": "http://purl.obolibrary.org/obo/FBbi_00000265",
-            "@type": "DefinedTerm",
-            "name": "recorded image",
-            "identifier": "FBbi:00000265"
-        },
-        {
-            "@id": "#imaging-protocol-1",
-            "@type": "LabProtocol",
-            "name": "recorded image",
-            "description": "recorded image",
-            "measurementTechnique": [
-                {
-                    "@id": "http://purl.obolibrary.org/obo/FBbi_00000265"
-                }
-            ]
-        },
-        {
-            "@id": "http://purl.obolibrary.org/obo/FBbi_00000254",
-            "@type": "DefinedTerm",
-            "name": "two-photon laser scanning microscopy",
-            "identifier": "FBbi:00000254"
-        },
-        {
-            "@id": "#imaging-protocol-2",
-            "@type": "LabProtocol",
-            "name": "two-photon laser scanning microscopy",
-            "description": "two-photon laser scanning microscopy",
-            "measurementTechnique": [
-                {
-                    "@id": "http://purl.obolibrary.org/obo/FBbi_00000254"
-                }
-            ]
-        },
-        {
-            "@id": "http://purl.obolibrary.org/obo/FBbi_00000251",
-            "@type": "DefinedTerm",
-            "name": "confocal microscopy",
-            "identifier": "FBbi:00000251"
-        },
-        {
-            "@id": "#imaging-protocol-3",
-            "@type": "LabProtocol",
-            "name": "confocal microscopy",
-            "description": "confocal microscopy",
-            "measurementTechnique": [
-                {
-                    "@id": "http://purl.obolibrary.org/obo/FBbi_00000251"
-                }
-            ]
-        },
-        {
-            "@id": "#total-dataset-size",
-            "@type": "QuantitativeValue",
-            "value": 24583597713,
-            "description": "24.6 GB",
-            "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
-            "unitText": "bytes"
-        },
-        {
-            "@id": "#file-count",
-            "@type": "QuantitativeValue",
-            "value": 1981,
-            "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
-            "unitText": "file count"
+          "@id": "https://doi.org/10.1016/j.cub.2023.12.049"
         }
-    ]
+      ],
+      "funder": [
+        {
+          "@id": "#grant-001"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#biosample-2"
+        },
+        {
+          "@id": "#biosample-1"
+        },
+        {
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/10090"
+        }
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#imaging-protocol-1"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000254"
+        },
+        {
+          "@id": "#imaging-protocol-2"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000251"
+        }
+      ],
+      "thumbnailUrl": [
+        "https://ssbd.riken.jp/ssbd-omero/v1/projects/1551/render_thumbnail/"
+      ],
+      "size": [
+        {
+          "@id": "#total-dataset-size"
+        },
+        {
+          "@id": "#file-count"
+        }
+      ]
+    },
+    {
+      "@id": "https://ssbd.riken.jp/database",
+      "@type": "Organization",
+      "name": "SSBD:database"
+    },
+    {
+      "@id": "https://orcid.org/0000-0001-7323-9627",
+      "@type": "Person",
+      "name": "Tsuyoshi Hirashima",
+      "email": "thira@nus.edu.sg",
+      "description": "Organization: National University of Singapore; Department: Mechanobiology Institute",
+      "affiliation": [
+        {
+          "@id": "#affiliation-001"
+        }
+      ]
+    },
+    {
+      "@id": "#affiliation-001",
+      "@type": "Organization",
+      "name": "National University of Singapore"
+    },
+    {
+      "@id": "https://doi.org/10.1016/j.cub.2023.12.049",
+      "@type": "ScholarlyArticle",
+      "name": "Hirashima T and Matsuda M. ERK-mediated curvature feedback regulates branching morphogenesis in lung epithelial tissue. Curr Biol. 2024 Feb 26;34(4):683-696.e6.",
+      "datePublished": "2024",
+      "sameAs": [
+        "https://pubmed.ncbi.nlm.nih.gov/38228149/"
+      ]
+    },
+    {
+      "@id": "#grant-001",
+      "@type": "Grant",
+      "name": "This work was supported by JST PRESTO grant JPMJPR1949, JSPS KA- KENHI 19H00993 and 21H05290, the Medical Research Support Center of Kyoto University, and the Mechanobiology Institute (MBI) at the National Uni- versity of Singapore funded through the National Research Foundation, Singapore and the Ministry of Education, Singapore under the Research Centre of Excellence program and by the Department of Physiology at the Na- tional University of Singapore."
+    },
+    {
+      "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/10090",
+      "@type": "Taxon",
+      "scientificName": "Mus musculus",
+      "name": "Mus musculus",
+      "identifier": "NCBITaxon:10090"
+    },
+    {
+      "@id": "#biosample-1",
+      "@type": "BioSample",
+      "name": "hyBRET-ERK-NES ~ epithelial cell of lung",
+      "description": "Murine lungs dissected at embryonic day 12.5  that ubiquitously expressed the cytoplasmic FRET biosensor for the ERK activity.",
+      "taxonomicRange": [
+        {
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/10090"
+        }
+      ]
+    },
+    {
+      "@id": "#biosample-2",
+      "@type": "BioSample",
+      "name": "Slc:ICR ~ epithelial cell of lung",
+      "description": "Isolated epithelial tissues cultured within growth factor-reduced Matrigel.",
+      "taxonomicRange": [
+        {
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/10090"
+        }
+      ]
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/FBbi_00000254",
+      "@type": "DefinedTerm",
+      "name": "two-photon laser scanning microscopy",
+      "identifier": "FBbi:00000254"
+    },
+    {
+      "@id": "#imaging-protocol-1",
+      "@type": "LabProtocol",
+      "name": "two-photon laser scanning microscopy",
+      "description": "two-photon laser scanning microscopy",
+      "measurementTechnique": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000254"
+        }
+      ]
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/FBbi_00000251",
+      "@type": "DefinedTerm",
+      "name": "confocal microscopy",
+      "identifier": "FBbi:00000251"
+    },
+    {
+      "@id": "#imaging-protocol-2",
+      "@type": "LabProtocol",
+      "name": "confocal microscopy",
+      "description": "confocal microscopy",
+      "measurementTechnique": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000251"
+        }
+      ]
+    },
+    {
+      "@id": "#total-dataset-size",
+      "@type": "QuantitativeValue",
+      "value": 24583597713,
+      "description": "24.6 GB",
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes"
+    },
+    {
+      "@id": "#file-count",
+      "@type": "QuantitativeValue",
+      "value": 1981,
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count"
+    }
+  ]
 }

@@ -1,326 +1,303 @@
 {
-    "@context": [
-        "https://w3id.org/ro/crate/1.2/context",
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "datePublished": {
+        "@id": "http://schema.org/datePublished",
+        "@type": "xsd:date"
+      },
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "taxonomicRange": {
+        "@id": "http://schema.org/taxonomicRange"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "72-Kyogoku-CytoplasmNucDyn-ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://ssbd.riken.jp/v2/project/72-Kyogoku-CytoplasmNucDyn"
+      }
+    },
+    {
+      "@id": "https://ssbd.riken.jp/v2/project/72-Kyogoku-CytoplasmNucDyn",
+      "@type": "Dataset",
+      "identifier": "72-Kyogoku-CytoplasmNucDyn",
+      "name": "Timelapse images and BDML file for quantitative information about the cytoplasmic size affecting nuclear dynamics during mouse oocytes meiosis",
+      "description": "See details in Kyogoku H, et. al. (2017)  Dev. Cell, 41(3): 287-298.",
+      "datePublished": "2021-11-30",
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "keywords": [
+        "Anaphase",
+        "Anaphase/physiology",
+        "Animals",
+        "Chromosome Segregation",
+        "Chromosome Segregation/physiology",
+        "Cytoplasm",
+        "Cytoplasm/metabolism",
+        "Fertilization",
+        "Fertilization/physiology",
+        "Meiosis",
+        "Meiosis/physiology",
+        "Mice",
+        "Microtubules",
+        "Microtubules/metabolism",
+        "Oocytes",
+        "Oocytes/cytology",
+        "Spindle Apparatus",
+        "Spindle Apparatus/metabolism"
+      ],
+      "publisher": {
+        "@id": "https://ssbd.riken.jp/database"
+      },
+      "author": [
         {
-            "bia": "https://bioimage-archive.org/ro-crate/",
-            "obo": "http://purl.obolibrary.org/obo/",
-            "dwc": "http://rs.tdwg.org/dwc/terms/",
-            "dwciri": "http://rs.tdwg.org/dwc/iri/",
-            "bao": "http://www.bioassayontology.org/bao#",
-            "xsd": "http://www.w3.org/2001/XMLSchema#",
-            "datePublished": {
-                "@id": "http://schema.org/datePublished",
-                "@type": "xsd:date"
-            },
-            "vernacularName": {
-                "@id": "dwc:vernacularName"
-            },
-            "scientificName": {
-                "@id": "dwc:scientificName"
-            },
-            "hasCellLine": {
-                "@id": "bao:BAO_0002004"
-            },
-            "measurementMethod": {
-                "@id": "dwciri:measurementMethod"
-            },
-            "taxonomicRange": {
-                "@id": "http://schema.org/taxonomicRange"
-            },
-            "seeAlso": {
-                "@id": "rdf:seeAlso"
-            },
-            "BioSample": {
-                "@id": "http://schema.org/BioSample"
-            },
-            "LabProtocol": {
-                "@id": "http://schema.org/LabProtocol"
-            },
-            "labEquipment": {
-                "@id": "http://schema.org/labEquipment"
-            }
+          "@id": "#auth-001"
+        },
+        {
+          "@id": "#auth-002"
+        },
+        {
+          "@id": "#auth-003"
         }
-    ],
-    "@graph": [
+      ],
+      "seeAlso": [
         {
-            "@id": "72-Kyogoku-CytoplasmNucDyn-ro-crate-metadata.json",
-            "@type": "CreativeWork",
-            "conformsTo": {
-                "@id": "https://w3id.org/ro/crate/1.2"
-            },
-            "about": {
-                "@id": "https://ssbd.riken.jp/v2/project/72-Kyogoku-CytoplasmNucDyn"
-            }
-        },
-        {
-            "@id": "https://ssbd.riken.jp/v2/project/72-Kyogoku-CytoplasmNucDyn",
-            "@type": "Dataset",
-            "identifier": "72-Kyogoku-CytoplasmNucDyn",
-            "name": "Timelapse images and BDML file for quantitative information about the cytoplasmic size affecting nuclear dynamics during mouse oocytes meiosis",
-            "description": "See details in Kyogoku H, et. al. (2017)  Dev. Cell, 41(3): 287-298.",
-            "datePublished": "2021-11-30",
-            "license": "https://creativecommons.org/licenses/by/4.0/",
-            "keywords": [
-                "Anaphase",
-                "Anaphase/physiology",
-                "Animals",
-                "Chromosome Segregation",
-                "Chromosome Segregation/physiology",
-                "Cytoplasm",
-                "Cytoplasm/metabolism",
-                "Fertilization",
-                "Fertilization/physiology",
-                "Meiosis",
-                "Meiosis/physiology",
-                "Mice",
-                "Microtubules",
-                "Microtubules/metabolism",
-                "Oocytes",
-                "Oocytes/cytology",
-                "Spindle Apparatus",
-                "Spindle Apparatus/metabolism"
-            ],
-            "publisher": {
-                "@id": "https://ssbd.riken.jp/database"
-            },
-            "author": [
-                {
-                    "@id": "#auth-001"
-                },
-                {
-                    "@id": "#auth-002"
-                },
-                {
-                    "@id": "#auth-003"
-                }
-            ],
-            "seeAlso": [
-                {
-                    "@id": "https://doi.org/10.1016/j.devcel.2017.04.009"
-                }
-            ],
-            "about": [
-                {
-                    "@id": "#biosample-1"
-                },
-                {
-                    "@id": "http://purl.obolibrary.org/obo/GO_0051081"
-                },
-                {
-                    "@id": "http://purl.obolibrary.org/obo/GO_0007067"
-                },
-                {
-                    "@id": "http://purl.obolibrary.org/obo/GO_0007028"
-                },
-                {
-                    "@id": "http://purl.obolibrary.org/obo/GO_0005828"
-                },
-                {
-                    "@id": "http://purl.obolibrary.org/obo/GO_0005694"
-                },
-                {
-                    "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/10090"
-                }
-            ],
-            "measurementMethod": [
-                {
-                    "@id": "#imaging-protocol-1"
-                },
-                {
-                    "@id": "http://purl.obolibrary.org/obo/FBbi_00000265"
-                },
-                {
-                    "@id": "#imaging-protocol-2"
-                },
-                {
-                    "@id": "http://purl.obolibrary.org/obo/FBbi_00000249"
-                },
-                {
-                    "@id": "#imaging-protocol-3"
-                },
-                {
-                    "@id": "http://purl.obolibrary.org/obo/FBbi_00000246"
-                }
-            ],
-            "thumbnailUrl": [
-                "https://ssbd.riken.jp/ssbd-omero/v1/projects/662/render_thumbnail/"
-            ],
-            "size": [
-                {
-                    "@id": "#total-dataset-size"
-                },
-                {
-                    "@id": "#file-count"
-                }
-            ]
-        },
-        {
-            "@id": "https://ssbd.riken.jp/database",
-            "@type": "Organization",
-            "name": "SSBD:database"
-        },
-        {
-            "@id": "#auth-001",
-            "@type": "Person",
-            "name": "Tomoya S. Kitajima",
-            "email": "tomoya.kitajima@riken.jp",
-            "description": "Organization: RIKEN; Department: Center for Biosystems Dynamics Research; Laboratory: Laboratory for Chromosome Segregation",
-            "affiliation": [
-                {
-                    "@id": "#affiliation-001"
-                }
-            ]
-        },
-        {
-            "@id": "#auth-002",
-            "@type": "Person",
-            "name": "Tomoya S. Kitajima",
-            "email": "tomoya.kitajima@riken.jp",
-            "description": "Organization: RIKEN; Department: Center for Biosystems Dynamics Research; Laboratory: Laboratory for Chromosome Segregation",
-            "affiliation": [
-                {
-                    "@id": "#affiliation-001"
-                }
-            ]
-        },
-        {
-            "@id": "#auth-003",
-            "@type": "Person",
-            "name": "Hirohisa Kyogoku",
-            "description": "Organization: RIKEN; Department: Center for Biosystems Dynamics Research; Laboratory: Laboratory for Chromosome Segregation",
-            "affiliation": [
-                {
-                    "@id": "#affiliation-001"
-                }
-            ]
-        },
-        {
-            "@id": "#affiliation-001",
-            "@type": "Organization",
-            "name": "RIKEN"
-        },
-        {
-            "@id": "https://doi.org/10.1016/j.devcel.2017.04.009",
-            "@type": "ScholarlyArticle",
-            "name": "Kyogoku H, and Kitajima T S (2017) Large Cytoplasm Is Linked to the Error-Prone Nature of Oocytes. Developmental Cell, Volume 41, Issue 3, pages 287-298.",
-            "datePublished": "2017",
-            "sameAs": [
-                "https://www.ncbi.nlm.nih.gov/pubmed/28486131"
-            ]
-        },
-        {
-            "@id": "http://purl.obolibrary.org/obo/GO_0051081",
-            "@type": "DefinedTerm",
-            "name": "nuclear envelope breakdown",
-            "identifier": "GO:0051081"
-        },
-        {
-            "@id": "http://purl.obolibrary.org/obo/GO_0007067",
-            "@type": "DefinedTerm",
-            "name": "mitotic cell cycle",
-            "identifier": "GO:0007067"
-        },
-        {
-            "@id": "http://purl.obolibrary.org/obo/GO_0007028",
-            "@type": "DefinedTerm",
-            "name": "cytoplasm organization",
-            "identifier": "GO:0007028"
-        },
-        {
-            "@id": "http://purl.obolibrary.org/obo/GO_0005828",
-            "@type": "DefinedTerm",
-            "name": "kinetochore microtubule",
-            "identifier": "GO:0005828"
-        },
-        {
-            "@id": "http://purl.obolibrary.org/obo/GO_0005694",
-            "@type": "DefinedTerm",
-            "name": "chromosome",
-            "identifier": "GO:0005694"
-        },
-        {
-            "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/10090",
-            "@type": "Taxon",
-            "scientificName": "Mus musculus",
-            "name": "Mus musculus",
-            "identifier": "NCBITaxon:10090"
-        },
-        {
-            "@id": "#biosample-1",
-            "@type": "BioSample",
-            "name": "Mus musculus",
-            "description": "Mus musculus",
-            "taxonomicRange": [
-                {
-                    "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/10090"
-                }
-            ]
-        },
-        {
-            "@id": "http://purl.obolibrary.org/obo/FBbi_00000265",
-            "@type": "DefinedTerm",
-            "name": "recorded image",
-            "identifier": "FBbi:00000265"
-        },
-        {
-            "@id": "#imaging-protocol-1",
-            "@type": "LabProtocol",
-            "name": "recorded image",
-            "description": "recorded image",
-            "measurementTechnique": [
-                {
-                    "@id": "http://purl.obolibrary.org/obo/FBbi_00000265"
-                }
-            ]
-        },
-        {
-            "@id": "http://purl.obolibrary.org/obo/FBbi_00000249",
-            "@type": "DefinedTerm",
-            "name": "time lapse microscopy",
-            "identifier": "FBbi:00000249"
-        },
-        {
-            "@id": "#imaging-protocol-2",
-            "@type": "LabProtocol",
-            "name": "time lapse microscopy",
-            "description": "time lapse microscopy",
-            "measurementTechnique": [
-                {
-                    "@id": "http://purl.obolibrary.org/obo/FBbi_00000249"
-                }
-            ]
-        },
-        {
-            "@id": "http://purl.obolibrary.org/obo/FBbi_00000246",
-            "@type": "DefinedTerm",
-            "name": "fluorescence microscopy",
-            "identifier": "FBbi:00000246"
-        },
-        {
-            "@id": "#imaging-protocol-3",
-            "@type": "LabProtocol",
-            "name": "fluorescence microscopy",
-            "description": "fluorescence microscopy",
-            "measurementTechnique": [
-                {
-                    "@id": "http://purl.obolibrary.org/obo/FBbi_00000246"
-                }
-            ]
-        },
-        {
-            "@id": "#total-dataset-size",
-            "@type": "QuantitativeValue",
-            "value": 11298271298205,
-            "description": "11.3 TB",
-            "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
-            "unitText": "bytes"
-        },
-        {
-            "@id": "#file-count",
-            "@type": "QuantitativeValue",
-            "value": 724063,
-            "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
-            "unitText": "file count"
+          "@id": "https://doi.org/10.1016/j.devcel.2017.04.009"
         }
-    ]
+      ],
+      "about": [
+        {
+          "@id": "#biosample-1"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/GO_0051081"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/GO_0007067"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/GO_0007028"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/GO_0005828"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/GO_0005694"
+        },
+        {
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/10090"
+        }
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#imaging-protocol-1"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000249"
+        },
+        {
+          "@id": "#imaging-protocol-2"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000246"
+        }
+      ],
+      "thumbnailUrl": [
+        "https://ssbd.riken.jp/ssbd-omero/v1/projects/662/render_thumbnail/"
+      ],
+      "size": [
+        {
+          "@id": "#total-dataset-size"
+        },
+        {
+          "@id": "#file-count"
+        }
+      ]
+    },
+    {
+      "@id": "https://ssbd.riken.jp/database",
+      "@type": "Organization",
+      "name": "SSBD:database"
+    },
+    {
+      "@id": "#auth-001",
+      "@type": "Person",
+      "name": "Tomoya S. Kitajima",
+      "email": "tomoya.kitajima@riken.jp",
+      "description": "Organization: RIKEN; Department: Center for Biosystems Dynamics Research; Laboratory: Laboratory for Chromosome Segregation",
+      "affiliation": [
+        {
+          "@id": "#affiliation-001"
+        }
+      ]
+    },
+    {
+      "@id": "#auth-002",
+      "@type": "Person",
+      "name": "Tomoya S. Kitajima",
+      "email": "tomoya.kitajima@riken.jp",
+      "description": "Organization: RIKEN; Department: Center for Biosystems Dynamics Research; Laboratory: Laboratory for Chromosome Segregation",
+      "affiliation": [
+        {
+          "@id": "#affiliation-001"
+        }
+      ]
+    },
+    {
+      "@id": "#auth-003",
+      "@type": "Person",
+      "name": "Hirohisa Kyogoku",
+      "description": "Organization: RIKEN; Department: Center for Biosystems Dynamics Research; Laboratory: Laboratory for Chromosome Segregation",
+      "affiliation": [
+        {
+          "@id": "#affiliation-001"
+        }
+      ]
+    },
+    {
+      "@id": "#affiliation-001",
+      "@type": "Organization",
+      "name": "RIKEN"
+    },
+    {
+      "@id": "https://doi.org/10.1016/j.devcel.2017.04.009",
+      "@type": "ScholarlyArticle",
+      "name": "Kyogoku H, and Kitajima T S (2017) Large Cytoplasm Is Linked to the Error-Prone Nature of Oocytes. Developmental Cell, Volume 41, Issue 3, pages 287-298.",
+      "datePublished": "2017",
+      "sameAs": [
+        "https://www.ncbi.nlm.nih.gov/pubmed/28486131"
+      ]
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_0051081",
+      "@type": "DefinedTerm",
+      "name": "nuclear envelope breakdown",
+      "identifier": "GO:0051081"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_0007067",
+      "@type": "DefinedTerm",
+      "name": "mitotic cell cycle",
+      "identifier": "GO:0007067"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_0007028",
+      "@type": "DefinedTerm",
+      "name": "cytoplasm organization",
+      "identifier": "GO:0007028"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_0005828",
+      "@type": "DefinedTerm",
+      "name": "kinetochore microtubule",
+      "identifier": "GO:0005828"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_0005694",
+      "@type": "DefinedTerm",
+      "name": "chromosome",
+      "identifier": "GO:0005694"
+    },
+    {
+      "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/10090",
+      "@type": "Taxon",
+      "scientificName": "Mus musculus",
+      "name": "Mus musculus",
+      "identifier": "NCBITaxon:10090"
+    },
+    {
+      "@id": "#biosample-1",
+      "@type": "BioSample",
+      "name": "Mus musculus",
+      "description": "Mus musculus",
+      "taxonomicRange": [
+        {
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/10090"
+        }
+      ]
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/FBbi_00000249",
+      "@type": "DefinedTerm",
+      "name": "time lapse microscopy",
+      "identifier": "FBbi:00000249"
+    },
+    {
+      "@id": "#imaging-protocol-1",
+      "@type": "LabProtocol",
+      "name": "time lapse microscopy",
+      "description": "time lapse microscopy",
+      "measurementTechnique": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000249"
+        }
+      ]
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/FBbi_00000246",
+      "@type": "DefinedTerm",
+      "name": "fluorescence microscopy",
+      "identifier": "FBbi:00000246"
+    },
+    {
+      "@id": "#imaging-protocol-2",
+      "@type": "LabProtocol",
+      "name": "fluorescence microscopy",
+      "description": "fluorescence microscopy",
+      "measurementTechnique": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000246"
+        }
+      ]
+    },
+    {
+      "@id": "#total-dataset-size",
+      "@type": "QuantitativeValue",
+      "value": 11298271298205,
+      "description": "11.3 TB",
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes"
+    },
+    {
+      "@id": "#file-count",
+      "@type": "QuantitativeValue",
+      "value": 724063,
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count"
+    }
+  ]
 }

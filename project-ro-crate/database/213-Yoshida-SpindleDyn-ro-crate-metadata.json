@@ -1,294 +1,271 @@
 {
-    "@context": [
-        "https://w3id.org/ro/crate/1.2/context",
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "datePublished": {
+        "@id": "http://schema.org/datePublished",
+        "@type": "xsd:date"
+      },
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "taxonomicRange": {
+        "@id": "http://schema.org/taxonomicRange"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "213-Yoshida-SpindleDyn-ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://ssbd.riken.jp/v2/project/213-Yoshida-SpindleDyn"
+      }
+    },
+    {
+      "@id": "https://ssbd.riken.jp/v2/project/213-Yoshida-SpindleDyn",
+      "@type": "Dataset",
+      "identifier": "213-Yoshida-SpindleDyn",
+      "name": "Live imaging of spindle bipolarization during meiosis I in mouse oocytes.",
+      "description": "See details in Yoshida S, et. al. (2020)  Nat Commun., 11(1):2652.",
+      "datePublished": "2022-03-31",
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "keywords": [
+        "Animals",
+        "Cell Cycle Proteins",
+        "Cell Cycle Proteins/metabolism",
+        "Chromosome Segregation",
+        "Cytoskeletal Proteins",
+        "Cytoskeletal Proteins/metabolism",
+        "Female",
+        "Gametogenesis",
+        "Gametogenesis/physiology",
+        "Kinetochores",
+        "Kinetochores/metabolism",
+        "Meiosis",
+        "Meiosis/physiology",
+        "Mice",
+        "Microtubule-Associated Proteins",
+        "Microtubule-Associated Proteins/metabolism",
+        "Microtubules",
+        "Microtubules/metabolism",
+        "Nuclear Proteins",
+        "Nuclear Proteins/metabolism",
+        "Oocytes",
+        "Oocytes/metabolism",
+        "Spindle Apparatus",
+        "Spindle Apparatus/metabolism"
+      ],
+      "publisher": {
+        "@id": "https://ssbd.riken.jp/database"
+      },
+      "author": [
         {
-            "bia": "https://bioimage-archive.org/ro-crate/",
-            "obo": "http://purl.obolibrary.org/obo/",
-            "dwc": "http://rs.tdwg.org/dwc/terms/",
-            "dwciri": "http://rs.tdwg.org/dwc/iri/",
-            "bao": "http://www.bioassayontology.org/bao#",
-            "xsd": "http://www.w3.org/2001/XMLSchema#",
-            "datePublished": {
-                "@id": "http://schema.org/datePublished",
-                "@type": "xsd:date"
-            },
-            "vernacularName": {
-                "@id": "dwc:vernacularName"
-            },
-            "scientificName": {
-                "@id": "dwc:scientificName"
-            },
-            "hasCellLine": {
-                "@id": "bao:BAO_0002004"
-            },
-            "measurementMethod": {
-                "@id": "dwciri:measurementMethod"
-            },
-            "taxonomicRange": {
-                "@id": "http://schema.org/taxonomicRange"
-            },
-            "seeAlso": {
-                "@id": "rdf:seeAlso"
-            },
-            "BioSample": {
-                "@id": "http://schema.org/BioSample"
-            },
-            "LabProtocol": {
-                "@id": "http://schema.org/LabProtocol"
-            },
-            "labEquipment": {
-                "@id": "http://schema.org/labEquipment"
-            }
+          "@id": "#auth-001"
         }
-    ],
-    "@graph": [
+      ],
+      "seeAlso": [
         {
-            "@id": "213-Yoshida-SpindleDyn-ro-crate-metadata.json",
-            "@type": "CreativeWork",
-            "conformsTo": {
-                "@id": "https://w3id.org/ro/crate/1.2"
-            },
-            "about": {
-                "@id": "https://ssbd.riken.jp/v2/project/213-Yoshida-SpindleDyn"
-            }
-        },
-        {
-            "@id": "https://ssbd.riken.jp/v2/project/213-Yoshida-SpindleDyn",
-            "@type": "Dataset",
-            "identifier": "213-Yoshida-SpindleDyn",
-            "name": "Live imaging of spindle bipolarization during meiosis I in mouse oocytes.",
-            "description": "See details in Yoshida S, et. al. (2020)  Nat Commun., 11(1):2652.",
-            "datePublished": "2022-03-31",
-            "license": "https://creativecommons.org/licenses/by/4.0/",
-            "keywords": [
-                "Animals",
-                "Cell Cycle Proteins",
-                "Cell Cycle Proteins/metabolism",
-                "Chromosome Segregation",
-                "Cytoskeletal Proteins",
-                "Cytoskeletal Proteins/metabolism",
-                "Female",
-                "Gametogenesis",
-                "Gametogenesis/physiology",
-                "Kinetochores",
-                "Kinetochores/metabolism",
-                "Meiosis",
-                "Meiosis/physiology",
-                "Mice",
-                "Microtubule-Associated Proteins",
-                "Microtubule-Associated Proteins/metabolism",
-                "Microtubules",
-                "Microtubules/metabolism",
-                "Nuclear Proteins",
-                "Nuclear Proteins/metabolism",
-                "Oocytes",
-                "Oocytes/metabolism",
-                "Spindle Apparatus",
-                "Spindle Apparatus/metabolism"
-            ],
-            "publisher": {
-                "@id": "https://ssbd.riken.jp/database"
-            },
-            "author": [
-                {
-                    "@id": "#auth-001"
-                }
-            ],
-            "seeAlso": [
-                {
-                    "@id": "https://doi.org/10.1038/s41467-020-16488-y"
-                }
-            ],
-            "about": [
-                {
-                    "@id": "#biosample-1"
-                },
-                {
-                    "@id": "http://purl.obolibrary.org/obo/GO_0051079"
-                },
-                {
-                    "@id": "http://purl.obolibrary.org/obo/GO_0005819"
-                },
-                {
-                    "@id": "http://purl.obolibrary.org/obo/GO_0000776"
-                },
-                {
-                    "@id": "http://purl.obolibrary.org/obo/GO_0005694"
-                },
-                {
-                    "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/10090"
-                }
-            ],
-            "measurementMethod": [
-                {
-                    "@id": "#imaging-protocol-1"
-                },
-                {
-                    "@id": "http://purl.obolibrary.org/obo/FBbi_00000265"
-                },
-                {
-                    "@id": "#imaging-protocol-2"
-                },
-                {
-                    "@id": "http://purl.obolibrary.org/obo/FBbi_00000251"
-                },
-                {
-                    "@id": "#imaging-protocol-3"
-                },
-                {
-                    "@id": "http://purl.obolibrary.org/obo/FBbi_00000249"
-                }
-            ],
-            "thumbnailUrl": [
-                "https://ssbd.riken.jp/ssbd-omero/v1/projects/727/render_thumbnail/"
-            ],
-            "size": [
-                {
-                    "@id": "#total-dataset-size"
-                },
-                {
-                    "@id": "#file-count"
-                }
-            ]
-        },
-        {
-            "@id": "https://ssbd.riken.jp/database",
-            "@type": "Organization",
-            "name": "SSBD:database"
-        },
-        {
-            "@id": "#auth-001",
-            "@type": "Person",
-            "name": "Tomoya S. Kitajima",
-            "email": "tomoya.kitajima@riken.jp",
-            "description": "Organization: RIKEN; Department: Center for Biosystems Dynamics Research; Laboratory: Laboratory for Chromosome Segregation",
-            "affiliation": [
-                {
-                    "@id": "#affiliation-001"
-                }
-            ]
-        },
-        {
-            "@id": "#affiliation-001",
-            "@type": "Organization",
-            "name": "RIKEN"
-        },
-        {
-            "@id": "https://doi.org/10.1038/s41467-020-16488-y",
-            "@type": "ScholarlyArticle",
-            "name": "Yoshida S, Nishiyama S, Lister L, Hashimoto S, Mishina T, Courtois A, Kyogoku H, Abe T, Shiraishi A, Choudhary M, Nakaoka Y, Herbert M, and Kitajima TS (2020) Prc1-rich kinetochores are required for error-free acentrosomal spindle bipolarization during meiosis I in mouse oocytes. Nature Communications, Volume 11, Issue 1, pages 2652.",
-            "datePublished": "2020",
-            "sameAs": [
-                "https://www.ncbi.nlm.nih.gov/pubmed/32461611"
-            ]
-        },
-        {
-            "@id": "http://purl.obolibrary.org/obo/GO_0051079",
-            "@type": "DefinedTerm",
-            "name": "meiosis I nuclear membrane disassembly",
-            "identifier": "GO:0051079"
-        },
-        {
-            "@id": "http://purl.obolibrary.org/obo/GO_0005819",
-            "@type": "DefinedTerm",
-            "name": "spindle",
-            "identifier": "GO:0005819"
-        },
-        {
-            "@id": "http://purl.obolibrary.org/obo/GO_0000776",
-            "@type": "DefinedTerm",
-            "name": "kinetochore",
-            "identifier": "GO:0000776"
-        },
-        {
-            "@id": "http://purl.obolibrary.org/obo/GO_0005694",
-            "@type": "DefinedTerm",
-            "name": "chromosome",
-            "identifier": "GO:0005694"
-        },
-        {
-            "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/10090",
-            "@type": "Taxon",
-            "scientificName": "Mus musculus",
-            "name": "Mus musculus",
-            "identifier": "NCBITaxon:10090"
-        },
-        {
-            "@id": "#biosample-1",
-            "@type": "BioSample",
-            "name": "Mus musculus",
-            "description": "Mus musculus",
-            "taxonomicRange": [
-                {
-                    "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/10090"
-                }
-            ]
-        },
-        {
-            "@id": "http://purl.obolibrary.org/obo/FBbi_00000265",
-            "@type": "DefinedTerm",
-            "name": "recorded image",
-            "identifier": "FBbi:00000265"
-        },
-        {
-            "@id": "#imaging-protocol-1",
-            "@type": "LabProtocol",
-            "name": "recorded image",
-            "description": "recorded image",
-            "measurementTechnique": [
-                {
-                    "@id": "http://purl.obolibrary.org/obo/FBbi_00000265"
-                }
-            ]
-        },
-        {
-            "@id": "http://purl.obolibrary.org/obo/FBbi_00000251",
-            "@type": "DefinedTerm",
-            "name": "confocal microscopy",
-            "identifier": "FBbi:00000251"
-        },
-        {
-            "@id": "#imaging-protocol-2",
-            "@type": "LabProtocol",
-            "name": "confocal microscopy",
-            "description": "confocal microscopy",
-            "measurementTechnique": [
-                {
-                    "@id": "http://purl.obolibrary.org/obo/FBbi_00000251"
-                }
-            ]
-        },
-        {
-            "@id": "http://purl.obolibrary.org/obo/FBbi_00000249",
-            "@type": "DefinedTerm",
-            "name": "time lapse microscopy",
-            "identifier": "FBbi:00000249"
-        },
-        {
-            "@id": "#imaging-protocol-3",
-            "@type": "LabProtocol",
-            "name": "time lapse microscopy",
-            "description": "time lapse microscopy",
-            "measurementTechnique": [
-                {
-                    "@id": "http://purl.obolibrary.org/obo/FBbi_00000249"
-                }
-            ]
-        },
-        {
-            "@id": "#total-dataset-size",
-            "@type": "QuantitativeValue",
-            "value": 74271668572,
-            "description": "74.3 GB",
-            "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
-            "unitText": "bytes"
-        },
-        {
-            "@id": "#file-count",
-            "@type": "QuantitativeValue",
-            "value": 2538,
-            "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
-            "unitText": "file count"
+          "@id": "https://doi.org/10.1038/s41467-020-16488-y"
         }
-    ]
+      ],
+      "about": [
+        {
+          "@id": "#biosample-1"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/GO_0051079"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/GO_0005819"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/GO_0000776"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/GO_0005694"
+        },
+        {
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/10090"
+        }
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#imaging-protocol-1"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000251"
+        },
+        {
+          "@id": "#imaging-protocol-2"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000249"
+        }
+      ],
+      "thumbnailUrl": [
+        "https://ssbd.riken.jp/ssbd-omero/v1/projects/727/render_thumbnail/"
+      ],
+      "size": [
+        {
+          "@id": "#total-dataset-size"
+        },
+        {
+          "@id": "#file-count"
+        }
+      ]
+    },
+    {
+      "@id": "https://ssbd.riken.jp/database",
+      "@type": "Organization",
+      "name": "SSBD:database"
+    },
+    {
+      "@id": "#auth-001",
+      "@type": "Person",
+      "name": "Tomoya S. Kitajima",
+      "email": "tomoya.kitajima@riken.jp",
+      "description": "Organization: RIKEN; Department: Center for Biosystems Dynamics Research; Laboratory: Laboratory for Chromosome Segregation",
+      "affiliation": [
+        {
+          "@id": "#affiliation-001"
+        }
+      ]
+    },
+    {
+      "@id": "#affiliation-001",
+      "@type": "Organization",
+      "name": "RIKEN"
+    },
+    {
+      "@id": "https://doi.org/10.1038/s41467-020-16488-y",
+      "@type": "ScholarlyArticle",
+      "name": "Yoshida S, Nishiyama S, Lister L, Hashimoto S, Mishina T, Courtois A, Kyogoku H, Abe T, Shiraishi A, Choudhary M, Nakaoka Y, Herbert M, and Kitajima TS (2020) Prc1-rich kinetochores are required for error-free acentrosomal spindle bipolarization during meiosis I in mouse oocytes. Nature Communications, Volume 11, Issue 1, pages 2652.",
+      "datePublished": "2020",
+      "sameAs": [
+        "https://www.ncbi.nlm.nih.gov/pubmed/32461611"
+      ]
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_0051079",
+      "@type": "DefinedTerm",
+      "name": "meiosis I nuclear membrane disassembly",
+      "identifier": "GO:0051079"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_0005819",
+      "@type": "DefinedTerm",
+      "name": "spindle",
+      "identifier": "GO:0005819"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_0000776",
+      "@type": "DefinedTerm",
+      "name": "kinetochore",
+      "identifier": "GO:0000776"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_0005694",
+      "@type": "DefinedTerm",
+      "name": "chromosome",
+      "identifier": "GO:0005694"
+    },
+    {
+      "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/10090",
+      "@type": "Taxon",
+      "scientificName": "Mus musculus",
+      "name": "Mus musculus",
+      "identifier": "NCBITaxon:10090"
+    },
+    {
+      "@id": "#biosample-1",
+      "@type": "BioSample",
+      "name": "Mus musculus",
+      "description": "Mus musculus",
+      "taxonomicRange": [
+        {
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/10090"
+        }
+      ]
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/FBbi_00000251",
+      "@type": "DefinedTerm",
+      "name": "confocal microscopy",
+      "identifier": "FBbi:00000251"
+    },
+    {
+      "@id": "#imaging-protocol-1",
+      "@type": "LabProtocol",
+      "name": "confocal microscopy",
+      "description": "confocal microscopy",
+      "measurementTechnique": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000251"
+        }
+      ]
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/FBbi_00000249",
+      "@type": "DefinedTerm",
+      "name": "time lapse microscopy",
+      "identifier": "FBbi:00000249"
+    },
+    {
+      "@id": "#imaging-protocol-2",
+      "@type": "LabProtocol",
+      "name": "time lapse microscopy",
+      "description": "time lapse microscopy",
+      "measurementTechnique": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000249"
+        }
+      ]
+    },
+    {
+      "@id": "#total-dataset-size",
+      "@type": "QuantitativeValue",
+      "value": 74271668572,
+      "description": "74.3 GB",
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes"
+    },
+    {
+      "@id": "#file-count",
+      "@type": "QuantitativeValue",
+      "value": 2538,
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count"
+    }
+  ]
 }
