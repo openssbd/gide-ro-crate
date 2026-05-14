@@ -1,245 +1,201 @@
 {
-    "@context": [
-        "https://w3id.org/ro/crate/1.2/context",
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "datePublished": {
+        "@id": "http://schema.org/datePublished",
+        "@type": "xsd:date"
+      },
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "taxonomicRange": {
+        "@id": "http://schema.org/taxonomicRange"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "246-Hung-CircadianRhythm-ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://ssbd.riken.jp/v2/project/246-Hung-CircadianRhythm"
+      }
+    },
+    {
+      "@id": "https://ssbd.riken.jp/v2/project/246-Hung-CircadianRhythm",
+      "@type": "Dataset",
+      "identifier": "246-Hung-CircadianRhythm",
+      "name": "Time-series images of daily patterns of wake, NREM, and REM sleep in control or CRF-Cre/Bmal1flox/flox mice under LD and DD.",
+      "description": "See details in Hung CJ, et. al. (2022) Front Neurosci, 2022 Feb 18;15:808754.",
+      "datePublished": "2023-05-11",
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "publisher": {
+        "@id": "https://ssbd.riken.jp/database"
+      },
+      "author": [
         {
-            "bia": "https://bioimage-archive.org/ro-crate/",
-            "obo": "http://purl.obolibrary.org/obo/",
-            "dwc": "http://rs.tdwg.org/dwc/terms/",
-            "dwciri": "http://rs.tdwg.org/dwc/iri/",
-            "bao": "http://www.bioassayontology.org/bao#",
-            "xsd": "http://www.w3.org/2001/XMLSchema#",
-            "datePublished": {
-                "@id": "http://schema.org/datePublished",
-                "@type": "xsd:date"
-            },
-            "vernacularName": {
-                "@id": "dwc:vernacularName"
-            },
-            "scientificName": {
-                "@id": "dwc:scientificName"
-            },
-            "hasCellLine": {
-                "@id": "bao:BAO_0002004"
-            },
-            "measurementMethod": {
-                "@id": "dwciri:measurementMethod"
-            },
-            "taxonomicRange": {
-                "@id": "http://schema.org/taxonomicRange"
-            },
-            "seeAlso": {
-                "@id": "rdf:seeAlso"
-            },
-            "BioSample": {
-                "@id": "http://schema.org/BioSample"
-            },
-            "LabProtocol": {
-                "@id": "http://schema.org/LabProtocol"
-            },
-            "labEquipment": {
-                "@id": "http://schema.org/labEquipment"
-            }
+          "@id": "#auth-001"
         }
-    ],
-    "@graph": [
+      ],
+      "seeAlso": [
         {
-            "@id": "246-Hung-CircadianRhythm-ro-crate-metadata.json",
-            "@type": "CreativeWork",
-            "conformsTo": {
-                "@id": "https://w3id.org/ro/crate/1.2"
-            },
-            "about": {
-                "@id": "https://ssbd.riken.jp/v2/project/246-Hung-CircadianRhythm"
-            }
-        },
-        {
-            "@id": "https://ssbd.riken.jp/v2/project/246-Hung-CircadianRhythm",
-            "@type": "Dataset",
-            "identifier": "246-Hung-CircadianRhythm",
-            "name": "Time-series images of daily patterns of wake, NREM, and REM sleep in control or CRF-Cre/Bmal1flox/flox mice under LD and DD.",
-            "description": "See details in Hung CJ, et. al. (2022) Front Neurosci, 2022 Feb 18;15:808754.",
-            "datePublished": "2023-05-11",
-            "license": "https://creativecommons.org/licenses/by/4.0/",
-            "publisher": {
-                "@id": "https://ssbd.riken.jp/database"
-            },
-            "author": [
-                {
-                    "@id": "#auth-001"
-                }
-            ],
-            "seeAlso": [
-                {
-                    "@id": "https://doi.org/10.3389/fnins.2021.808754"
-                }
-            ],
-            "about": [
-                {
-                    "@id": "#biosample-1"
-                },
-                {
-                    "@id": "http://purl.obolibrary.org/obo/GO_0042746"
-                },
-                {
-                    "@id": "http://purl.obolibrary.org/obo/GO_0007623"
-                },
-                {
-                    "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/10090"
-                }
-            ],
-            "measurementMethod": [
-                {
-                    "@id": "#imaging-protocol-1"
-                },
-                {
-                    "@id": "http://purl.obolibrary.org/obo/FBbi_00000265"
-                },
-                {
-                    "@id": "#imaging-protocol-2"
-                },
-                {
-                    "@id": "#imaging-technique-2"
-                },
-                {
-                    "@id": "#imaging-protocol-3"
-                },
-                {
-                    "@id": "#imaging-technique-3"
-                }
-            ],
-            "size": [
-                {
-                    "@id": "#total-dataset-size"
-                },
-                {
-                    "@id": "#file-count"
-                }
-            ]
-        },
-        {
-            "@id": "https://ssbd.riken.jp/database",
-            "@type": "Organization",
-            "name": "SSBD:database"
-        },
-        {
-            "@id": "#auth-001",
-            "@type": "Person",
-            "name": "Daisuke Ono",
-            "email": "dai-ono@riem.nagoya-u.ac.jp",
-            "description": "Organization: Nagoya University; Department: Research Institute of Environmental Medicine; Laboratory: Department of Neuroscience II",
-            "affiliation": [
-                {
-                    "@id": "#affiliation-001"
-                }
-            ]
-        },
-        {
-            "@id": "#affiliation-001",
-            "@type": "Organization",
-            "name": "Nagoya University"
-        },
-        {
-            "@id": "https://doi.org/10.3389/fnins.2021.808754",
-            "@type": "ScholarlyArticle",
-            "name": "Hung CJ, Yamanaka A, Ono D. Conditional Knockout of Bmal1 in Corticotropin-Releasing Factor Neurons Does Not Alter Sleep-Wake Rhythm in Mice. Front Neurosci. 2022 Feb 18;15:808754.",
-            "datePublished": "2022",
-            "sameAs": [
-                "https://pubmed.ncbi.nlm.nih.gov/35250437/"
-            ]
-        },
-        {
-            "@id": "http://purl.obolibrary.org/obo/GO_0042746",
-            "@type": "DefinedTerm",
-            "name": "wakefulness",
-            "identifier": "GO:0042746"
-        },
-        {
-            "@id": "http://purl.obolibrary.org/obo/GO_0007623",
-            "@type": "DefinedTerm",
-            "name": "circadian rhythm",
-            "identifier": "GO:0007623"
-        },
-        {
-            "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/10090",
-            "@type": "Taxon",
-            "scientificName": "Mus musculus",
-            "name": "Mus musculus",
-            "identifier": "NCBITaxon:10090"
-        },
-        {
-            "@id": "#biosample-1",
-            "@type": "BioSample",
-            "name": "Mus musculus",
-            "description": "Mus musculus",
-            "taxonomicRange": [
-                {
-                    "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/10090"
-                }
-            ]
-        },
-        {
-            "@id": "http://purl.obolibrary.org/obo/FBbi_00000265",
-            "@type": "DefinedTerm",
-            "name": "recorded image",
-            "identifier": "FBbi:00000265"
-        },
-        {
-            "@id": "#imaging-protocol-1",
-            "@type": "LabProtocol",
-            "name": "recorded image",
-            "description": "recorded image",
-            "measurementTechnique": [
-                {
-                    "@id": "http://purl.obolibrary.org/obo/FBbi_00000265"
-                }
-            ]
-        },
-        {
-            "@id": "#imaging-technique-2",
-            "@type": "DefinedTerm",
-            "name": "Animal behavior was monitored using a charge-coupled device video camera (SPK-E700CHP1"
-        },
-        {
-            "@id": "#imaging-protocol-2",
-            "@type": "LabProtocol",
-            "name": "Animal behavior was monitored using a charge-coupled device video camera (SPK-E700CHP1",
-            "description": "Animal behavior was monitored using a charge-coupled device video camera (SPK-E700CHP1",
-            "measurementTechnique": [
-                {
-                    "@id": "#imaging-technique-2"
-                }
-            ]
-        },
-        {
-            "@id": "#imaging-technique-3",
-            "@type": "DefinedTerm",
-            "name": "Keiyo Techno) and recorded using an infrared activity sensor (Kissei Comtec)."
-        },
-        {
-            "@id": "#imaging-protocol-3",
-            "@type": "LabProtocol",
-            "name": "Keiyo Techno) and recorded using an infrared activity sensor (Kissei Comtec).",
-            "description": "Keiyo Techno) and recorded using an infrared activity sensor (Kissei Comtec).",
-            "measurementTechnique": [
-                {
-                    "@id": "#imaging-technique-3"
-                }
-            ]
-        },
-        {
-            "@id": "#total-dataset-size",
-            "@type": "QuantitativeValue",
-            "value": 319683941315,
-            "description": "319.7 GB",
-            "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
-            "unitText": "bytes"
-        },
-        {
-            "@id": "#file-count",
-            "@type": "QuantitativeValue",
-            "value": 1810,
-            "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
-            "unitText": "file count"
+          "@id": "https://doi.org/10.3389/fnins.2021.808754"
         }
-    ]
+      ],
+      "about": [
+        {
+          "@id": "#biosample-1"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/GO_0042746"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/GO_0007623"
+        },
+        {
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/10090"
+        }
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#imaging-protocol-1"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000265"
+        }
+      ],
+      "size": [
+        {
+          "@id": "#total-dataset-size"
+        },
+        {
+          "@id": "#file-count"
+        }
+      ]
+    },
+    {
+      "@id": "https://ssbd.riken.jp/database",
+      "@type": "Organization",
+      "name": "SSBD:database"
+    },
+    {
+      "@id": "#auth-001",
+      "@type": "Person",
+      "name": "Daisuke Ono",
+      "email": "dai-ono@riem.nagoya-u.ac.jp",
+      "description": "Organization: Nagoya University; Department: Research Institute of Environmental Medicine; Laboratory: Department of Neuroscience II",
+      "affiliation": [
+        {
+          "@id": "#affiliation-001"
+        }
+      ]
+    },
+    {
+      "@id": "#affiliation-001",
+      "@type": "Organization",
+      "name": "Nagoya University"
+    },
+    {
+      "@id": "https://doi.org/10.3389/fnins.2021.808754",
+      "@type": "ScholarlyArticle",
+      "name": "Hung CJ, Yamanaka A, Ono D. Conditional Knockout of Bmal1 in Corticotropin-Releasing Factor Neurons Does Not Alter Sleep-Wake Rhythm in Mice. Front Neurosci. 2022 Feb 18;15:808754.",
+      "datePublished": "2022",
+      "sameAs": [
+        "https://pubmed.ncbi.nlm.nih.gov/35250437/"
+      ]
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_0042746",
+      "@type": "DefinedTerm",
+      "name": "wakefulness",
+      "identifier": "GO:0042746"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_0007623",
+      "@type": "DefinedTerm",
+      "name": "circadian rhythm",
+      "identifier": "GO:0007623"
+    },
+    {
+      "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/10090",
+      "@type": "Taxon",
+      "scientificName": "Mus musculus",
+      "name": "Mus musculus",
+      "identifier": "NCBITaxon:10090"
+    },
+    {
+      "@id": "#biosample-1",
+      "@type": "BioSample",
+      "name": "Mus musculus",
+      "description": "Mus musculus",
+      "taxonomicRange": [
+        {
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/10090"
+        }
+      ]
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/FBbi_00000265",
+      "@type": "DefinedTerm",
+      "name": "recorded image",
+      "identifier": "FBbi:00000265"
+    },
+    {
+      "@id": "#imaging-protocol-1",
+      "@type": "LabProtocol",
+      "name": "recorded image",
+      "description": "recorded image",
+      "measurementTechnique": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000265"
+        }
+      ]
+    },
+    {
+      "@id": "#total-dataset-size",
+      "@type": "QuantitativeValue",
+      "value": 319683941315,
+      "description": "319.7 GB",
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes"
+    },
+    {
+      "@id": "#file-count",
+      "@type": "QuantitativeValue",
+      "value": 1810,
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count"
+    }
+  ]
 }

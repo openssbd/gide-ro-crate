@@ -1,346 +1,323 @@
 {
-    "@context": [
-        "https://w3id.org/ro/crate/1.2/context",
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "datePublished": {
+        "@id": "http://schema.org/datePublished",
+        "@type": "xsd:date"
+      },
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "taxonomicRange": {
+        "@id": "http://schema.org/taxonomicRange"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "386-Takahashi-EarIL31RA-ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://ssbd.riken.jp/v3/project/386-Takahashi-EarIL31RA"
+      }
+    },
+    {
+      "@id": "https://ssbd.riken.jp/v3/project/386-Takahashi-EarIL31RA",
+      "@type": "Dataset",
+      "identifier": "386-Takahashi-EarIL31RA",
+      "name": "Immunofluorescence images of nerve fiber and IL-31 receptors in the mouse ear skin",
+      "description": "IL-31 receptor blockade suppresses pruritus of atopic dermatitis. However, cell-type-specific contributions of IL-31 receptor to itch, its expression mechanism, and the downstream signaling pathway to induce itch remain unknown. In this report, using conditional knockout mice, the authors demonstrate that IL-31-induced itch requires sensory neuronal IL-31 receptor and STAT3. They find that IL-31 receptor expression is dependent on STAT3 in sensory neurons. In addition, pharmacological experiments suggest that STAT3 activation is important for the itch-inducing signaling downstream of the IL-31 receptor. A cutaneous IL-31 injection induces the nuclear accumulation of activated STAT3 first in sensory neurons that abundantly express IL-31 receptor and then in other itch-transmitting neurons. IL-31 enhances itch induced by various pruritogens including even chloroquine. Finally, pruritus associated with dermatitis is partially dependent on sensory neuronal IL-31 receptor and strongly on sensory neuronal STAT3. Thus, sensory neuronal STAT3 is essential for IL-31-induced itch and further contributes to IL-31-independent inflammatory itch.",
+      "datePublished": "2025-11-28",
+      "license": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "keywords": [
+        "Neurons",
+        "Microscopy, Confocal",
+        "Skin",
+        "Axons",
+        "Keratinocytes",
+        "Ear",
+        "Cell Nucleus"
+      ],
+      "publisher": {
+        "@id": "https://ssbd.riken.jp/database"
+      },
+      "author": [
         {
-            "bia": "https://bioimage-archive.org/ro-crate/",
-            "obo": "http://purl.obolibrary.org/obo/",
-            "dwc": "http://rs.tdwg.org/dwc/terms/",
-            "dwciri": "http://rs.tdwg.org/dwc/iri/",
-            "bao": "http://www.bioassayontology.org/bao#",
-            "xsd": "http://www.w3.org/2001/XMLSchema#",
-            "datePublished": {
-                "@id": "http://schema.org/datePublished",
-                "@type": "xsd:date"
-            },
-            "vernacularName": {
-                "@id": "dwc:vernacularName"
-            },
-            "scientificName": {
-                "@id": "dwc:scientificName"
-            },
-            "hasCellLine": {
-                "@id": "bao:BAO_0002004"
-            },
-            "measurementMethod": {
-                "@id": "dwciri:measurementMethod"
-            },
-            "taxonomicRange": {
-                "@id": "http://schema.org/taxonomicRange"
-            },
-            "seeAlso": {
-                "@id": "rdf:seeAlso"
-            },
-            "BioSample": {
-                "@id": "http://schema.org/BioSample"
-            },
-            "LabProtocol": {
-                "@id": "http://schema.org/LabProtocol"
-            },
-            "labEquipment": {
-                "@id": "http://schema.org/labEquipment"
-            }
+          "@id": "https://orcid.org/0000-0002-8255-1724"
+        },
+        {
+          "@id": "#auth-002"
+        },
+        {
+          "@id": "#auth-003"
+        },
+        {
+          "@id": "#auth-004"
+        },
+        {
+          "@id": "#auth-005"
+        },
+        {
+          "@id": "#auth-006"
         }
-    ],
-    "@graph": [
+      ],
+      "seeAlso": [
         {
-            "@id": "386-Takahashi-EarIL31RA-ro-crate-metadata.json",
-            "@type": "CreativeWork",
-            "conformsTo": {
-                "@id": "https://w3id.org/ro/crate/1.2"
-            },
-            "about": {
-                "@id": "https://ssbd.riken.jp/v3/project/386-Takahashi-EarIL31RA"
-            }
-        },
-        {
-            "@id": "https://ssbd.riken.jp/v3/project/386-Takahashi-EarIL31RA",
-            "@type": "Dataset",
-            "identifier": "386-Takahashi-EarIL31RA",
-            "name": "Immunofluorescence images of nerve fiber and IL-31 receptors in the mouse ear skin",
-            "description": "IL-31 receptor blockade suppresses pruritus of atopic dermatitis. However, cell-type-specific contributions of IL-31 receptor to itch, its expression mechanism, and the downstream signaling pathway to induce itch remain unknown. In this report, using conditional knockout mice, the authors demonstrate that IL-31-induced itch requires sensory neuronal IL-31 receptor and STAT3. They find that IL-31 receptor expression is dependent on STAT3 in sensory neurons. In addition, pharmacological experiments suggest that STAT3 activation is important for the itch-inducing signaling downstream of the IL-31 receptor. A cutaneous IL-31 injection induces the nuclear accumulation of activated STAT3 first in sensory neurons that abundantly express IL-31 receptor and then in other itch-transmitting neurons. IL-31 enhances itch induced by various pruritogens including even chloroquine. Finally, pruritus associated with dermatitis is partially dependent on sensory neuronal IL-31 receptor and strongly on sensory neuronal STAT3. Thus, sensory neuronal STAT3 is essential for IL-31-induced itch and further contributes to IL-31-independent inflammatory itch.",
-            "datePublished": "2025-11-28",
-            "license": "https://creativecommons.org/licenses/by-sa/4.0/",
-            "keywords": [
-                "Neurons",
-                "Microscopy, Confocal",
-                "Skin",
-                "Axons",
-                "Keratinocytes",
-                "Ear",
-                "Cell Nucleus"
-            ],
-            "publisher": {
-                "@id": "https://ssbd.riken.jp/database"
-            },
-            "author": [
-                {
-                    "@id": "https://orcid.org/0000-0002-8255-1724"
-                },
-                {
-                    "@id": "#auth-002"
-                },
-                {
-                    "@id": "#auth-003"
-                },
-                {
-                    "@id": "#auth-004"
-                },
-                {
-                    "@id": "#auth-005"
-                },
-                {
-                    "@id": "#auth-006"
-                }
-            ],
-            "seeAlso": [
-                {
-                    "@id": "https://doi.org/10.1016/j.celrep.2023.113433"
-                }
-            ],
-            "funder": [
-                {
-                    "@id": "#grant-001"
-                }
-            ],
-            "about": [
-                {
-                    "@id": "#biosample-3"
-                },
-                {
-                    "@id": "#biosample-2"
-                },
-                {
-                    "@id": "#biosample-1"
-                },
-                {
-                    "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/10090"
-                }
-            ],
-            "measurementMethod": [
-                {
-                    "@id": "#imaging-protocol-1"
-                },
-                {
-                    "@id": "http://purl.obolibrary.org/obo/FBbi_00000265"
-                },
-                {
-                    "@id": "#imaging-protocol-2"
-                },
-                {
-                    "@id": "http://purl.obolibrary.org/obo/FBbi_00000251"
-                }
-            ],
-            "thumbnailUrl": [
-                "https://ssbd.riken.jp/ssbd-omero/v1/projects/1804/render_thumbnail/"
-            ],
-            "size": [
-                {
-                    "@id": "#total-dataset-size"
-                },
-                {
-                    "@id": "#file-count"
-                }
-            ]
-        },
-        {
-            "@id": "https://ssbd.riken.jp/database",
-            "@type": "Organization",
-            "name": "SSBD:database"
-        },
-        {
-            "@id": "https://orcid.org/0000-0002-8255-1724",
-            "@type": "Person",
-            "name": "Takaharu Okada",
-            "email": "takaharu.okada@riken.jp",
-            "description": "Organization: RIKEN  IMS; Department: Laboratory for Tissue Dynamics",
-            "affiliation": [
-                {
-                    "@id": "#affiliation-001"
-                }
-            ]
-        },
-        {
-            "@id": "#auth-002",
-            "@type": "Person",
-            "name": "Sonoko Takahashi",
-            "email": "sonoko.takahashi@riken.jp",
-            "description": "Organization: RIKEN  IMS",
-            "affiliation": [
-                {
-                    "@id": "#affiliation-001"
-                }
-            ]
-        },
-        {
-            "@id": "#auth-003",
-            "@type": "Person",
-            "name": "Sotaro Ochiai",
-            "email": "sochiai@malaghan.org.nz",
-            "description": "Organization: Malaghan Inst Med Res",
-            "affiliation": [
-                {
-                    "@id": "#affiliation-002"
-                }
-            ]
-        },
-        {
-            "@id": "#auth-004",
-            "@type": "Person",
-            "name": "Noriko Takahashi",
-            "email": "ikahatan@hirakata.kmu.ac.jp",
-            "description": "Organization: Kansai Med Univ",
-            "affiliation": [
-                {
-                    "@id": "#affiliation-003"
-                }
-            ]
-        },
-        {
-            "@id": "#auth-005",
-            "@type": "Person",
-            "name": "Manabu Nakayama",
-            "email": "nmanabu@kazusa.or.jp",
-            "description": "Organization: Kazusa DNA Res Inst",
-            "affiliation": [
-                {
-                    "@id": "#affiliation-004"
-                }
-            ]
-        },
-        {
-            "@id": "#auth-006",
-            "@type": "Person",
-            "name": "Takaharu Okada",
-            "email": "takaharu.okada@riken.jp",
-            "description": "Organization: RIKEN  IMS",
-            "affiliation": [
-                {
-                    "@id": "#affiliation-001"
-                }
-            ]
-        },
-        {
-            "@id": "#affiliation-001",
-            "@type": "Organization",
-            "name": "RIKEN  IMS"
-        },
-        {
-            "@id": "#affiliation-002",
-            "@type": "Organization",
-            "name": "Malaghan Inst Med Res"
-        },
-        {
-            "@id": "#affiliation-003",
-            "@type": "Organization",
-            "name": "Kansai Med Univ"
-        },
-        {
-            "@id": "#affiliation-004",
-            "@type": "Organization",
-            "name": "Kazusa DNA Res Inst"
-        },
-        {
-            "@id": "https://doi.org/10.1016/j.celrep.2023.113433",
-            "@type": "ScholarlyArticle",
-            "name": "Takahashi S, Ochiai S, Jin J, Takahashi N, Toshima S, Ishigame H, Kabashima K, Kubo M, Nakayama M, Shiroguchi K, Okada T. Sensory neuronal STAT3 is critical for IL-31 receptor expression and inflammatory itch. Cell Rep. 2023 Dec 26;42(12):113433.",
-            "datePublished": "2023",
-            "sameAs": [
-                "https://pubmed.ncbi.nlm.nih.gov/38029739/"
-            ]
-        },
-        {
-            "@id": "#grant-001",
-            "@type": "Grant",
-            "name": "S.O. was supported by RIKEN Medical Sciences Innovation Hub Pro- gram (RIKEN MIH) and the Special Postdoctoral Researchers program at RIKEN. K.K. is supported by Japan Agency for Medical Research and Develop- ment (AMED) under CREST grant number JP23gm1210006. M.N. is supported by Platform Project for Supporting Drug Discovery and Life Science Research (Basis for Supporting Innovative Drug Discovery and Life Science Research (BINDS)) from AMED under grant number JP21am0101119. K.S. is supported by the Japan Society for the Promotion of Science (JSPS) KAKENHI grant 18H05411. T.O. was supported by AMED under grant number JP18ek0410033 and Japan Science and Technology Agency (JST) under CREST grant number JPMJCR17H1 and is supported by AMED under CREST grant number JP23gm1210006 and JST Moonshot R&D grant number JPMJMS2025."
-        },
-        {
-            "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/10090",
-            "@type": "Taxon",
-            "scientificName": "Mus musculus",
-            "name": "Mus musculus",
-            "identifier": "NCBITaxon:10090"
-        },
-        {
-            "@id": "#biosample-1",
-            "@type": "BioSample",
-            "name": "B6.129-Scn10a^{tm2(cre)Jwo}/H, \nB6.Cg-Gt(ROSA)26Sor^{tm14(CAG-tdTomato)Hze}/J ~ neuron,\nkeratinocyte",
-            "description": "Mouse ear pinnae were harvested and split into dorsal and ventral layers. The ventral layer with the cartilage was used to whole mount immunofluorescence staining of ear skin tissue.",
-            "taxonomicRange": [
-                {
-                    "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/10090"
-                }
-            ]
-        },
-        {
-            "@id": "#biosample-2",
-            "@type": "BioSample",
-            "name": "B6.129-Scn10a^{tm2(cre)Jwo}/H, \nB6.Cg-Gt(ROSA)26Sor^{tm14(CAG-tdTomato)Hze}/J ~ neuron,\nkeratinocyte,\nmesenchymal cell",
-            "description": "Mouse ear pinnae were harvested and split into dorsal and ventral layers. The ventral layer with the cartilage was used to whole mount immunofluorescence staining of ear skin tissue.",
-            "taxonomicRange": [
-                {
-                    "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/10090"
-                }
-            ]
-        },
-        {
-            "@id": "#biosample-3",
-            "@type": "BioSample",
-            "name": "B6.129-Scn10a^{tm2(cre)Jwo}/H, \nB6.Cg-Gt(ROSA)26Sor^{tm14(CAG-tdTomato)Hze}/J,\nIl31ra-flox ~ neuron,\nkeratinocyte,\nmesenchymal cell",
-            "description": "Mouse ear pinnae were harvested and split into dorsal and ventral layers. The ventral layer with the cartilage was used to whole mount immunofluorescence staining of ear skin tissue.",
-            "taxonomicRange": [
-                {
-                    "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/10090"
-                }
-            ]
-        },
-        {
-            "@id": "http://purl.obolibrary.org/obo/FBbi_00000265",
-            "@type": "DefinedTerm",
-            "name": "recorded image",
-            "identifier": "FBbi:00000265"
-        },
-        {
-            "@id": "#imaging-protocol-1",
-            "@type": "LabProtocol",
-            "name": "recorded image",
-            "description": "recorded image",
-            "measurementTechnique": [
-                {
-                    "@id": "http://purl.obolibrary.org/obo/FBbi_00000265"
-                }
-            ]
-        },
-        {
-            "@id": "http://purl.obolibrary.org/obo/FBbi_00000251",
-            "@type": "DefinedTerm",
-            "name": "confocal microscopy",
-            "identifier": "FBbi:00000251"
-        },
-        {
-            "@id": "#imaging-protocol-2",
-            "@type": "LabProtocol",
-            "name": "confocal microscopy",
-            "description": "confocal microscopy",
-            "measurementTechnique": [
-                {
-                    "@id": "http://purl.obolibrary.org/obo/FBbi_00000251"
-                }
-            ]
-        },
-        {
-            "@id": "#total-dataset-size",
-            "@type": "QuantitativeValue",
-            "value": 18177565254,
-            "description": "18.2 GB",
-            "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
-            "unitText": "bytes"
-        },
-        {
-            "@id": "#file-count",
-            "@type": "QuantitativeValue",
-            "value": 13,
-            "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
-            "unitText": "file count"
+          "@id": "https://doi.org/10.1016/j.celrep.2023.113433"
         }
-    ]
+      ],
+      "funder": [
+        {
+          "@id": "#grant-001"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#biosample-3"
+        },
+        {
+          "@id": "#biosample-2"
+        },
+        {
+          "@id": "#biosample-1"
+        },
+        {
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/10090"
+        }
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#imaging-protocol-1"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000251"
+        }
+      ],
+      "thumbnailUrl": [
+        "https://ssbd.riken.jp/ssbd-omero/v1/projects/1804/render_thumbnail/"
+      ],
+      "size": [
+        {
+          "@id": "#total-dataset-size"
+        },
+        {
+          "@id": "#file-count"
+        }
+      ]
+    },
+    {
+      "@id": "https://ssbd.riken.jp/database",
+      "@type": "Organization",
+      "name": "SSBD:database"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-8255-1724",
+      "@type": "Person",
+      "name": "Takaharu Okada",
+      "email": "takaharu.okada@riken.jp",
+      "description": "Organization: RIKEN  IMS; Department: Laboratory for Tissue Dynamics",
+      "affiliation": [
+        {
+          "@id": "#affiliation-001"
+        }
+      ]
+    },
+    {
+      "@id": "#auth-002",
+      "@type": "Person",
+      "name": "Sonoko Takahashi",
+      "email": "sonoko.takahashi@riken.jp",
+      "description": "Organization: RIKEN  IMS",
+      "affiliation": [
+        {
+          "@id": "#affiliation-001"
+        }
+      ]
+    },
+    {
+      "@id": "#auth-003",
+      "@type": "Person",
+      "name": "Sotaro Ochiai",
+      "email": "sochiai@malaghan.org.nz",
+      "description": "Organization: Malaghan Inst Med Res",
+      "affiliation": [
+        {
+          "@id": "#affiliation-002"
+        }
+      ]
+    },
+    {
+      "@id": "#auth-004",
+      "@type": "Person",
+      "name": "Noriko Takahashi",
+      "email": "ikahatan@hirakata.kmu.ac.jp",
+      "description": "Organization: Kansai Med Univ",
+      "affiliation": [
+        {
+          "@id": "#affiliation-003"
+        }
+      ]
+    },
+    {
+      "@id": "#auth-005",
+      "@type": "Person",
+      "name": "Manabu Nakayama",
+      "email": "nmanabu@kazusa.or.jp",
+      "description": "Organization: Kazusa DNA Res Inst",
+      "affiliation": [
+        {
+          "@id": "#affiliation-004"
+        }
+      ]
+    },
+    {
+      "@id": "#auth-006",
+      "@type": "Person",
+      "name": "Takaharu Okada",
+      "email": "takaharu.okada@riken.jp",
+      "description": "Organization: RIKEN  IMS",
+      "affiliation": [
+        {
+          "@id": "#affiliation-001"
+        }
+      ]
+    },
+    {
+      "@id": "#affiliation-001",
+      "@type": "Organization",
+      "name": "RIKEN  IMS"
+    },
+    {
+      "@id": "#affiliation-002",
+      "@type": "Organization",
+      "name": "Malaghan Inst Med Res"
+    },
+    {
+      "@id": "#affiliation-003",
+      "@type": "Organization",
+      "name": "Kansai Med Univ"
+    },
+    {
+      "@id": "#affiliation-004",
+      "@type": "Organization",
+      "name": "Kazusa DNA Res Inst"
+    },
+    {
+      "@id": "https://doi.org/10.1016/j.celrep.2023.113433",
+      "@type": "ScholarlyArticle",
+      "name": "Takahashi S, Ochiai S, Jin J, Takahashi N, Toshima S, Ishigame H, Kabashima K, Kubo M, Nakayama M, Shiroguchi K, Okada T. Sensory neuronal STAT3 is critical for IL-31 receptor expression and inflammatory itch. Cell Rep. 2023 Dec 26;42(12):113433.",
+      "datePublished": "2023",
+      "sameAs": [
+        "https://pubmed.ncbi.nlm.nih.gov/38029739/"
+      ]
+    },
+    {
+      "@id": "#grant-001",
+      "@type": "Grant",
+      "name": "S.O. was supported by RIKEN Medical Sciences Innovation Hub Pro- gram (RIKEN MIH) and the Special Postdoctoral Researchers program at RIKEN. K.K. is supported by Japan Agency for Medical Research and Develop- ment (AMED) under CREST grant number JP23gm1210006. M.N. is supported by Platform Project for Supporting Drug Discovery and Life Science Research (Basis for Supporting Innovative Drug Discovery and Life Science Research (BINDS)) from AMED under grant number JP21am0101119. K.S. is supported by the Japan Society for the Promotion of Science (JSPS) KAKENHI grant 18H05411. T.O. was supported by AMED under grant number JP18ek0410033 and Japan Science and Technology Agency (JST) under CREST grant number JPMJCR17H1 and is supported by AMED under CREST grant number JP23gm1210006 and JST Moonshot R&D grant number JPMJMS2025."
+    },
+    {
+      "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/10090",
+      "@type": "Taxon",
+      "scientificName": "Mus musculus",
+      "name": "Mus musculus",
+      "identifier": "NCBITaxon:10090"
+    },
+    {
+      "@id": "#biosample-1",
+      "@type": "BioSample",
+      "name": "B6.129-Scn10a^{tm2(cre)Jwo}/H, \nB6.Cg-Gt(ROSA)26Sor^{tm14(CAG-tdTomato)Hze}/J ~ neuron,\nkeratinocyte",
+      "description": "Mouse ear pinnae were harvested and split into dorsal and ventral layers. The ventral layer with the cartilage was used to whole mount immunofluorescence staining of ear skin tissue.",
+      "taxonomicRange": [
+        {
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/10090"
+        }
+      ]
+    },
+    {
+      "@id": "#biosample-2",
+      "@type": "BioSample",
+      "name": "B6.129-Scn10a^{tm2(cre)Jwo}/H, \nB6.Cg-Gt(ROSA)26Sor^{tm14(CAG-tdTomato)Hze}/J ~ neuron,\nkeratinocyte,\nmesenchymal cell",
+      "description": "Mouse ear pinnae were harvested and split into dorsal and ventral layers. The ventral layer with the cartilage was used to whole mount immunofluorescence staining of ear skin tissue.",
+      "taxonomicRange": [
+        {
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/10090"
+        }
+      ]
+    },
+    {
+      "@id": "#biosample-3",
+      "@type": "BioSample",
+      "name": "B6.129-Scn10a^{tm2(cre)Jwo}/H, \nB6.Cg-Gt(ROSA)26Sor^{tm14(CAG-tdTomato)Hze}/J,\nIl31ra-flox ~ neuron,\nkeratinocyte,\nmesenchymal cell",
+      "description": "Mouse ear pinnae were harvested and split into dorsal and ventral layers. The ventral layer with the cartilage was used to whole mount immunofluorescence staining of ear skin tissue.",
+      "taxonomicRange": [
+        {
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/10090"
+        }
+      ]
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/FBbi_00000251",
+      "@type": "DefinedTerm",
+      "name": "confocal microscopy",
+      "identifier": "FBbi:00000251"
+    },
+    {
+      "@id": "#imaging-protocol-1",
+      "@type": "LabProtocol",
+      "name": "confocal microscopy",
+      "description": "confocal microscopy",
+      "measurementTechnique": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000251"
+        }
+      ]
+    },
+    {
+      "@id": "#total-dataset-size",
+      "@type": "QuantitativeValue",
+      "value": 18177565254,
+      "description": "18.2 GB",
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes"
+    },
+    {
+      "@id": "#file-count",
+      "@type": "QuantitativeValue",
+      "value": 13,
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count"
+    }
+  ]
 }

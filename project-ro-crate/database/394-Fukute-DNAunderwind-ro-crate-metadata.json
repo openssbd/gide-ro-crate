@@ -1,275 +1,253 @@
 {
-    "@context": [
-        "https://w3id.org/ro/crate/1.2/context",
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "datePublished": {
+        "@id": "http://schema.org/datePublished",
+        "@type": "xsd:date"
+      },
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "taxonomicRange": {
+        "@id": "http://schema.org/taxonomicRange"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "394-Fukute-DNAunderwind-ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://ssbd.riken.jp/v3/project/394-Fukute-DNAunderwind"
+      }
+    },
+    {
+      "@id": "https://ssbd.riken.jp/v3/project/394-Fukute-DNAunderwind",
+      "@type": "Dataset",
+      "identifier": "394-Fukute-DNAunderwind",
+      "name": "Mechanical regulation of DNA underwinding in the nucleus",
+      "description": "This project investigates how DNA is underwound in the mechanical environment of the nucleus, by performing super-resolution imaging of underwound DNA and nuclear proteins in mouse cells.",
+      "datePublished": "2025-01-31",
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "publisher": {
+        "@id": "https://ssbd.riken.jp/database"
+      },
+      "author": [
         {
-            "bia": "https://bioimage-archive.org/ro-crate/",
-            "obo": "http://purl.obolibrary.org/obo/",
-            "dwc": "http://rs.tdwg.org/dwc/terms/",
-            "dwciri": "http://rs.tdwg.org/dwc/iri/",
-            "bao": "http://www.bioassayontology.org/bao#",
-            "xsd": "http://www.w3.org/2001/XMLSchema#",
-            "datePublished": {
-                "@id": "http://schema.org/datePublished",
-                "@type": "xsd:date"
-            },
-            "vernacularName": {
-                "@id": "dwc:vernacularName"
-            },
-            "scientificName": {
-                "@id": "dwc:scientificName"
-            },
-            "hasCellLine": {
-                "@id": "bao:BAO_0002004"
-            },
-            "measurementMethod": {
-                "@id": "dwciri:measurementMethod"
-            },
-            "taxonomicRange": {
-                "@id": "http://schema.org/taxonomicRange"
-            },
-            "seeAlso": {
-                "@id": "rdf:seeAlso"
-            },
-            "BioSample": {
-                "@id": "http://schema.org/BioSample"
-            },
-            "LabProtocol": {
-                "@id": "http://schema.org/LabProtocol"
-            },
-            "labEquipment": {
-                "@id": "http://schema.org/labEquipment"
-            }
+          "@id": "#auth-001"
+        },
+        {
+          "@id": "#auth-002"
+        },
+        {
+          "@id": "#auth-003"
+        },
+        {
+          "@id": "#auth-004"
         }
-    ],
-    "@graph": [
+      ],
+      "seeAlso": [
         {
-            "@id": "394-Fukute-DNAunderwind-ro-crate-metadata.json",
-            "@type": "CreativeWork",
-            "conformsTo": {
-                "@id": "https://w3id.org/ro/crate/1.2"
-            },
-            "about": {
-                "@id": "https://ssbd.riken.jp/v3/project/394-Fukute-DNAunderwind"
-            }
-        },
-        {
-            "@id": "https://ssbd.riken.jp/v3/project/394-Fukute-DNAunderwind",
-            "@type": "Dataset",
-            "identifier": "394-Fukute-DNAunderwind",
-            "name": "Mechanical regulation of DNA underwinding in the nucleus",
-            "description": "This project investigates how DNA is underwound in the mechanical environment of the nucleus, by performing super-resolution imaging of underwound DNA and nuclear proteins in mouse cells.",
-            "datePublished": "2025-01-31",
-            "license": "https://creativecommons.org/licenses/by/4.0/",
-            "publisher": {
-                "@id": "https://ssbd.riken.jp/database"
-            },
-            "author": [
-                {
-                    "@id": "#auth-001"
-                },
-                {
-                    "@id": "#auth-002"
-                },
-                {
-                    "@id": "#auth-003"
-                },
-                {
-                    "@id": "#auth-004"
-                }
-            ],
-            "seeAlso": [
-                {
-                    "@id": "https://doi.org/10.1038/s42003-023-05750-w"
-                }
-            ],
-            "funder": [
-                {
-                    "@id": "#grant-001"
-                }
-            ],
-            "about": [
-                {
-                    "@id": "#biosample-1"
-                },
-                {
-                    "@id": "http://purl.obolibrary.org/obo/CLO_0007582"
-                },
-                {
-                    "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/10090"
-                }
-            ],
-            "measurementMethod": [
-                {
-                    "@id": "#imaging-protocol-1"
-                },
-                {
-                    "@id": "http://purl.obolibrary.org/obo/FBbi_00000265"
-                },
-                {
-                    "@id": "#imaging-protocol-2"
-                },
-                {
-                    "@id": "#imaging-technique-2"
-                }
-            ],
-            "thumbnailUrl": [
-                "https://ssbd.riken.jp/ssbd-omero/v1/projects/1504/render_thumbnail/"
-            ],
-            "size": [
-                {
-                    "@id": "#total-dataset-size"
-                },
-                {
-                    "@id": "#file-count"
-                }
-            ]
-        },
-        {
-            "@id": "https://ssbd.riken.jp/database",
-            "@type": "Organization",
-            "name": "SSBD:database"
-        },
-        {
-            "@id": "#auth-001",
-            "@type": "Person",
-            "name": "Koichiro Maki",
-            "email": "maki@infront.kyoto-u.ac.jp",
-            "description": "Organization: Kyoto University; Department: Laboratory of Cellular and Molecular Biomechanics, Department of Mammalian Regulatory Network, Graduate School of Biostudies",
-            "affiliation": [
-                {
-                    "@id": "#affiliation-001"
-                }
-            ]
-        },
-        {
-            "@id": "#auth-002",
-            "@type": "Person",
-            "name": "Jumpei Fukute",
-            "email": "jumpei.fukute.y67@kyoto-u.jp",
-            "description": "Organization: Kyoto University",
-            "affiliation": [
-                {
-                    "@id": "#affiliation-001"
-                }
-            ]
-        },
-        {
-            "@id": "#auth-003",
-            "@type": "Person",
-            "name": "Koichiro Maki",
-            "email": "maki@infront.kyoto-u.ac.jp",
-            "description": "Organization: Kyoto University",
-            "affiliation": [
-                {
-                    "@id": "#affiliation-001"
-                }
-            ]
-        },
-        {
-            "@id": "#auth-004",
-            "@type": "Person",
-            "name": "Taiji Adachi",
-            "email": "adachi@infront.kyoto-u.ac.jp",
-            "description": "Organization: Kyoto University",
-            "affiliation": [
-                {
-                    "@id": "#affiliation-001"
-                }
-            ]
-        },
-        {
-            "@id": "#affiliation-001",
-            "@type": "Organization",
-            "name": "Kyoto University"
-        },
-        {
-            "@id": "https://doi.org/10.1038/s42003-023-05750-w",
-            "@type": "ScholarlyArticle",
-            "name": "Fukute J, Maki K, Adachi T. The nucleolar shell provides anchoring sites for DNA untwisting. Commun Biol. 2024 Jan 23;7(1):83.",
-            "datePublished": "2024",
-            "sameAs": [
-                "https://pubmed.ncbi.nlm.nih.gov/38263258/",
-                "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10805735/"
-            ]
-        },
-        {
-            "@id": "#grant-001",
-            "@type": "Grant",
-            "name": "This work was supported by JST, CREST, Grant Number JPMJCR2023, Japan (J.F., K.M.), JST, CREST, Grant Number JPMJCR22L5, Japan (T.A.), JST, SPRING, Grant Number JPMJSP2110, Japan (J.F.), MEXT/JSPS, KAKENHI, Grant Number JP23KJ1255, Japan (J.F.), and MEXT/JSPS, KAKENHI, Grant Number JP20K20180 and JP23K17196, Japan (K.M.)."
-        },
-        {
-            "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/10090",
-            "@type": "Taxon",
-            "scientificName": "Mus musculus",
-            "name": "Mus musculus",
-            "identifier": "NCBITaxon:10090"
-        },
-        {
-            "@id": "http://purl.obolibrary.org/obo/CLO_0007582",
-            "@type": "DefinedTerm",
-            "name": "MC3T3-E1 cell"
-        },
-        {
-            "@id": "#biosample-1",
-            "@type": "BioSample",
-            "name": "Mus musculus (NCBI:txid10090) ~ MC3T3-E1 cell",
-            "description": "MC3T3-E1 mouse osteoblast-like cells in which underwound nuclear DNA was fluorescently labeled with psoralen",
-            "taxonomicRange": [
-                {
-                    "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/10090"
-                }
-            ],
-            "hasCellLine": {
-                "@id": "http://purl.obolibrary.org/obo/CLO_0007582"
-            }
-        },
-        {
-            "@id": "http://purl.obolibrary.org/obo/FBbi_00000265",
-            "@type": "DefinedTerm",
-            "name": "recorded image",
-            "identifier": "FBbi:00000265"
-        },
-        {
-            "@id": "#imaging-protocol-1",
-            "@type": "LabProtocol",
-            "name": "recorded image",
-            "description": "recorded image",
-            "measurementTechnique": [
-                {
-                    "@id": "http://purl.obolibrary.org/obo/FBbi_00000265"
-                }
-            ]
-        },
-        {
-            "@id": "#imaging-technique-2",
-            "@type": "DefinedTerm",
-            "name": "Lattice-pattern structured illumination microscopy"
-        },
-        {
-            "@id": "#imaging-protocol-2",
-            "@type": "LabProtocol",
-            "name": "Lattice-pattern structured illumination microscopy",
-            "description": "Lattice-pattern structured illumination microscopy",
-            "measurementTechnique": [
-                {
-                    "@id": "#imaging-technique-2"
-                }
-            ]
-        },
-        {
-            "@id": "#total-dataset-size",
-            "@type": "QuantitativeValue",
-            "value": 13714570744,
-            "description": "13.7 GB",
-            "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
-            "unitText": "bytes"
-        },
-        {
-            "@id": "#file-count",
-            "@type": "QuantitativeValue",
-            "value": 28,
-            "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
-            "unitText": "file count"
+          "@id": "https://doi.org/10.1038/s42003-023-05750-w"
         }
-    ]
+      ],
+      "funder": [
+        {
+          "@id": "#grant-001"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#biosample-1"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/CLO_0007582"
+        },
+        {
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/10090"
+        }
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#imaging-protocol-1"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000265"
+        }
+      ],
+      "thumbnailUrl": [
+        "https://ssbd.riken.jp/ssbd-omero/v1/projects/1504/render_thumbnail/"
+      ],
+      "size": [
+        {
+          "@id": "#total-dataset-size"
+        },
+        {
+          "@id": "#file-count"
+        }
+      ]
+    },
+    {
+      "@id": "https://ssbd.riken.jp/database",
+      "@type": "Organization",
+      "name": "SSBD:database"
+    },
+    {
+      "@id": "#auth-001",
+      "@type": "Person",
+      "name": "Koichiro Maki",
+      "email": "maki@infront.kyoto-u.ac.jp",
+      "description": "Organization: Kyoto University; Department: Laboratory of Cellular and Molecular Biomechanics, Department of Mammalian Regulatory Network, Graduate School of Biostudies",
+      "affiliation": [
+        {
+          "@id": "#affiliation-001"
+        }
+      ]
+    },
+    {
+      "@id": "#auth-002",
+      "@type": "Person",
+      "name": "Jumpei Fukute",
+      "email": "jumpei.fukute.y67@kyoto-u.jp",
+      "description": "Organization: Kyoto University",
+      "affiliation": [
+        {
+          "@id": "#affiliation-001"
+        }
+      ]
+    },
+    {
+      "@id": "#auth-003",
+      "@type": "Person",
+      "name": "Koichiro Maki",
+      "email": "maki@infront.kyoto-u.ac.jp",
+      "description": "Organization: Kyoto University",
+      "affiliation": [
+        {
+          "@id": "#affiliation-001"
+        }
+      ]
+    },
+    {
+      "@id": "#auth-004",
+      "@type": "Person",
+      "name": "Taiji Adachi",
+      "email": "adachi@infront.kyoto-u.ac.jp",
+      "description": "Organization: Kyoto University",
+      "affiliation": [
+        {
+          "@id": "#affiliation-001"
+        }
+      ]
+    },
+    {
+      "@id": "#affiliation-001",
+      "@type": "Organization",
+      "name": "Kyoto University"
+    },
+    {
+      "@id": "https://doi.org/10.1038/s42003-023-05750-w",
+      "@type": "ScholarlyArticle",
+      "name": "Fukute J, Maki K, Adachi T. The nucleolar shell provides anchoring sites for DNA untwisting. Commun Biol. 2024 Jan 23;7(1):83.",
+      "datePublished": "2024",
+      "sameAs": [
+        "https://pubmed.ncbi.nlm.nih.gov/38263258/",
+        "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10805735/"
+      ]
+    },
+    {
+      "@id": "#grant-001",
+      "@type": "Grant",
+      "name": "This work was supported by JST, CREST, Grant Number JPMJCR2023, Japan (J.F., K.M.), JST, CREST, Grant Number JPMJCR22L5, Japan (T.A.), JST, SPRING, Grant Number JPMJSP2110, Japan (J.F.), MEXT/JSPS, KAKENHI, Grant Number JP23KJ1255, Japan (J.F.), and MEXT/JSPS, KAKENHI, Grant Number JP20K20180 and JP23K17196, Japan (K.M.)."
+    },
+    {
+      "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/10090",
+      "@type": "Taxon",
+      "scientificName": "Mus musculus",
+      "name": "Mus musculus",
+      "identifier": "NCBITaxon:10090"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/CLO_0007582",
+      "@type": "DefinedTerm",
+      "name": "MC3T3-E1 cell"
+    },
+    {
+      "@id": "#biosample-1",
+      "@type": "BioSample",
+      "name": "Mus musculus (NCBI:txid10090) ~ MC3T3-E1 cell",
+      "description": "MC3T3-E1 mouse osteoblast-like cells in which underwound nuclear DNA was fluorescently labeled with psoralen",
+      "taxonomicRange": [
+        {
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/10090"
+        }
+      ],
+      "hasCellLine": {
+        "@id": "http://purl.obolibrary.org/obo/CLO_0007582"
+      }
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/FBbi_00000265",
+      "@type": "DefinedTerm",
+      "name": "recorded image",
+      "identifier": "FBbi:00000265"
+    },
+    {
+      "@id": "#imaging-protocol-1",
+      "@type": "LabProtocol",
+      "name": "recorded image",
+      "description": "recorded image",
+      "measurementTechnique": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000265"
+        }
+      ]
+    },
+    {
+      "@id": "#total-dataset-size",
+      "@type": "QuantitativeValue",
+      "value": 13714570744,
+      "description": "13.7 GB",
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes"
+    },
+    {
+      "@id": "#file-count",
+      "@type": "QuantitativeValue",
+      "value": 28,
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count"
+    }
+  ]
 }

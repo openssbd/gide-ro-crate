@@ -1,280 +1,303 @@
 {
-    "@context": [
-        "https://w3id.org/ro/crate/1.2/context",
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "datePublished": {
+        "@id": "http://schema.org/datePublished",
+        "@type": "xsd:date"
+      },
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "taxonomicRange": {
+        "@id": "http://schema.org/taxonomicRange"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "217-Sakai-iRFPactivity-ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://ssbd.riken.jp/v2/project/217-Sakai-iRFPactivity"
+      }
+    },
+    {
+      "@id": "https://ssbd.riken.jp/v2/project/217-Sakai-iRFPactivity",
+      "@type": "Dataset",
+      "identifier": "217-Sakai-iRFPactivity",
+      "name": "Time-series images of iRFP actitivy in cultured fission or budding yeast cells with BV or PCB.",
+      "description": "See details in Sakai K, et. al. (2021) J Cell Sci, jcs.259315.",
+      "datePublished": "2022-03-31",
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "publisher": {
+        "@id": "https://ssbd.riken.jp/database"
+      },
+      "author": [
         {
-            "bia": "https://bioimage-archive.org/ro-crate/",
-            "obo": "http://purl.obolibrary.org/obo/",
-            "dwc": "http://rs.tdwg.org/dwc/terms/",
-            "dwciri": "http://rs.tdwg.org/dwc/iri/",
-            "bao": "http://www.bioassayontology.org/bao#",
-            "xsd": "http://www.w3.org/2001/XMLSchema#",
-            "datePublished": {
-                "@id": "http://schema.org/datePublished",
-                "@type": "xsd:date"
-            },
-            "vernacularName": {
-                "@id": "dwc:vernacularName"
-            },
-            "scientificName": {
-                "@id": "dwc:scientificName"
-            },
-            "hasCellLine": {
-                "@id": "bao:BAO_0002004"
-            },
-            "measurementMethod": {
-                "@id": "dwciri:measurementMethod"
-            },
-            "taxonomicRange": {
-                "@id": "http://schema.org/taxonomicRange"
-            },
-            "seeAlso": {
-                "@id": "rdf:seeAlso"
-            },
-            "BioSample": {
-                "@id": "http://schema.org/BioSample"
-            },
-            "LabProtocol": {
-                "@id": "http://schema.org/LabProtocol"
-            },
-            "labEquipment": {
-                "@id": "http://schema.org/labEquipment"
-            }
+          "@id": "#auth-001"
+        },
+        {
+          "@id": "#auth-002"
         }
-    ],
-    "@graph": [
+      ],
+      "seeAlso": [
         {
-            "@id": "217-Sakai-iRFPactivity-ro-crate-metadata.json",
-            "@type": "CreativeWork",
-            "conformsTo": {
-                "@id": "https://w3id.org/ro/crate/1.2"
-            },
-            "about": {
-                "@id": "https://ssbd.riken.jp/v2/project/217-Sakai-iRFPactivity"
-            }
-        },
-        {
-            "@id": "https://ssbd.riken.jp/v2/project/217-Sakai-iRFPactivity",
-            "@type": "Dataset",
-            "identifier": "217-Sakai-iRFPactivity",
-            "name": "Time-series images of iRFP actitivy in cultured fission or budding yeast cells with BV or PCB.",
-            "description": "See details in Sakai K, et. al. (2021) J Cell Sci, jcs.259315.",
-            "datePublished": "2022-03-31",
-            "license": "https://creativecommons.org/licenses/by/4.0/",
-            "publisher": {
-                "@id": "https://ssbd.riken.jp/database"
-            },
-            "author": [
-                {
-                    "@id": "#auth-001"
-                },
-                {
-                    "@id": "#auth-002"
-                }
-            ],
-            "seeAlso": [
-                {
-                    "@id": "https://doi.org/10.1242/jcs.259315"
-                }
-            ],
-            "about": [
-                {
-                    "@id": "#biosample-3"
-                },
-                {
-                    "@id": "#biosample-2"
-                },
-                {
-                    "@id": "#biosample-1"
-                },
-                {
-                    "@id": "http://purl.obolibrary.org/obo/GO_0140609"
-                },
-                {
-                    "@id": "http://purl.obolibrary.org/obo/GO_0004074"
-                },
-                {
-                    "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/4896"
-                },
-                {
-                    "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/4932"
-                }
-            ],
-            "measurementMethod": [
-                {
-                    "@id": "#imaging-protocol-1"
-                },
-                {
-                    "@id": "http://purl.obolibrary.org/obo/FBbi_00000265"
-                },
-                {
-                    "@id": "#imaging-protocol-2"
-                },
-                {
-                    "@id": "http://purl.obolibrary.org/obo/FBbi_00000251"
-                }
-            ],
-            "thumbnailUrl": [
-                "https://ssbd.riken.jp/ssbd-omero/v1/projects/715/render_thumbnail/"
-            ],
-            "size": [
-                {
-                    "@id": "#total-dataset-size"
-                },
-                {
-                    "@id": "#file-count"
-                }
-            ]
-        },
-        {
-            "@id": "https://ssbd.riken.jp/database",
-            "@type": "Organization",
-            "name": "SSBD:database"
-        },
-        {
-            "@id": "#auth-001",
-            "@type": "Person",
-            "name": "Kazuhiro Aoki",
-            "email": "k-aoki@nibb.ac.jp",
-            "description": "Organization: National Institutes of Natural Sciences; Department: Exploratory Research Center on Life and Living Systems (ExCELLS); Laboratory: Quantitative Biology Research Group",
-            "affiliation": [
-                {
-                    "@id": "#affiliation-001"
-                }
-            ]
-        },
-        {
-            "@id": "#auth-002",
-            "@type": "Person",
-            "name": "Yuhei Goto",
-            "email": "y-goto@nibb.ac.jp",
-            "description": "Organization: National Institutes of Natural Sciences; Department: Exploratory Research Center on Life and Living Systems (ExCELLS); Laboratory: Quantitative Biology Research Group",
-            "affiliation": [
-                {
-                    "@id": "#affiliation-001"
-                }
-            ]
-        },
-        {
-            "@id": "#affiliation-001",
-            "@type": "Organization",
-            "name": "National Institutes of Natural Sciences"
-        },
-        {
-            "@id": "https://doi.org/10.1242/jcs.259315",
-            "@type": "ScholarlyArticle",
-            "name": "Sakai K, Kondo Y, Fujioka H, Kamiya M, Aoki K, Goto Y. Near-infrared imaging in fission yeast by genetically encoded biosynthesis of phycocyanobilin. J Cell Sci. 2021 Nov 22:jcs.259315. doi: 10.1242/jcs.259315. Epub ahead of print. PMID: 34806750.",
-            "datePublished": "2021",
-            "sameAs": [
-                "https://pubmed.ncbi.nlm.nih.gov/34806750"
-            ]
-        },
-        {
-            "@id": "http://purl.obolibrary.org/obo/GO_0140609",
-            "@type": "DefinedTerm",
-            "name": "phycocyanobilin biosynthetic process",
-            "identifier": "GO:0140609"
-        },
-        {
-            "@id": "http://purl.obolibrary.org/obo/GO_0004074",
-            "@type": "DefinedTerm",
-            "name": "biliverdin reductase (NAD(P)+) activity",
-            "identifier": "GO:0004074"
-        },
-        {
-            "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/4896",
-            "@type": "Taxon",
-            "scientificName": "Schizosaccharomyces pombe",
-            "name": "Schizosaccharomyces pombe",
-            "identifier": "NCBITaxon:4896"
-        },
-        {
-            "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/4932",
-            "@type": "Taxon",
-            "scientificName": "Saccharomyces cerevisiae",
-            "name": "Saccharomyces cerevisiae",
-            "identifier": "NCBITaxon:4932"
-        },
-        {
-            "@id": "#biosample-1",
-            "@type": "BioSample",
-            "name": "SK276",
-            "description": "SK276",
-            "taxonomicRange": [
-                {
-                    "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/4896"
-                }
-            ]
-        },
-        {
-            "@id": "#biosample-2",
-            "@type": "BioSample",
-            "name": "SK482",
-            "description": "SK482",
-            "taxonomicRange": [
-                {
-                    "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/4932"
-                }
-            ]
-        },
-        {
-            "@id": "#biosample-3",
-            "@type": "BioSample",
-            "name": "SK483",
-            "description": "SK483",
-            "taxonomicRange": [
-                {
-                    "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/4932"
-                }
-            ]
-        },
-        {
-            "@id": "http://purl.obolibrary.org/obo/FBbi_00000265",
-            "@type": "DefinedTerm",
-            "name": "recorded image",
-            "identifier": "FBbi:00000265"
-        },
-        {
-            "@id": "#imaging-protocol-1",
-            "@type": "LabProtocol",
-            "name": "recorded image",
-            "description": "recorded image",
-            "measurementTechnique": [
-                {
-                    "@id": "http://purl.obolibrary.org/obo/FBbi_00000265"
-                }
-            ]
-        },
-        {
-            "@id": "http://purl.obolibrary.org/obo/FBbi_00000251",
-            "@type": "DefinedTerm",
-            "name": "confocal microscopy",
-            "identifier": "FBbi:00000251"
-        },
-        {
-            "@id": "#imaging-protocol-2",
-            "@type": "LabProtocol",
-            "name": "confocal microscopy",
-            "description": "confocal microscopy",
-            "measurementTechnique": [
-                {
-                    "@id": "http://purl.obolibrary.org/obo/FBbi_00000251"
-                }
-            ]
-        },
-        {
-            "@id": "#total-dataset-size",
-            "@type": "QuantitativeValue",
-            "value": 129138684688,
-            "description": "129.1 GB",
-            "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
-            "unitText": "bytes"
-        },
-        {
-            "@id": "#file-count",
-            "@type": "QuantitativeValue",
-            "value": 2594,
-            "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
-            "unitText": "file count"
+          "@id": "https://doi.org/10.1242/jcs.259315"
         }
-    ]
+      ],
+      "about": [
+        {
+          "@id": "#biosample-3"
+        },
+        {
+          "@id": "#biosample-2"
+        },
+        {
+          "@id": "#biosample-1"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/GO_0140609"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/GO_0004074"
+        },
+        {
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/4896"
+        },
+        {
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/4932"
+        }
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#imaging-protocol-1"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000251"
+        },
+        {
+          "@id": "#imaging-protocol-2"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000245"
+        },
+        {
+          "@id": "#imaging-protocol-3"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000253"
+        }
+      ],
+      "thumbnailUrl": [
+        "https://ssbd.riken.jp/ssbd-omero/v1/projects/715/render_thumbnail/"
+      ],
+      "size": [
+        {
+          "@id": "#total-dataset-size"
+        },
+        {
+          "@id": "#file-count"
+        }
+      ]
+    },
+    {
+      "@id": "https://ssbd.riken.jp/database",
+      "@type": "Organization",
+      "name": "SSBD:database"
+    },
+    {
+      "@id": "#auth-001",
+      "@type": "Person",
+      "name": "Kazuhiro Aoki",
+      "email": "k-aoki@nibb.ac.jp",
+      "description": "Organization: National Institutes of Natural Sciences; Department: Exploratory Research Center on Life and Living Systems (ExCELLS); Laboratory: Quantitative Biology Research Group",
+      "affiliation": [
+        {
+          "@id": "#affiliation-001"
+        }
+      ]
+    },
+    {
+      "@id": "#auth-002",
+      "@type": "Person",
+      "name": "Yuhei Goto",
+      "email": "y-goto@nibb.ac.jp",
+      "description": "Organization: National Institutes of Natural Sciences; Department: Exploratory Research Center on Life and Living Systems (ExCELLS); Laboratory: Quantitative Biology Research Group",
+      "affiliation": [
+        {
+          "@id": "#affiliation-001"
+        }
+      ]
+    },
+    {
+      "@id": "#affiliation-001",
+      "@type": "Organization",
+      "name": "National Institutes of Natural Sciences"
+    },
+    {
+      "@id": "https://doi.org/10.1242/jcs.259315",
+      "@type": "ScholarlyArticle",
+      "name": "Sakai K, Kondo Y, Fujioka H, Kamiya M, Aoki K, Goto Y. Near-infrared imaging in fission yeast by genetically encoded biosynthesis of phycocyanobilin. J Cell Sci. 2021 Nov 22:jcs.259315. doi: 10.1242/jcs.259315. Epub ahead of print. PMID: 34806750.",
+      "datePublished": "2021",
+      "sameAs": [
+        "https://pubmed.ncbi.nlm.nih.gov/34806750"
+      ]
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_0140609",
+      "@type": "DefinedTerm",
+      "name": "phycocyanobilin biosynthetic process",
+      "identifier": "GO:0140609"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_0004074",
+      "@type": "DefinedTerm",
+      "name": "biliverdin reductase (NAD(P)+) activity",
+      "identifier": "GO:0004074"
+    },
+    {
+      "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/4896",
+      "@type": "Taxon",
+      "scientificName": "Schizosaccharomyces pombe",
+      "name": "Schizosaccharomyces pombe",
+      "identifier": "NCBITaxon:4896"
+    },
+    {
+      "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/4932",
+      "@type": "Taxon",
+      "scientificName": "Saccharomyces cerevisiae",
+      "name": "Saccharomyces cerevisiae",
+      "identifier": "NCBITaxon:4932"
+    },
+    {
+      "@id": "#biosample-1",
+      "@type": "BioSample",
+      "name": "SK276",
+      "description": "SK276",
+      "taxonomicRange": [
+        {
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/4896"
+        }
+      ]
+    },
+    {
+      "@id": "#biosample-2",
+      "@type": "BioSample",
+      "name": "SK482",
+      "description": "SK482",
+      "taxonomicRange": [
+        {
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/4932"
+        }
+      ]
+    },
+    {
+      "@id": "#biosample-3",
+      "@type": "BioSample",
+      "name": "SK483",
+      "description": "SK483",
+      "taxonomicRange": [
+        {
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/4932"
+        }
+      ]
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/FBbi_00000251",
+      "@type": "DefinedTerm",
+      "name": "confocal microscopy",
+      "identifier": "FBbi:00000251"
+    },
+    {
+      "@id": "#imaging-protocol-1",
+      "@type": "LabProtocol",
+      "name": "confocal microscopy",
+      "description": "confocal microscopy",
+      "measurementTechnique": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000251"
+        }
+      ]
+    },
+    {
+      "@id": "#total-dataset-size",
+      "@type": "QuantitativeValue",
+      "value": 129138684688,
+      "description": "129.1 GB",
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes"
+    },
+    {
+      "@id": "#file-count",
+      "@type": "QuantitativeValue",
+      "value": 2594,
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/FBbi_00000245",
+      "@type": "DefinedTerm",
+      "name": "differential interference contrast microscopy",
+      "identifier": "FBbi:00000245"
+    },
+    {
+      "@id": "#imaging-protocol-2",
+      "@type": "LabProtocol",
+      "name": "differential interference contrast microscopy",
+      "description": "differential interference contrast microscopy",
+      "measurementTechnique": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000245"
+        }
+      ]
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/FBbi_00000253",
+      "@type": "DefinedTerm",
+      "name": "spinning disk confocal microscopy",
+      "identifier": "FBbi:00000253"
+    },
+    {
+      "@id": "#imaging-protocol-3",
+      "@type": "LabProtocol",
+      "name": "spinning disk confocal microscopy",
+      "description": "spinning disk confocal microscopy",
+      "measurementTechnique": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000253"
+        }
+      ]
+    }
+  ]
 }

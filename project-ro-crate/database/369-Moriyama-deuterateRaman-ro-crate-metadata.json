@@ -1,274 +1,251 @@
 {
-    "@context": [
-        "https://w3id.org/ro/crate/1.2/context",
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "datePublished": {
+        "@id": "http://schema.org/datePublished",
+        "@type": "xsd:date"
+      },
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "taxonomicRange": {
+        "@id": "http://schema.org/taxonomicRange"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "369-Moriyama-deuterateRaman-ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://ssbd.riken.jp/v3/project/369-Moriyama-deuterateRaman"
+      }
+    },
+    {
+      "@id": "https://ssbd.riken.jp/v3/project/369-Moriyama-deuterateRaman",
+      "@type": "Dataset",
+      "identifier": "369-Moriyama-deuterateRaman",
+      "name": "Multiple deuteration of triphenylphosphine and live-cell Raman imaging\nof deuterium-incorporated Mito-Q",
+      "description": "All aromatic C–H bonds of triphenylphosphine (PPh3) were efficiently replaced by C–D bonds using Ru/C and Ir/C co-catalysts in 2-PrOH and D2O, an inexpensive deuterium source. Furthermore, non-radioactive and safe deuterium-incorporated Mito-Q (drug candidate) was prepared from deuterated PPh3 and used for the live-cell Raman imaging to evaluate the mitochondrial uptake.",
+      "datePublished": "2025-01-31",
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "keywords": [
+        "HeLa Cells",
+        "Mitochondria"
+      ],
+      "publisher": {
+        "@id": "https://ssbd.riken.jp/database"
+      },
+      "author": [
         {
-            "bia": "https://bioimage-archive.org/ro-crate/",
-            "obo": "http://purl.obolibrary.org/obo/",
-            "dwc": "http://rs.tdwg.org/dwc/terms/",
-            "dwciri": "http://rs.tdwg.org/dwc/iri/",
-            "bao": "http://www.bioassayontology.org/bao#",
-            "xsd": "http://www.w3.org/2001/XMLSchema#",
-            "datePublished": {
-                "@id": "http://schema.org/datePublished",
-                "@type": "xsd:date"
-            },
-            "vernacularName": {
-                "@id": "dwc:vernacularName"
-            },
-            "scientificName": {
-                "@id": "dwc:scientificName"
-            },
-            "hasCellLine": {
-                "@id": "bao:BAO_0002004"
-            },
-            "measurementMethod": {
-                "@id": "dwciri:measurementMethod"
-            },
-            "taxonomicRange": {
-                "@id": "http://schema.org/taxonomicRange"
-            },
-            "seeAlso": {
-                "@id": "rdf:seeAlso"
-            },
-            "BioSample": {
-                "@id": "http://schema.org/BioSample"
-            },
-            "LabProtocol": {
-                "@id": "http://schema.org/LabProtocol"
-            },
-            "labEquipment": {
-                "@id": "http://schema.org/labEquipment"
-            }
+          "@id": "https://orcid.org/0000-0002-9923-2412"
+        },
+        {
+          "@id": "#auth-002"
+        },
+        {
+          "@id": "https://orcid.org/0000-0001-5451-331X"
+        },
+        {
+          "@id": "#auth-004"
+        },
+        {
+          "@id": "https://orcid.org/0000-0001-7432-8090"
+        },
+        {
+          "@id": "https://orcid.org/0000-0003-2942-2189"
         }
-    ],
-    "@graph": [
+      ],
+      "seeAlso": [
         {
-            "@id": "369-Moriyama-deuterateRaman-ro-crate-metadata.json",
-            "@type": "CreativeWork",
-            "conformsTo": {
-                "@id": "https://w3id.org/ro/crate/1.2"
-            },
-            "about": {
-                "@id": "https://ssbd.riken.jp/v3/project/369-Moriyama-deuterateRaman"
-            }
-        },
-        {
-            "@id": "https://ssbd.riken.jp/v3/project/369-Moriyama-deuterateRaman",
-            "@type": "Dataset",
-            "identifier": "369-Moriyama-deuterateRaman",
-            "name": "Multiple deuteration of triphenylphosphine and live-cell Raman imaging\nof deuterium-incorporated Mito-Q",
-            "description": "All aromatic C–H bonds of triphenylphosphine (PPh3) were efficiently replaced by C–D bonds using Ru/C and Ir/C co-catalysts in 2-PrOH and D2O, an inexpensive deuterium source. Furthermore, non-radioactive and safe deuterium-incorporated Mito-Q (drug candidate) was prepared from deuterated PPh3 and used for the live-cell Raman imaging to evaluate the mitochondrial uptake.",
-            "datePublished": "2025-01-31",
-            "license": "https://creativecommons.org/licenses/by/4.0/",
-            "keywords": [
-                "HeLa Cells",
-                "Mitochondria"
-            ],
-            "publisher": {
-                "@id": "https://ssbd.riken.jp/database"
-            },
-            "author": [
-                {
-                    "@id": "https://orcid.org/0000-0002-9923-2412"
-                },
-                {
-                    "@id": "#auth-002"
-                },
-                {
-                    "@id": "https://orcid.org/0000-0001-5451-331X"
-                },
-                {
-                    "@id": "#auth-004"
-                },
-                {
-                    "@id": "https://orcid.org/0000-0001-7432-8090"
-                },
-                {
-                    "@id": "https://orcid.org/0000-0003-2942-2189"
-                }
-            ],
-            "seeAlso": [
-                {
-                    "@id": "https://doi.org/10.1039/d3cc04410f"
-                }
-            ],
-            "funder": [
-                {
-                    "@id": "#grant-001"
-                }
-            ],
-            "about": [
-                {
-                    "@id": "#biosample-1"
-                },
-                {
-                    "@id": "http://purl.obolibrary.org/obo/CLO_0003684"
-                },
-                {
-                    "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/9606"
-                }
-            ],
-            "measurementMethod": [
-                {
-                    "@id": "#imaging-protocol-1"
-                },
-                {
-                    "@id": "http://purl.obolibrary.org/obo/FBbi_00000265"
-                },
-                {
-                    "@id": "#imaging-protocol-2"
-                },
-                {
-                    "@id": "http://purl.obolibrary.org/obo/FBbi_00000589"
-                }
-            ],
-            "thumbnailUrl": [
-                "https://ssbd.riken.jp/ssbd-omero/v1/projects/1501/render_thumbnail/"
-            ],
-            "size": [
-                {
-                    "@id": "#total-dataset-size"
-                },
-                {
-                    "@id": "#file-count"
-                }
-            ]
-        },
-        {
-            "@id": "https://ssbd.riken.jp/database",
-            "@type": "Organization",
-            "name": "SSBD:database"
-        },
-        {
-            "@id": "https://orcid.org/0000-0002-9923-2412",
-            "@type": "Person",
-            "name": "Yoshinari Sawama",
-            "email": "sawama@phs.osaka-u.ac.jp",
-            "description": "Organization: Osaka University; Department: Graduate School of Pharmaceutical Sciences",
-            "affiliation": [
-                {
-                    "@id": "#affiliation-001"
-                }
-            ]
-        },
-        {
-            "@id": "#auth-002",
-            "@type": "Person",
-            "name": "Shogo Moriyama"
-        },
-        {
-            "@id": "https://orcid.org/0000-0001-5451-331X",
-            "@type": "Person",
-            "name": "Daiki Shibata"
-        },
-        {
-            "@id": "#auth-004",
-            "@type": "Person",
-            "name": "Hiroyuki Yamakoshi"
-        },
-        {
-            "@id": "https://orcid.org/0000-0001-7432-8090",
-            "@type": "Person",
-            "name": "Shinji Kajimoto"
-        },
-        {
-            "@id": "https://orcid.org/0000-0003-2942-2189",
-            "@type": "Person",
-            "name": "Takakazu Nakabayashi"
-        },
-        {
-            "@id": "#affiliation-001",
-            "@type": "Organization",
-            "name": "Osaka University"
-        },
-        {
-            "@id": "https://doi.org/10.1039/d3cc04410f",
-            "@type": "ScholarlyArticle",
-            "name": "Moriyama S, Mae M, Shibata D, Yamakoshi H, Kajimoto S, Nakabayashi T, Ishimoto T, Mogi K, Sajiki H, Akai S, Sawama Y. Multiple deuteration of triphenylphosphine and live-cell Raman imaging of deuterium-incorporated Mito-Q. Chem Commun (Camb). 2023 Oct 10;59(81):12100-12103.",
-            "datePublished": "2023",
-            "sameAs": [
-                "https://pubmed.ncbi.nlm.nih.gov/37721453/"
-            ]
-        },
-        {
-            "@id": "#grant-001",
-            "@type": "Grant",
-            "name": "This study was partially supported by JSPS (MEXT grant in aid-for transformative research areas (B) Deuterium Science) KAKENHI Grant Number 20H05738 (for Y.S.), and Life Science and Drug Discovery (Basis for Supporting Innovative Drug Discovery and Life Science Research (BINDS)) from AMED under Grant Number 23ama121054 (for Y.S.)."
-        },
-        {
-            "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/9606",
-            "@type": "Taxon",
-            "scientificName": "Homo sapiens",
-            "name": "Homo sapiens",
-            "identifier": "NCBITaxon:9606"
-        },
-        {
-            "@id": "http://purl.obolibrary.org/obo/CLO_0003684",
-            "@type": "DefinedTerm",
-            "name": "HeLa Cell"
-        },
-        {
-            "@id": "#biosample-1",
-            "@type": "BioSample",
-            "name": "Homo sapiens (NCBI:txid9606) ~ HeLa Cell",
-            "description": "HeLa cells treated with  deuterium-incorporated compound.",
-            "taxonomicRange": [
-                {
-                    "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/9606"
-                }
-            ],
-            "hasCellLine": {
-                "@id": "http://purl.obolibrary.org/obo/CLO_0003684"
-            }
-        },
-        {
-            "@id": "http://purl.obolibrary.org/obo/FBbi_00000265",
-            "@type": "DefinedTerm",
-            "name": "recorded image",
-            "identifier": "FBbi:00000265"
-        },
-        {
-            "@id": "#imaging-protocol-1",
-            "@type": "LabProtocol",
-            "name": "recorded image",
-            "description": "recorded image",
-            "measurementTechnique": [
-                {
-                    "@id": "http://purl.obolibrary.org/obo/FBbi_00000265"
-                }
-            ]
-        },
-        {
-            "@id": "http://purl.obolibrary.org/obo/FBbi_00000589",
-            "@type": "DefinedTerm",
-            "name": "inelastic scattering of photons (Raman scattering)",
-            "identifier": "FBbi:00000589"
-        },
-        {
-            "@id": "#imaging-protocol-2",
-            "@type": "LabProtocol",
-            "name": "inelastic scattering of photons (Raman scattering)",
-            "description": "inelastic scattering of photons (Raman scattering)",
-            "measurementTechnique": [
-                {
-                    "@id": "http://purl.obolibrary.org/obo/FBbi_00000589"
-                }
-            ]
-        },
-        {
-            "@id": "#total-dataset-size",
-            "@type": "QuantitativeValue",
-            "value": 272626,
-            "description": "272.6 KB",
-            "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
-            "unitText": "bytes"
-        },
-        {
-            "@id": "#file-count",
-            "@type": "QuantitativeValue",
-            "value": 18,
-            "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
-            "unitText": "file count"
+          "@id": "https://doi.org/10.1039/d3cc04410f"
         }
-    ]
+      ],
+      "funder": [
+        {
+          "@id": "#grant-001"
+        }
+      ],
+      "about": [
+        {
+          "@id": "#biosample-1"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/CLO_0003684"
+        },
+        {
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/9606"
+        }
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#imaging-protocol-1"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000589"
+        }
+      ],
+      "thumbnailUrl": [
+        "https://ssbd.riken.jp/ssbd-omero/v1/projects/1501/render_thumbnail/"
+      ],
+      "size": [
+        {
+          "@id": "#total-dataset-size"
+        },
+        {
+          "@id": "#file-count"
+        }
+      ]
+    },
+    {
+      "@id": "https://ssbd.riken.jp/database",
+      "@type": "Organization",
+      "name": "SSBD:database"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-9923-2412",
+      "@type": "Person",
+      "name": "Yoshinari Sawama",
+      "email": "sawama@phs.osaka-u.ac.jp",
+      "description": "Organization: Osaka University; Department: Graduate School of Pharmaceutical Sciences",
+      "affiliation": [
+        {
+          "@id": "#affiliation-001"
+        }
+      ]
+    },
+    {
+      "@id": "#auth-002",
+      "@type": "Person",
+      "name": "Shogo Moriyama"
+    },
+    {
+      "@id": "https://orcid.org/0000-0001-5451-331X",
+      "@type": "Person",
+      "name": "Daiki Shibata"
+    },
+    {
+      "@id": "#auth-004",
+      "@type": "Person",
+      "name": "Hiroyuki Yamakoshi"
+    },
+    {
+      "@id": "https://orcid.org/0000-0001-7432-8090",
+      "@type": "Person",
+      "name": "Shinji Kajimoto"
+    },
+    {
+      "@id": "https://orcid.org/0000-0003-2942-2189",
+      "@type": "Person",
+      "name": "Takakazu Nakabayashi"
+    },
+    {
+      "@id": "#affiliation-001",
+      "@type": "Organization",
+      "name": "Osaka University"
+    },
+    {
+      "@id": "https://doi.org/10.1039/d3cc04410f",
+      "@type": "ScholarlyArticle",
+      "name": "Moriyama S, Mae M, Shibata D, Yamakoshi H, Kajimoto S, Nakabayashi T, Ishimoto T, Mogi K, Sajiki H, Akai S, Sawama Y. Multiple deuteration of triphenylphosphine and live-cell Raman imaging of deuterium-incorporated Mito-Q. Chem Commun (Camb). 2023 Oct 10;59(81):12100-12103.",
+      "datePublished": "2023",
+      "sameAs": [
+        "https://pubmed.ncbi.nlm.nih.gov/37721453/"
+      ]
+    },
+    {
+      "@id": "#grant-001",
+      "@type": "Grant",
+      "name": "This study was partially supported by JSPS (MEXT grant in aid-for transformative research areas (B) Deuterium Science) KAKENHI Grant Number 20H05738 (for Y.S.), and Life Science and Drug Discovery (Basis for Supporting Innovative Drug Discovery and Life Science Research (BINDS)) from AMED under Grant Number 23ama121054 (for Y.S.)."
+    },
+    {
+      "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/9606",
+      "@type": "Taxon",
+      "scientificName": "Homo sapiens",
+      "name": "Homo sapiens",
+      "identifier": "NCBITaxon:9606"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/CLO_0003684",
+      "@type": "DefinedTerm",
+      "name": "HeLa Cell"
+    },
+    {
+      "@id": "#biosample-1",
+      "@type": "BioSample",
+      "name": "Homo sapiens (NCBI:txid9606) ~ HeLa Cell",
+      "description": "HeLa cells treated with  deuterium-incorporated compound.",
+      "taxonomicRange": [
+        {
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/9606"
+        }
+      ],
+      "hasCellLine": {
+        "@id": "http://purl.obolibrary.org/obo/CLO_0003684"
+      }
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/FBbi_00000589",
+      "@type": "DefinedTerm",
+      "name": "Raman scattering",
+      "identifier": "FBbi:00000589"
+    },
+    {
+      "@id": "#imaging-protocol-1",
+      "@type": "LabProtocol",
+      "name": "Raman scattering",
+      "description": "Raman scattering",
+      "measurementTechnique": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000589"
+        }
+      ]
+    },
+    {
+      "@id": "#total-dataset-size",
+      "@type": "QuantitativeValue",
+      "value": 272626,
+      "description": "272.6 KB",
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes"
+    },
+    {
+      "@id": "#file-count",
+      "@type": "QuantitativeValue",
+      "value": 18,
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count"
+    }
+  ]
 }

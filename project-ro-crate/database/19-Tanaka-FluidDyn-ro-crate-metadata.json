@@ -68,6 +68,14 @@
                     "@id": "#auth-001"
                 }
             ],
+            "seeAlso": [
+                {
+                    "@id": "https://doi.org/10.3390/mi5020289"
+                }
+            ],
+            "about": [
+
+            ],
             "measurementMethod": [
                 {
                     "@id": "#imaging-protocol-1"

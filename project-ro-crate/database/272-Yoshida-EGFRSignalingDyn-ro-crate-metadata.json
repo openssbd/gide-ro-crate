@@ -1,317 +1,295 @@
 {
-    "@context": [
-        "https://w3id.org/ro/crate/1.2/context",
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "datePublished": {
+        "@id": "http://schema.org/datePublished",
+        "@type": "xsd:date"
+      },
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "taxonomicRange": {
+        "@id": "http://schema.org/taxonomicRange"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "272-Yoshida-EGFRSignalingDyn-ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://ssbd.riken.jp/v2/project/272-Yoshida-EGFRSignalingDyn"
+      }
+    },
+    {
+      "@id": "https://ssbd.riken.jp/v2/project/272-Yoshida-EGFRSignalingDyn",
+      "@type": "Dataset",
+      "identifier": "272-Yoshida-EGFRSignalingDyn",
+      "name": "Time-lapse or z-stack images of EGFR signaling dynamics in epithelial homeostasis of Drosophila embyos.",
+      "description": "See details in Yoshida K, et. al. Development. 2023 Mar 1;150(5):dev201231.",
+      "datePublished": "2023-08-29",
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "publisher": {
+        "@id": "https://ssbd.riken.jp/database"
+      },
+      "author": [
         {
-            "bia": "https://bioimage-archive.org/ro-crate/",
-            "obo": "http://purl.obolibrary.org/obo/",
-            "dwc": "http://rs.tdwg.org/dwc/terms/",
-            "dwciri": "http://rs.tdwg.org/dwc/iri/",
-            "bao": "http://www.bioassayontology.org/bao#",
-            "xsd": "http://www.w3.org/2001/XMLSchema#",
-            "datePublished": {
-                "@id": "http://schema.org/datePublished",
-                "@type": "xsd:date"
-            },
-            "vernacularName": {
-                "@id": "dwc:vernacularName"
-            },
-            "scientificName": {
-                "@id": "dwc:scientificName"
-            },
-            "hasCellLine": {
-                "@id": "bao:BAO_0002004"
-            },
-            "measurementMethod": {
-                "@id": "dwciri:measurementMethod"
-            },
-            "taxonomicRange": {
-                "@id": "http://schema.org/taxonomicRange"
-            },
-            "seeAlso": {
-                "@id": "rdf:seeAlso"
-            },
-            "BioSample": {
-                "@id": "http://schema.org/BioSample"
-            },
-            "LabProtocol": {
-                "@id": "http://schema.org/LabProtocol"
-            },
-            "labEquipment": {
-                "@id": "http://schema.org/labEquipment"
-            }
+          "@id": "#auth-001"
         }
-    ],
-    "@graph": [
+      ],
+      "seeAlso": [
         {
-            "@id": "272-Yoshida-EGFRSignalingDyn-ro-crate-metadata.json",
-            "@type": "CreativeWork",
-            "conformsTo": {
-                "@id": "https://w3id.org/ro/crate/1.2"
-            },
-            "about": {
-                "@id": "https://ssbd.riken.jp/v2/project/272-Yoshida-EGFRSignalingDyn"
-            }
-        },
-        {
-            "@id": "https://ssbd.riken.jp/v2/project/272-Yoshida-EGFRSignalingDyn",
-            "@type": "Dataset",
-            "identifier": "272-Yoshida-EGFRSignalingDyn",
-            "name": "Time-lapse or z-stack images of EGFR signaling dynamics in epithelial homeostasis of Drosophila embyos.",
-            "description": "See details in Yoshida K, et. al. Development. 2023 Mar 1;150(5):dev201231.",
-            "datePublished": "2023-08-29",
-            "license": "https://creativecommons.org/licenses/by/4.0/",
-            "publisher": {
-                "@id": "https://ssbd.riken.jp/database"
-            },
-            "author": [
-                {
-                    "@id": "#auth-001"
-                }
-            ],
-            "seeAlso": [
-                {
-                    "@id": "https://doi.org/10.1242/dev.201231"
-                }
-            ],
-            "about": [
-                {
-                    "@id": "#biosample-1"
-                },
-                {
-                    "@id": "http://purl.obolibrary.org/obo/GO_0003382"
-                },
-                {
-                    "@id": "http://purl.obolibrary.org/obo/GO_0001894"
-                },
-                {
-                    "@id": "http://purl.obolibrary.org/obo/GO_0010669"
-                },
-                {
-                    "@id": "http://purl.obolibrary.org/obo/GO_0004707"
-                },
-                {
-                    "@id": "http://purl.obolibrary.org/obo/GO_0005006"
-                },
-                {
-                    "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/7227"
-                },
-                {
-                    "@id": "http://purl.obolibrary.org/obo/GO_0097194"
-                },
-                {
-                    "@id": "http://purl.obolibrary.org/obo/GO_0042060"
-                }
-            ],
-            "measurementMethod": [
-                {
-                    "@id": "#imaging-protocol-1"
-                },
-                {
-                    "@id": "http://purl.obolibrary.org/obo/FBbi_00000265"
-                },
-                {
-                    "@id": "#imaging-protocol-2"
-                },
-                {
-                    "@id": "http://purl.obolibrary.org/obo/FBbi_00000249"
-                },
-                {
-                    "@id": "#imaging-protocol-3"
-                },
-                {
-                    "@id": "http://purl.obolibrary.org/obo/FBbi_00000251"
-                },
-                {
-                    "@id": "#imaging-protocol-4"
-                },
-                {
-                    "@id": "#imaging-technique-4"
-                }
-            ],
-            "thumbnailUrl": [
-                "https://ssbd.riken.jp/ssbd-omero/v1/projects/1101/render_thumbnail/"
-            ],
-            "size": [
-                {
-                    "@id": "#total-dataset-size"
-                },
-                {
-                    "@id": "#file-count"
-                }
-            ]
-        },
-        {
-            "@id": "https://ssbd.riken.jp/database",
-            "@type": "Organization",
-            "name": "SSBD:database"
-        },
-        {
-            "@id": "#auth-001",
-            "@type": "Person",
-            "name": "Shigeo Hayashi",
-            "email": "shigeo.hayashi@riken.jp",
-            "description": "Organization: RIKEN; Department: Center for Biosystems Dynamics Research; Laboratory: Laboratory for Morphogenetic Signalin",
-            "affiliation": [
-                {
-                    "@id": "#affiliation-001"
-                }
-            ]
-        },
-        {
-            "@id": "#affiliation-001",
-            "@type": "Organization",
-            "name": "RIKEN"
-        },
-        {
-            "@id": "https://doi.org/10.1242/dev.201231",
-            "@type": "ScholarlyArticle",
-            "name": "Yoshida K, Hayashi S. Epidermal growth factor receptor signaling protects epithelia from morphogenetic instability and tissue damage in Drosophila. Development. 2023 Mar 1;150(5):dev201231.",
-            "datePublished": "2023",
-            "sameAs": [
-                "https://pubmed.ncbi.nlm.nih.gov/36897356/"
-            ]
-        },
-        {
-            "@id": "http://purl.obolibrary.org/obo/GO_0003382",
-            "@type": "DefinedTerm",
-            "name": "epithelial cell morphogenesis",
-            "identifier": "GO:0003382"
-        },
-        {
-            "@id": "http://purl.obolibrary.org/obo/GO_0001894",
-            "@type": "DefinedTerm",
-            "name": "tissue homeostasis",
-            "identifier": "GO:0001894"
-        },
-        {
-            "@id": "http://purl.obolibrary.org/obo/GO_0010669",
-            "@type": "DefinedTerm",
-            "name": "epithelial structure maintenance",
-            "identifier": "GO:0010669"
-        },
-        {
-            "@id": "http://purl.obolibrary.org/obo/GO_0004707",
-            "@type": "DefinedTerm",
-            "name": "MAP kinase activity",
-            "identifier": "GO:0004707"
-        },
-        {
-            "@id": "http://purl.obolibrary.org/obo/GO_0005006",
-            "@type": "DefinedTerm",
-            "name": "epidermal growth factor receptor activity",
-            "identifier": "GO:0005006"
-        },
-        {
-            "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/7227",
-            "@type": "Taxon",
-            "scientificName": "Drosophila melanogaster",
-            "name": "Drosophila melanogaster",
-            "identifier": "NCBITaxon:7227"
-        },
-        {
-            "@id": "http://purl.obolibrary.org/obo/GO_0097194",
-            "@type": "DefinedTerm",
-            "name": "execution phase of apoptosis",
-            "identifier": "GO:0097194"
-        },
-        {
-            "@id": "http://purl.obolibrary.org/obo/GO_0042060",
-            "@type": "DefinedTerm",
-            "name": "wound healing",
-            "identifier": "GO:0042060"
-        },
-        {
-            "@id": "#biosample-1",
-            "@type": "BioSample",
-            "name": "Drosophila melanogaster",
-            "description": "Drosophila melanogaster",
-            "taxonomicRange": [
-                {
-                    "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/7227"
-                }
-            ]
-        },
-        {
-            "@id": "http://purl.obolibrary.org/obo/FBbi_00000265",
-            "@type": "DefinedTerm",
-            "name": "recorded image",
-            "identifier": "FBbi:00000265"
-        },
-        {
-            "@id": "#imaging-protocol-1",
-            "@type": "LabProtocol",
-            "name": "recorded image",
-            "description": "recorded image",
-            "measurementTechnique": [
-                {
-                    "@id": "http://purl.obolibrary.org/obo/FBbi_00000265"
-                }
-            ]
-        },
-        {
-            "@id": "http://purl.obolibrary.org/obo/FBbi_00000249",
-            "@type": "DefinedTerm",
-            "name": "time lapse microscopy",
-            "identifier": "FBbi:00000249"
-        },
-        {
-            "@id": "#imaging-protocol-2",
-            "@type": "LabProtocol",
-            "name": "time lapse microscopy",
-            "description": "time lapse microscopy",
-            "measurementTechnique": [
-                {
-                    "@id": "http://purl.obolibrary.org/obo/FBbi_00000249"
-                }
-            ]
-        },
-        {
-            "@id": "http://purl.obolibrary.org/obo/FBbi_00000251",
-            "@type": "DefinedTerm",
-            "name": "confocal microscopy",
-            "identifier": "FBbi:00000251"
-        },
-        {
-            "@id": "#imaging-protocol-3",
-            "@type": "LabProtocol",
-            "name": "confocal microscopy",
-            "description": "confocal microscopy",
-            "measurementTechnique": [
-                {
-                    "@id": "http://purl.obolibrary.org/obo/FBbi_00000251"
-                }
-            ]
-        },
-        {
-            "@id": "#imaging-technique-4",
-            "@type": "DefinedTerm",
-            "name": "laser scanning confocal microscope"
-        },
-        {
-            "@id": "#imaging-protocol-4",
-            "@type": "LabProtocol",
-            "name": "laser scanning confocal microscope",
-            "description": "laser scanning confocal microscope",
-            "measurementTechnique": [
-                {
-                    "@id": "#imaging-technique-4"
-                }
-            ]
-        },
-        {
-            "@id": "#total-dataset-size",
-            "@type": "QuantitativeValue",
-            "value": 380975781734,
-            "description": "381.0 GB",
-            "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
-            "unitText": "bytes"
-        },
-        {
-            "@id": "#file-count",
-            "@type": "QuantitativeValue",
-            "value": 2417,
-            "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
-            "unitText": "file count"
+          "@id": "https://doi.org/10.1242/dev.201231"
         }
-    ]
+      ],
+      "about": [
+        {
+          "@id": "#biosample-1"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/GO_0003382"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/GO_0001894"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/GO_0010669"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/GO_0004707"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/GO_0005006"
+        },
+        {
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/7227"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/GO_0097194"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/GO_0042060"
+        }
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#imaging-protocol-1"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000249"
+        },
+        {
+          "@id": "#imaging-protocol-2"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000251"
+        },
+        {
+          "@id": "#imaging-protocol-3"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000252"
+        }
+      ],
+      "thumbnailUrl": [
+        "https://ssbd.riken.jp/ssbd-omero/v1/projects/1101/render_thumbnail/"
+      ],
+      "size": [
+        {
+          "@id": "#total-dataset-size"
+        },
+        {
+          "@id": "#file-count"
+        }
+      ]
+    },
+    {
+      "@id": "https://ssbd.riken.jp/database",
+      "@type": "Organization",
+      "name": "SSBD:database"
+    },
+    {
+      "@id": "#auth-001",
+      "@type": "Person",
+      "name": "Shigeo Hayashi",
+      "email": "shigeo.hayashi@riken.jp",
+      "description": "Organization: RIKEN; Department: Center for Biosystems Dynamics Research; Laboratory: Laboratory for Morphogenetic Signalin",
+      "affiliation": [
+        {
+          "@id": "#affiliation-001"
+        }
+      ]
+    },
+    {
+      "@id": "#affiliation-001",
+      "@type": "Organization",
+      "name": "RIKEN"
+    },
+    {
+      "@id": "https://doi.org/10.1242/dev.201231",
+      "@type": "ScholarlyArticle",
+      "name": "Yoshida K, Hayashi S. Epidermal growth factor receptor signaling protects epithelia from morphogenetic instability and tissue damage in Drosophila. Development. 2023 Mar 1;150(5):dev201231.",
+      "datePublished": "2023",
+      "sameAs": [
+        "https://pubmed.ncbi.nlm.nih.gov/36897356/"
+      ]
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_0003382",
+      "@type": "DefinedTerm",
+      "name": "epithelial cell morphogenesis",
+      "identifier": "GO:0003382"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_0001894",
+      "@type": "DefinedTerm",
+      "name": "tissue homeostasis",
+      "identifier": "GO:0001894"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_0010669",
+      "@type": "DefinedTerm",
+      "name": "epithelial structure maintenance",
+      "identifier": "GO:0010669"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_0004707",
+      "@type": "DefinedTerm",
+      "name": "MAP kinase activity",
+      "identifier": "GO:0004707"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_0005006",
+      "@type": "DefinedTerm",
+      "name": "epidermal growth factor receptor activity",
+      "identifier": "GO:0005006"
+    },
+    {
+      "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/7227",
+      "@type": "Taxon",
+      "scientificName": "Drosophila melanogaster",
+      "name": "Drosophila melanogaster",
+      "identifier": "NCBITaxon:7227"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_0097194",
+      "@type": "DefinedTerm",
+      "name": "execution phase of apoptosis",
+      "identifier": "GO:0097194"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_0042060",
+      "@type": "DefinedTerm",
+      "name": "wound healing",
+      "identifier": "GO:0042060"
+    },
+    {
+      "@id": "#biosample-1",
+      "@type": "BioSample",
+      "name": "Drosophila melanogaster",
+      "description": "Drosophila melanogaster",
+      "taxonomicRange": [
+        {
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/7227"
+        }
+      ]
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/FBbi_00000249",
+      "@type": "DefinedTerm",
+      "name": "time lapse microscopy",
+      "identifier": "FBbi:00000249"
+    },
+    {
+      "@id": "#imaging-protocol-1",
+      "@type": "LabProtocol",
+      "name": "time lapse microscopy",
+      "description": "time lapse microscopy",
+      "measurementTechnique": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000249"
+        }
+      ]
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/FBbi_00000251",
+      "@type": "DefinedTerm",
+      "name": "confocal microscopy",
+      "identifier": "FBbi:00000251"
+    },
+    {
+      "@id": "#imaging-protocol-2",
+      "@type": "LabProtocol",
+      "name": "confocal microscopy",
+      "description": "confocal microscopy",
+      "measurementTechnique": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000251"
+        }
+      ]
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/FBbi_00000252",
+      "@type": "DefinedTerm",
+      "name": "single-spot confocal microscopy",
+      "identifier": "FBbi:00000252"
+    },
+    {
+      "@id": "#imaging-protocol-3",
+      "@type": "LabProtocol",
+      "name": "single-spot confocal microscopy",
+      "description": "single-spot confocal microscopy",
+      "measurementTechnique": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000252"
+        }
+      ]
+    },
+    {
+      "@id": "#total-dataset-size",
+      "@type": "QuantitativeValue",
+      "value": 380975781734,
+      "description": "381.0 GB",
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes"
+    },
+    {
+      "@id": "#file-count",
+      "@type": "QuantitativeValue",
+      "value": 2417,
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count"
+    }
+  ]
 }
